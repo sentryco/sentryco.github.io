@@ -1,0 +1,133 @@
+/* one FIX: ⚠️️ delete this file */
+.page#one #maincontent {
+	height: calc(100% - 120px);
+	width: 100%;
+}
+.page#one #maincontent #mainleft {
+	background-color: lightblue;
+	height: 100%;
+	width: calc(100% - 320px);
+	float: left;
+	clear: none;
+}
+.page#one #maincontent #mainslogan {
+	width: 100%;
+	height: calc(100% - 60px);
+	font-size: 44px;
+	font-weight: bold;
+	background-color: pink;
+}
+.page#one #maincontent #mainleft .download {
+	height: 60px;
+	width: 100%;
+	float: left;
+	clear: left;
+}
+.page#one #maincontent #mainright {
+	background-color: lightgreen;
+	height: 100%;
+	width: 320px;
+	float: right;
+	clear: none;
+}
+.download {
+	background-color: lightyellow;
+}
+.download .downloadios {
+	background-color: orange;
+	width: 50%;
+	height: 32px;
+	float: left;
+	clear: none;
+}
+.download .downloadmac {
+	background-color: lightgray;
+	width: 50%;
+	height: 32px;
+	float: right;
+	clear: none;
+}
+/* two */
+.header {
+	width: 600px;
+	height: 48px;
+	background-color: lightblue;
+	align: center;
+}
+.paragraph {
+	width: 600px;
+	height: 48px;
+	background-color: lightyellow;
+}
+.page#two #icons {
+	width: 100%;
+	height: calc(100% - 128px);
+	background-color: lightgray;
+	margin: 10px;
+}
+.page#two #icons .icon {
+	width: 320px;
+	height: 320px;
+	float: left;
+	clear: none;
+}
+.page#two #icons .icon#a {
+	background-color: blue;
+}
+.page#two #icons .icon#b {
+	background-color: red;
+}
+.page#two #icons .icon#c {
+	background-color: green;
+}
+.pagelink {
+	background-color: gray;
+	height: 32px;
+	width: 100%;
+}
+/* page three */
+.page#three #videocontentcontainer {
+	width: 100%;
+	height: calc(100% - 128px);
+}
+.page#three #videocontentcontainer #leftvideo {
+	width: 600px;
+	height: 400px;
+}
+.page#three #videocontentcontainer #rightfeatures {
+	width: calc(100% - 600px);
+	height: 400px;
+}
+.rightfeature {
+	width: 100%;
+	height: 64px;
+	float: right;
+	clear: right;
+}
+.rightfeature .top {
+	width: 100%;
+	height: 32px;
+	background-color: lightblue;
+}
+.rightfeature .bottom {
+	width: 100%;
+	height: 32px;
+	background-color: lightyellow;
+}
+/* page four */
+.page#four #downloadbox {
+	background-color: orange;
+	width: 100%;
+	height: calc(100% - 128px);
+}
+.page#four #downloadbox #downloadheader {
+	background-color: yellow;
+	width: 100%;
+	height: 32px;
+}
+.page#four #downloadbox #downloadparagraph {
+	background-color: green;
+	width: 100%;
+	height: 32px;
+}
+/* page five */

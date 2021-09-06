@@ -1,0 +1,8 @@
+/*
+	We want these to fade in so we set the opacity to zero. Then we also want these photos to slide into place, so let’s adjust the transform to translate them down 4em, and give them a few degrees more rotation.
+	Next we set up the transition we want to happen when these photos become visible. We add a transition for the transform, with a duration of 4 seconds, a quarter-second delay and the exponential ease-out timing function. We also fade it in using the opacity property, making it a little quicker than the transform.
+	We’re using a delay so that if our visitor is scrolling slowly, the animation won’t have finished before the photo is properly visible on screen. It’s a small tweak helps the flow of the page.
+	Lastly we add a property we’ve not used yet, the will-change property. This is a way of telling the browser to prepare to animate the element. We supply this property the values transform and opacity.
+	With this done, the photos will be invisible. We need to add some CSS to make them visible.
+*/
+@import "scroll.css";

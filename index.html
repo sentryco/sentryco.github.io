@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" initial-scale=1.0>
+		<meta name="author" content="Sentry">
+		<meta name="description" content="The zero trust password manager"><!-- ⚠️️ might not be needed as we define it in config.yml too -->
+		<link rel="stylesheet" href="css/site.css"><!--  we prepend base url so we have a common root -->
+		<!--  Google fonts start -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<!--  Google fonts end -->
+	 	<title>Sentry.co</title>
+	</head>
+	<body>
+		<header> <!-- Contains logo and menu -->
+			<div id="logo">
+				<div id="logocontainer">
+					<img src="assets/logo.svg" alt="" id="logoimage">
+				</div>
+				<div id="logotext">
+					Sentry.co
+				</div>
+			</div>
+			<nav> <!-- Navigation for the site -->
+				<ul>
+					<li><a <a href="#feature">Features</a></li>
+					<li><a href="#security">Security</a></li>
+					<li><a href="#download">Download</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="front">	<!-- Adds ability to target front page in css -->
+			<!-- page one (front page) -->
+			<div class="page" id="one">
+				<div id="maincontent"> <!-- Center the -->
+					<div id="mainleft">
+						<div id="mainslogan">
+							A highly secure password manager that syncs offline
+							<!-- The first zero trust Password manager Free forever --> <!-- FIX: ⚠️️ should we add breaks between sentences? -->
+						</div>
+						<div id="mainsubslogan">
+							We never have access to any of your passwords. Everything remains locally on your devices.
+						</div>
+						<div class="downloadsection">
+							<a href="https://passbook.us18.list-manage.com/subscribe/post?u=2db5d8d44a0bb05f25765ce0e&amp;id=2f3a4ea7fe" class="downloadios"><!-- Fix: ⚠️️ add dropshadow -->
+								Download for iOS
+							</a>
+							<a href="https://passbook.us18.list-manage.com/subscribe/post?u=2db5d8d44a0bb05f25765ce0e&amp;id=2f3a4ea7fe" class="downloadmac"><!-- Fix: ⚠️️ add dropshadow -->
+								Download for MacOS
+							</a>
+						</div>
+					</div> <!-- End of mainleft -->
+					<div id="mainright">
+							<div class="phone">
+									<div class="image_box">
+										<img alt="img" src="assets/bezel.png">
+									</div>
+									<div class="video_box">
+										<video autoplay loop muted playsinline>
+										  <source src="assets/sentryios.mp4"><!-- ⚠️️ might need base url trick from subcontent html to work online etc -->
+											  Sorry, your browser doesn't support embedded videos.
+										</video>
+									</div>
+							</div>
+						<!--
+							<div id="devicevideo">
+								<img src="assets/iphone.png" alt="" id="iphone">
+							</div>
+					 	-->
+						<!-- Fix: ⚠️️ add looping video here -->
+					</div>
+					<div class="pagelink">
+						“Keeping your passwords safe, has never been more important.”  <!-- <a href="#"></a>-->
+					</div>
+				</div><!-- End of maincontent -->
+			</div>
+			<!-- page two (Features) -->
+			<div class="page" id="two">
+				<div class="header" id="feature"> <!-- Fix ⚠️️ use html element header? -->
+					<h2>Features</h2> <!-- Fix: ⚠️️ Center vertically, see download section for code -->
+				</div>
+				<div class="contentcontainer">
+					<div class="subheader">
+						<h3> <!-- Fix ⚠️️ center vertically, see download section for code -->
+							Passwords are automatically syncronized between devices. Also works in standby mode. Neat!
+						</h3>
+					</div>
+					<div id="icons">
+						<div class="icon" id="a">
+							<div class="icongraphic">
+								<div class="iconcircle">
+									<img src="assets/offline.svg" alt="" id="sync">
+								</div>
+							</div>
+							<div class="icontext">
+								<div class="top">Syncronizes offline</div>
+								<div class="bottom">Devices are syncronized over local network</div>
+							</div>
+						</div>
+						<div class="icon" id="b">
+							<div class="icongraphic">
+								<div class="iconcircle">
+									<img src="assets/mesh.svg" alt="" id="backup">
+								</div>
+							</div>
+							<div class="icontext">
+								<div class="top">Multiple backups</div>
+								<div class="bottom">Data is automatically stored on all your devices</div>
+							</div>
+						</div>
+						<div class="icon" id="c">
+							<div class="icongraphic">
+								<div class="iconcircle">
+									<img src="assets/bell.svg" alt="" id="alert">
+								</div>
+							</div>
+							<div class="icontext">
+								<div class="top">Breach alert</div>
+								<div class="bottom">Get notified about data leaks and compromises</div>
+							</div>
+						</div>
+					</div><!--  end of icons -->
+					<div class="pagelink">
+						“By storing passwords offline you avoid having a central point of failure”  <!-- <a href="#"></a>-->
+					</div>
+				</div><!--  end of content container -->
+			</div>
+			<!-- page three (Security)-->
+			<div class="page" id="three">
+				<div class="header" id="security">
+					Security
+				</div>
+				<div class="contentcontainer">
+					<div class="subheader">
+						Your passwords are only stored locally on secure hardware storage. Accessible by your biometric ID.
+					</div>
+					<div id="videocontentcontainer"> <!-- Fix: ⚠️️ vertically Center this -->
+						<div id="leftvideo">
+							<div id="innervideo">
+								<!-- Video goes here -->
+								<div class="video_box" id="macos">
+									<video autoplay loop muted playsinline>
+									  <source src="assets/sentrymacos.mp4"><!-- ⚠️️ might need base url trick from subcontent html to work online etc -->
+										  Sorry, your browser doesn't support embedded videos.
+									</video>
+								</div>
+							</div>
+						</div>
+						<div id="rightfeatures">
+							<!-- ⚠️️ Use ul li here -->
+							<div class="rightfeature" id="a">
+								<div class="icon">
+									<div class="iconcircle">
+										<img src="assets/clock.svg" alt="" id="clock">
+									</div>
+								</div>
+								<div class="text">
+									<div class="top">Two factor codes</div>
+									<div class="bottom">Full support of one time passwords<br>such as HOTP and TOTP</div>
+								</div>
+							</div>
+							<div class="rightfeature" id="b">
+								<div class="icon">
+									<div class="iconcircle">
+										<img src="assets/key.svg" alt="" id="key">
+									</div>
+								</div>
+								<div class="text">
+									<div class="top">Biometric authentication</div>
+									<div class="bottom">Face ID / Touch ID enabled with<br>secure enclave</div>
+								</div>
+							</div>
+							<div class="rightfeature" id="c">
+								<div class="icon">
+									<div class="iconcircle">
+										<img src="assets/smartphone.svg" alt="" id="smartphone">
+									</div>
+								</div>
+								<div class="text">
+									<div class="top">Device entropy</div>
+									<div class="bottom">Enables you to create truly<br>random passwords</div>
+								</div>
+							</div>
+						</div>
+					</div>	<!-- video container end-->
+					<div class="pagelink">
+						“Two factor authentication was always meant to be offline”<!-- <a href="#"></a>-->
+					</div>
+				</div> <!-- end of contentcontainer -->
+			</div>
+			<!-- page four (Download)-->
+			<!-- Fix: ⚠️️ Add footer for the page-->
+			<div class="page" id="four">
+				<div class="header" id="download">Download</div>
+				<div class="contentcontainer">
+					<div class="subheader">
+						All essential features are free. Additional security enhancements are available via in-app-purchases.
+					</div>
+					<div id="downloadcontainer"> <!-- Pale orange background, has rounded corners -->
+						<div id="downloadbox"> <!-- Inner box for title and msg -->
+							<div id="downloadheader">
+								Available on multiple platforms
+							</div>
+							<div id="downloadparagraph">
+								We are also working on a chrome plugin which is coming soon!<!-- fix ⚠️️ use % of width and remove the br -->
+							</div>
+							<div class="downloadsection"><!-- Also used in the top page -->
+								<a href="https://passbook.us18.list-manage.com/subscribe/post?u=2db5d8d44a0bb05f25765ce0e&amp;id=2f3a4ea7fe" class="downloadios"><!-- Fix: ⚠️️ add dropshadow -->
+									Download for iOS
+								</a>
+								<a href="https://passbook.us18.list-manage.com/subscribe/post?u=2db5d8d44a0bb05f25765ce0e&amp;id=2f3a4ea7fe" class="downloadmac"><!-- Fix: ⚠️️ add dropshadow -->
+									Download for MacOS
+								</a>
+							</div>
+						</div>
+					</div> <!-- end of downloadcontainer -->
+				</div><!-- end of contentcontainer -->
+				<div class="pagelink">
+					<a href="https://www.antler.co/">Funded by Antler.co</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

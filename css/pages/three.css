@@ -1,0 +1,103 @@
+/* page three */
+.page#three .contentcontainer {
+	width: 980px;
+	margin: auto;
+	height: calc(100% - 100px); /*header = 200, footer = 200*/
+	/*background-color: rgba(0,255,0,0.1);*/
+	/*x center start*/
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+}
+.page#three #videocontentcontainer {
+	width: 100%;
+	height: 500px;
+	/*background-color: rgba(0,255,255,0.1);*/
+}
+.page#three #videocontentcontainer #leftvideo {
+	/*background-color: magenta;*/
+	/*background-color: rgba(255,0,0,0.1);*/
+	width: 620px;
+	height: 100%;
+	float: left;
+	clear: none;
+	/**/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/**/
+}
+.page#three #videocontentcontainer #leftvideo #innervideo {
+	/*background-color: rgba(100,100,100,0.4);*/
+	height: 100%;
+	width: 100%;
+	/*margin: auto;*/
+}
+.page#three #videocontentcontainer #leftvideo #innervideo #macos { /* Looping iPhone */
+	width: 100%;
+	/*background-color: yellow;*/
+	position: relative;/*👈 this is key, to make img alignment work*/
+	height: 100%; /*👈 this is key*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.page#three #videocontentcontainer #leftvideo #innervideo .video_box#macos video {
+   width: 100%;/*scale video to fit inside png*/
+}
+.page#three #videocontentcontainer #rightfeatures {
+	/*background-color: rgba(255,255,0,0.1);*/
+	width: calc(100% - 620px);
+	height: 100%; /* match the left video*/
+	float: right;
+	clear: none;
+	/*xy center start*/
+	display: flex;
+   justify-content: center;
+   /*align-items: center;*/
+	flex-direction: column; /* center multiple items in a column */
+	/*xy center end*/
+}
+.rightfeature {
+	padding: 8px 12px;
+}
+.rightfeature#a {
+	/*background-color: rgba(0,255,255,0.1);*/
+}
+.rightfeature#b {
+	/*background-color: rgba(255,0,255,0.1);*/
+}
+.rightfeature#c {
+	/*background-color: rgba(255,255,0,0.1);*/
+}
+.rightfeature .icon {
+	/*rgba(100,100,100,0.1)*/
+	display: none;
+
+}
+.rightfeature .top {
+	padding: 0px 0px;
+	/*line-height: 50px;*/
+	/**/
+	/*background-color: rgba(0,0,255,0.1);*/
+	text-align: left; /*center horisontally*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+.rightfeature .bottom {
+	height: 40px;
+	/*line-height: 50px;*/
+	padding: 6px 0px;
+	float: left;
+	clear: left;
+	/**/
+	/*background-color: rgba(255,0,0,0.1);*/
+	/*background-color: lightyellow;*/
+	text-align: left; /*center horisontally*/
+	font-family: 'Montserrat', sans-serif;
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: normal;
+}

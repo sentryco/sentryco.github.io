@@ -1,0 +1,26 @@
+.image_box {
+  height: 100%; /*👈 this is key*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /*background-color: gray;*/
+}
+.image_box img {
+	width: 100%;
+	z-index: 30000;
+}
+.video_box {
+	position: absolute;
+	top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: flex; /*center video*/
+   justify-content: center;
+   align-items: center;
+	/*background-color: orange;*/
+}
+.video_box video {
+   width: 83%;/*scale video to fit inside png*/
+}

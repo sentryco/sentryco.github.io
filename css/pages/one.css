@@ -1,0 +1,57 @@
+
+.page#one #maincontent { /* Main */
+	/*background-color: rgba(55,55,55,0.1);*/
+	height: calc(100% - 100px); /*80px is the non.exisiting footer*/
+	width: 980px;
+	margin: auto;
+}
+.page#one #maincontent #mainleft { /* mainLeft */
+	/*background-color: rgba(0,0,255,0.1);*/
+	width: calc(100% - 360px - 40px); /*40px is the margins, 360px is the right side*/
+	height: 100%;
+	/*margin-top: 20px;*/
+	margin-left: 20px;
+	float: left;
+	clear: none;
+}
+.page#one #maincontent #mainslogan { /* Headline */
+	width: 100%;
+	/*height: calc(45%);*/
+	margin-top: 20px;
+	font-size: 54px;
+	line-height: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-align: left;
+	padding: 20px 0px;
+	/*background-color: rgba(255,0,0,0.1);*/
+}
+.page#one #maincontent #mainsubslogan { /* Sub-headline */
+	width: 100%;
+	/*height: calc(35% - 60px);*/
+	padding: 20px 0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: normal;
+	text-align: left;
+	/*background-color: rgba(0,255,0,0.1);*/
+}
+.page#one #maincontent #mainright { /* mainRight */
+	/*background-color: rgba(0,255,0,0.0);*/
+	height: 100%;
+	width: 360px;
+	float: right;
+	clear: none;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.phone {
+	width: 80%;
+	position: relative;/*👈 this is key, to make img alignment work*/
+	height: 100%; /*👈 this is key*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

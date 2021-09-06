@@ -1,0 +1,97 @@
+/**
+ * Add media queries for responsiveness
+ * when the screen is XXXpx wide or less, stack the links on top of each other
+ */
+@media screen and (max-width: 600px) {
+	.page#three .contentcontainer {
+		width: calc(100%);
+	}
+	.page#three #videocontentcontainer {
+		height: auto;
+		/*background-color: pink;*/
+	}
+	.page#three #videocontentcontainer #leftvideo {
+		display: none;
+	}
+	.page#three #videocontentcontainer #rightfeatures {
+		width: calc(100% - 40px);
+		/*background-color: blue;*/
+		height: auto; /* match the left video*/
+		/* float: left; */
+		float:none; /*hack*/
+		margin: auto; /*hack*/
+		/*text-align: center;*/
+		/*xy center start*/
+		display: flex;
+	   justify-content: flex-start;
+	   /*align-items: center;*/
+		flex-direction: column; /* center multiple items in a column */
+		/*xy center end*/
+	}
+	.rightfeature {
+		/*background-color: yellow;*/
+		height: 140px;
+		/*xy center start*/
+		display: flex;
+	   justify-content: center;
+	   align-items: center;
+		flex-direction: row; /* center multiple items in a column */
+		/*xy center end*/
+		padding: 0px;
+		margin: 0px;
+	}
+	.rightfeature .icon {
+		/*background-color: rgba(100,100,100,0.1);*/
+
+		/*padding: 0px 0px;*/
+		width: 140px;
+		/*height: 100%;*/
+		height: 100%;
+
+
+		/*xy center start*/
+		display: flex;
+	   justify-content: center;
+	   align-items: center;
+		/*xy center end*/
+	}
+	.rightfeature .icon .iconcircle {
+		border-radius: 50%;
+		background-color: #FFF5EE;
+		width: calc(100% - 20px); /*320*3 + 20 = 980px*/
+		height: calc(100% - 20px);
+		/* xy center start */
+		display: flex;
+	   justify-content: center;
+	   align-items: center;
+		/* xy center end */
+	}
+	.rightfeature .icon .iconcircle img {
+
+		width: 60px; /*320*3 + 20 = 980px*/
+		height: 60px;
+
+		/* xy center start */
+		display: flex;
+	   justify-content: center;
+	   align-items: center;
+		/* xy center end */
+	}
+	.rightfeature .text {
+		width: calc(100% - 140px);
+		height: 100%;
+		display: flex;
+	   justify-content: center;
+	   /*align-items: center;*/
+		flex-direction: column; /* center multiple items in a column */
+	}
+	.rightfeature .top {
+
+		font-size: 24px;
+		padding: 4px 0px;
+	}
+	.rightfeature .bottom {
+		padding: 4px 0px;
+		font-size: 18px;
+	}
+}

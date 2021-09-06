@@ -1,0 +1,72 @@
+/**
+ * Add media queries for responsiveness
+ * when the screen is XXXpx wide or less, stack the links on top of each other
+ */
+@media screen and (max-width: 600px) {
+	.page#two .contentcontainer {
+		width: 100%;
+		height: calc(100%);
+	}
+	.page#two #icons { /* icons container */
+		width: calc(100% - 40px);
+		flex-direction: column;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.page#two #icons .icon {
+		width: 100%;
+		height: 140px;
+		/*x center start*/
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		/*x center end*/
+	}
+	.page#two #icons .icon .icongraphic {
+
+		/*background-color: yellow;*/
+		padding: 0px 0px;
+		width: 140px; /*320*3 + 20 = 980px*/
+		height: 100%;
+	}
+	.page#two #icons .icon .icongraphic .iconcircle {
+		width: calc(100% - 20px); /*320*3 + 20 = 980px*/
+		height: calc(100% - 20px);
+	}
+	.page#two #icons .icon .icongraphic .iconcircle img {
+		/*width: 100%;
+		height: 100%;*/
+		width: 60px; /*320*3 + 20 = 980px*/
+		height: 60px;
+	}
+	.page#two #icons .icon .icontext {
+		/*background-color: rgba(200,200,200,0.4);*/
+		width: calc(100% - 140px);
+		height: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		padding: 0px;
+		display: flex;
+	   align-items: center;
+	   text-align: left;
+		flex-direction: column;
+	}
+	.page#two #icons .icon .icontext {
+		/*background-color: rgba(0,0,200,0.4);*/
+		font-size: 22px;
+	}
+	.page#two #icons .icon .icontext .top {
+		/*background-color: rgba(200,0,0,0.4);*/
+		font-weight: bold;
+		padding: 0px 0px;
+		display: inline-block;
+		width: 100%;
+		padding: 4px 0px;
+	}
+	.page#two #icons .icon .icontext .bottom {
+		/*background-color: rgba(0,200,0,0.4);*/
+		font-size: 18px;
+		/*display: block;*/
+		padding: 4px 0px;
+	}
+}
