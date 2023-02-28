@@ -1,0 +1,31 @@
+@import "reset.css";
+@import "front/header.css";
+@import "front/top.css";
+@import "front/features.css";
+@import "front/footer.css";
+@import "front/qa.css";
+@import "responsive/responsive.css";
+body {
+  background-color: #0F0F0F;/* bg color */
+  margin: auto; /* Centers things */
+  max-width: 960px;
+  color: #E0E0DD; /* Primary font color: #E0E0DD */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: medium;
+}
+html {
+   margin: auto; /* Centers things */
+}
+/**
+ * H2 styles for sections
+ */
+h2.headline {
+  display: flex;/* center vertically */
+  align-items: center;
+  font-size: 40px;
+  color: #E0E0DD; /* primary font color: #E0E0DD */
+  height: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 100%;
+}

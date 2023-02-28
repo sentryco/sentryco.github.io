@@ -1,0 +1,25 @@
+/*Top - logo*/
+header#logo {
+  width: auto;
+  height: 120px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+header#logo img#logo-img {
+   float: left;
+   clear: none;
+   width: 120px;
+   height: 120px;
+}
+header#logo h1 {
+   float: left;
+   clear: none;
+   width: auto;
+   height: 100%;
+   display: flex;
+   align-items: center; /* Align vertical */
+   padding-left: 12px;
+   padding-right: 12px;
+   font-size: 60px;
+   color: #E0E0DD; /* Primary font color: #E0E0DD */
+}

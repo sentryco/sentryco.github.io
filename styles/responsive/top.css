@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+	/*Top - slogan*/
+	#top h1#slogan {
+		font-size: 36px;
+	   line-height: 48px;
+	}
+	#top #download-container #download-button {
+	   width: 100%;
+	}
+	#top #download-container #version-tag {
+	   width: 100%;
+		padding: 0px;
+	   padding-left: 0px;
+		padding-top: 40px;
+	   padding-bottom: 40px;
+	}
+}

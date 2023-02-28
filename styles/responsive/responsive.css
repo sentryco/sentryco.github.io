@@ -1,0 +1,9 @@
+@import "footer.css";
+@import "features.css";
+@import "top.css";
+@import "qa.css";
+@media screen and (max-width: 600px) {
+	html {
+		width: auto;
+	}
+}

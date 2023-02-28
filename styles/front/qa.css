@@ -1,0 +1,116 @@
+/*Q&A*/
+#qa {}
+
+/*QA container*/
+#qa ul.faqs {
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/*QA box*/
+#qa ul.faqs li {
+	height: auto;
+	overflow: auto;
+	display: block;
+	border-radius: 60px;
+	box-sizing: border-box; /*border stays within size*/
+	border: 2px solid #E0E0DD;/*primary color: #E0E0DD*/
+	margin-bottom: 40px;
+}
+#qa ul.faqs li:last-child {
+	margin-bottom: 0px;
+}
+/**
+ * Expanded
+ */
+#qa ul.faqs li.expand:target {
+	color: #E0E0DD;/*primary font color*/
+	border-color: #6236FF;/*ascent color*/
+}
+/**
+ * - Note: We use span to target the link, since there is a link in answer as well
+ */
+#qa ul.faqs li .top {
+	padding: 40px;/*creates space around*/
+	padding-left: 40px;
+	padding-right: 40px;
+	height: auto;
+	display: block;
+	color: #E0E0DD;
+	margin: auto;
+	overflow: auto;
+	overflow-y: hidden;/* hides the scrll-bar, bug */
+   line-height: 44px;/*hack for some characters being cut of at the bottom*/
+}
+#qa ul.faqs li .top .left {
+	width: calc(100% - 80px);
+	font-size: 40px;
+	float: left;
+	clear: none;
+}
+#qa ul.faqs li .top .right {
+	float: right;
+	clear: none;
+	width: auto;
+	height: auto;
+	color: #E0E0DD;/* #00D47F */
+	text-align: center;
+	font-size: 40px;
+}
+/**
+ * Top expanded
+ */
+#qa ul.faqs li.expand:target .top {
+	padding-bottom: 0px;
+	color: #E0E0DD;
+}
+/**
+ * Bottom (in-active)
+ */
+#qa ul.faqs li .bottom {
+	padding-left: 40px;
+	padding-right: 40px;
+	width: calc(100% - 80px);
+	display: none; /*default is hidden*/
+	clear: both;
+	float: left;
+	padding-bottom: 40px;
+	font-size: 24px;
+   line-height: 28px;
+	margin-top: 20px;
+}
+#qa ul.faqs li .bottom a {
+	color: #6236FF;
+	text-decoration: none;
+}
+/**
+ * Bottom (active)
+ * - Note: The active state of the list item
+ * - Note: expand:target means active
+ * - Note: expand:target is set when link is clicked and url js call is made #q2 etc
+ */
+#qa ul.faqs li.expand:target .bottom {
+	 display: block; /*show when active*/
+	 height: auto;
+	 color: #E0E0DD;
+}
+/**
+ * Disclosure btns
+ */
+#qa ul.faqs li .top .right .minus {
+	display: none; /*hide when inactive*/
+}
+/**
+ * Disclosure btns - Expanded
+ */
+#qa ul.faqs li.expand:target .top .right .plus {
+	display: none;/*hide when active*/
+	color: #E0E0DD;
+}
+#qa ul.faqs li.expand:target .top .right .minus {
+	display: block;/*show when active*/
+	color: #E0E0DD;
+}
