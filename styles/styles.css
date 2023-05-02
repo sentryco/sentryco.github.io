@@ -1,0 +1,8 @@
+/*Common*/
+@import "common/reset.css";
+@import "common/global.css";
+@import "page/header_page.css";
+@import "page/feature_page.css";
+@import "page/faq_page.css";
+@import "page/footer_page.css";
+@import "responsive/responsive.css";

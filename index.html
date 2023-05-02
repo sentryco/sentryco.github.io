@@ -1,168 +1,236 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-      <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" initial-scale=1.0>
-		<meta name="author" content="KeyGuard">
+		<meta name="author" content="Sentry">
 		<meta name="description" content="Offline password manager"><!-- ⚠️️ might not be needed as we define it in config.yml too -->
-      <title>Sentry - Offline password manager</title>
-      <link rel="stylesheet" type="text/css" href="styles/style.css">
-
-      <!--  Google fonts start -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-      <!--  Google fonts end -->
-      <!-- this enables google analytics -->
+		<title>Sentry - Offline password manager</title>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<!--  Google fonts start -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<!--  Google fonts end -->
+		<!-- this enables google analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TFFVSRNV"></script>
 		<!-- IP anonymization with gtag.js - Google Analytics (so that we don't have to show GDPR warning etc) -->
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag() {
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
 				dataLayer.push(arguments);
-		  }
-		  gtag('js', new Date());
-		  gtag('config', 'G-C1TFFVSRNV', { 'anonymize_ip': true });
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-C1TFFVSRNV', {
+				'anonymize_ip': true
+			});
 		</script>
 		<!--Crisp.chat script-->
-		<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="3473ebf3-c592-4423-80d6-f8bee61f8050";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-      <!-- svg favicon  -->
-      <!-- <link rel="icon" href="favicon.ico" sizes="any"> -->
-      <link rel="icon" type="image/x-icon" href="favicon.svg">
-    </head>
-    <body>
-		 <div id="top"> <!-- Top container -->
-          <header id="logo">
-             <a href="">
-               <img src="logo_gradient_no_bg.svg" id="logo-img">
-               <h1 id="logo-text">Sentry</h1>
-             </a>
-    		</header>
-          <h1 id="slogan">
-             <span>Offline password manager</span></br>For iOS and macOS
-          </h1>
-			<div id="download-container">
-            <a href="#" id="download-button">
-               Download today
-            </a>
-				<div id="version-tag">
-					Version 1.0.0 (Beta)
+		<script type="text/javascript">
+			window.$crisp = [];
+			window.CRISP_WEBSITE_ID = "3473ebf3-c592-4423-80d6-f8bee61f8050";
+			(function() {
+				d = document;
+				s = d.createElement("script");
+				s.src = "https://client.crisp.chat/l.js";
+				s.async = 1;
+				d.getElementsByTagName("head")[0].appendChild(s);
+			})();
+		</script>
+		<!-- svg favicon  -->
+		<!-- <link rel="icon" href="favicon.ico" sizes="any"> -->
+		<link rel="icon" type="image/x-icon" href="favicon.svg">
+	</head>
+	<body>
+		<!-- 🏷️ Header page -->
+		<header id="header_page" class="page">
+			<!--  <header id="logo"> </header> -->
+			<a href="">
+				<div id="header_logo">
+					<!-- logo -->
+					<img src="assets/logo.svg" alt="logo">
+				</div>
+			</a>
+			<h1 id="header_title">Sentry</h1><!-- header title -->
+			<h1 id="header_subtitle" class="headline">Offline password manager</h1>
+			<div id="download_container">
+				<!-- download container -->
+				<div id="ios" class="download_item">
+					Download for iOS
+				</div>
+				<div id="macos" class="download_item">
+					Download for macOS
 				</div>
 			</div>
-		 </div>
-		 <div id="features"> <!-- Feature container -->
-			 <h2 class="headline">Features</h2>
-			 <div id="feature-container"> <!-- feature box container -->
-				 <div class="feature-box">
-					 <img src="svg/refresh-cw.svg" class="icon">
-					 <h3>Offline sync</h3>
-					 <p>Sync automatically offline /w BlueTooth</p>
-   			 </div>
-				 <div class="feature-box">
-                <img src="svg/log-in.svg" class="icon">
-					 <h3>Safari AutoFill</h3>
-					 <p>Autofill passwords in Safari</p>
-   			 </div>
-				 <div class="feature-box">
-                <img src="svg/share-2.svg" class="icon">
-					 <h3>Secure sharing</h3>
-					 <p>Share a password with someone else</p>
-   			 </div>
-				 <div class="feature-box">
-                <img src="svg/key.svg" class="icon">
-					 <h3>2FA TOTP codes</h3>
-					 <p>Support for onetime codes</p>
-   			 </div>
-             <div class="feature-box">
-                <img src="svg/clock.svg" class="icon">
-					 <h3>History support</h3>
-					 <p>All changes are recoverable</p>
-   			 </div>
-             <div class="feature-box">
-                <img src="svg/eye.svg" class="icon">
-					 <h3>Biometry auth</h3>
-					 <p>Secured with Face-ID or Touch-ID</p>
-   			 </div>
-			 </div>
-		 </div>
-		 <div id="qa"><!-- Q&A container -->
-          <h2 class="headline">Q & A</h2>
-          <ul class="faqs">  <!-- faq list -->
-            <!-- q1 -->
-            <li class="expand" id="q1"> <!-- list item -->
-               <a href="#q1" class="top"> <!-- link -->
-   					<h3 class="left">How much does it cost?</h3>
-   					<div class="right"> <!-- dropdown indicator -->
-   						<span class="plus">+</span>
-   						<span class="minus">-</span>
-   					</div>
-   				</a>
-               <div class="bottom"> <!-- expanded content -->
-                  Syncing two devices is free, to sync more we charge $1.99 /m ($19.99/YR) or buy forever at $79.99
-   				</div>
-            </li>
-            <!-- q2 -->
-            <li class="expand" id="q2"> <!-- list item -->
-               <a href="#q2" class="top"> <!-- link -->
-   					<h3 class="left">How does the sync work?</h3>
-   					<div class="right"> <!-- dropdown indicator -->
-   						<span class="plus">+</span>
-   						<span class="minus">-</span>
-   					</div>
-   				</a>
-               <div class="bottom"> <!-- expanded content -->
-                  Data is syncronized automatically between devices offline via BlueTooth. Even works in stand by.
-   				</div>
-            </li>
-            <!-- q3 -->
-            <li class="expand" id="q3"> <!-- list item -->
-               <a href="#q3" class="top"> <!-- link -->
-   					<h3 class="left">How does backups work?</h3>
-   					<div class="right"> <!-- dropdown indicator -->
-   						<span class="plus">+</span>
-   						<span class="minus">-</span>
-   					</div>
-   				</a>
-               <div class="bottom"> <!-- expanded content -->
-                  We support 2 types of backups, iCloud or USB Thumb, Securely encrypt with your own password
-   				</div>
-            </li>
-            <!-- q4 -->
-            <li class="expand" id="q4"> <!-- list item -->
-               <a href="#q4" class="top"> <!-- link -->
-   					<h3 class="left">How can I import my passwords?</h3>
-   					<div class="right"> <!-- dropdown indicator -->
-   						<span class="plus">+</span>
-   						<span class="minus">-</span>
-   					</div>
-   				</a>
-               <div class="bottom"> <!-- expanded content -->
-                  Import from LastPass, Dashlane, 1password, keeper, iCloud passwords or check out <a href="https://www.github.com/sentryco/KeychainExport">KeyChain export</a>
-   				</div>
-            </li>
-			 </div>
-		 </div><!-- End of Q&A container -->
-       <footer id="links"><!-- Links container -->
-			 <h2 class="headline">Links</h2>
-			 <div id="links-container"> <!-- needed for the responsive mechanism -->
-             <div class="link-box" id="c">
-                <h3>Investors</h3>
-                <a href="https://www.antler.co/">Antler</a>
-                <a href="https://www.innovationnorway.no/">Innovation Norway</a>
-                <a href="https://www.linkedin.com/in/jonasrinde/">Jonas Rinde</a>
- 			 	</div>
-				<div class="link-box" id="b">
-               <h3>Legal</h3>
-               <a href="https://sentry.co/privacypolicy.html">Terms of agrement</a>
-               <a href="https://sentry.co/privacypolicy.html">Privacy agrement</a>
-			 	</div>
-            <div class="link-box" id="a">
-               <h3>Socials</h3>
-               <a href="https://www.github.com/sentryco/">Github</a>
-               <a href="https://www.twitter.com/sentrydotco/">Twitter</a>
-               <a href="https://www.instagram.com/sentrydotco/">Instagram</a>
-			 	</div>
-			 </div>
-		 </footer>
-    </body>
+		</header>
+		<!-- ✨ Feature page -->
+		<div id="feature_page" class="page">
+			<h2 id="feature_header" class="headline">Features</h2>
+			<!-- <div id= "feature_description" class="description">A password manager that auto sync your passwords entirely offline. Setting a new standard for password security and privacy without sacrificing convenience.</div> -->
+			<div id="feature_container">
+				<!-- left feature container -->
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/refresh-cw.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Offline sync</div>
+					<div id="feature_item_content">Sync automatically offline w/ BlueTooth</div>
+				</div>
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/log-in.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Safari AutoFill</div>
+					<div id="feature_item_content">Autofill passwords in Safari</div>
+				</div>
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/share-2.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Secure sharing</div>
+					<div id="feature_item_content">Share a password with someone else</div>
+				</div>
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/key.svg" class="icon">
+					</div>
+					<div id="feature_item_header">2FA TOTP codes</div>
+					<div id="feature_item_content">Support for onetime codes</div>
+				</div>
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/clock.svg" class="icon">
+					</div>
+					<div id="feature_item_header">History support</div>
+					<div id="feature_item_content">All changes are recoverable</div>
+				</div>
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/eye.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Biometry auth</div>
+					<div id="feature_item_content">Secured with Face-ID or Touch-ID</div>
+				</div>
+
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/activity.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Password audit</div>
+					<div id="feature_item_content">Audit your accounts for leaks and reuse. (Coming soon)</div>
+				</div>
+
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/lock.svg" class="icon">
+					</div>
+					<div id="feature_item_header">Fido2 (PassKey)</div>
+					<div id="feature_item_content">Support for the the Fido2 standard (Coming soon)</div>
+				</div>
+
+				<div id="feature_item">
+					<div id="feature_item_icon">
+						<img src="assets/svg/tablet.svg" class="icon">
+					</div>
+					<div id="feature_item_header">iPad support</div>
+					<div id="feature_item_content">Native iPadOS support (Coming soon)</div>
+				</div>
+
+			</div> <!-- end of feature container -->
+		</div> <!-- end of page -->
+		<!-- 💡 Faq page -->
+		<div id="faq_page" class="page">
+			<h2 id="faq_header" class="headline">Common questions</h2>
+			<!--  <div id= "faq_description" class="description">Here are some of the most frequently asked questions. For additional questions please let us know in the chat or on social media.</div> -->
+			<ul class="faqs">
+				<!-- faq list -->
+				<!-- q1 -->
+				<li class="expand" id="q1">
+					<!-- list item -->
+					<a href="#q1" class="top">
+						<!-- link -->
+						<h3 class="left">How much does it cost?</h3>
+						<div class="right">
+							<!-- dropdown indicator -->
+							<span class="plus">+</span>
+							<span class="minus">-</span>
+						</div>
+					</a>
+					<div class="bottom">
+						<!-- expanded content -->
+						Syncing two devices is free, to sync more we charge $4.99 /m ($29.99/YR -50%) or buy forever at $79.99
+					</div>
+				</li>
+				<!-- q2 -->
+				<li class="expand" id="q2">
+					<!-- list item -->
+					<a href="#q2" class="top">
+						<!-- link -->
+						<h3 class="left">How does the sync work?</h3>
+						<div class="right">
+							<!-- dropdown indicator -->
+							<span class="plus">+</span>
+							<span class="minus">-</span>
+						</div>
+					</a>
+					<div class="bottom">
+						<!-- expanded content -->
+						Data is syncronized automatically between devices offline via BlueTooth. Also works in stand by.
+					</div>
+				</li>
+				<!-- q3 -->
+				<li class="expand" id="q3">
+					<!-- list item -->
+					<a href="#q3" class="top">
+						<!-- link -->
+						<h3 class="left">How does backups work?</h3>
+						<div class="right">
+							<!-- dropdown indicator -->
+							<span class="plus">+</span>
+							<span class="minus">-</span>
+						</div>
+					</a>
+					<div class="bottom">
+						<!-- expanded content -->
+						We support 2 types of backups, iCloud or USB Thumb, Securely encrypted with your own password
+					</div>
+				</li>
+				<!-- q4 -->
+				<li class="expand" id="q4">
+					<!-- list item -->
+					<a href="#q4" class="top">
+						<!-- link -->
+						<h3 class="left">How can I import my passwords?</h3>
+						<div class="right">
+							<!-- dropdown indicator -->
+							<span class="plus">+</span>
+							<span class="minus">-</span>
+						</div>
+					</a>
+					<div class="bottom">
+						<!-- expanded content -->
+						Import from LastPass, Dashlane, 1password, keeper, iCloud passwords or check out <a href="https://www.github.com/sentryco/KeychainExport">KeyChain export</a>
+					</div>
+				</li>
+			</ul> <!-- end of faq list -->
+		</div> <!-- end of faq page -->
+		<!-- ⛓️ Footer page -->
+		<footer id="footer_page" class="page">
+			<div id="link_container">
+				<!-- needed for the responsive mechanism -->
+				<a href="https://www.twitter.com/sentrydotco/">Twitter</a>
+				<a href="https://www.linkedin.com/company/sentry-co/">LinkedIn</a>
+				<a href="https://www.github.com/sentryco/">GitHub</a>
+				<!--  <a href="https://www.angleList.com/">AngleList</a> - -->
+				<!--  <a href="https://www.instagram.com/">Instagram</a> -->
+			</div>
+			<!--  <div id="copyright"> -->
+			<!-- add privacypolicy here? -->
+			<!--   Made in Norway -->
+			<!-- <a href="https://www.sentry.co/privacypolicy.html">privacy policy</a> -->
+			<!-- Sentry This is a copyright disclaimer. All rights reserved 2023. -->
+			<!-- </div> -->
+		</footer>
+	</body>
 </html>

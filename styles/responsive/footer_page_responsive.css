@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+	#link_container {
+		padding: 48px;
+		padding-bottom: 72px;
+	}
+	#link_container a {
+		padding: 24px;
+		font-size: 22px;
+	}
+}

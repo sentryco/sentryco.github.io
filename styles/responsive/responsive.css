@@ -1,9 +1,16 @@
-@import "footer.css";
-@import "features.css";
-@import "top.css";
-@import "qa.css";
+@import "top_page_responsive.css";
+@import "feature_page_responsive.css";
+@import "footer_page_responsive.css";
+@import "faq_page_responsive.css";
+
 @media screen and (max-width: 600px) {
 	html {
+		width: auto;
+	}
+	body {
+		width: auto;
+	}
+	.page {
 		width: auto;
 	}
 }

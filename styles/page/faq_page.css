@@ -1,0 +1,125 @@
+/*FAQ page*/
+#faq_page {
+	/*background-color: pink;*/
+}
+#faq_header {
+	/*background-color: purple;*/
+}
+/*QA container*/
+ul.faqs {
+  /*background-color: red;*/
+  padding: 0px;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+/*QA box*/
+ul.faqs li {
+	/*background-color: orange;*/
+	height: auto;
+	overflow: auto;
+	display: block;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, .1);
+	padding: 24px;
+	box-sizing: border-box; /*border stays within size*/
+	margin-bottom: 24px;
+}
+ul.faqs li:last-child {
+	margin-bottom: 0px; /*hack I guess, to avoid triling margin at the bottom*/
+}
+/**
+ * Expanded
+ */
+ul.faqs li.expand:target {
+	/*color: white;*//*primary font color*/ /*#E0E0DD*/
+}
+/**
+ * - Note: We use span to target the link, since there is a link in answer as well
+ */
+ul.faqs li .top {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	height: auto;
+	display: block;
+	color: white;/* #00D47F #E0E0DD*/
+	margin: auto;
+	overflow: auto;
+	overflow-y: hidden;/* hides the scrll-bar, bug */
+   /*line-height: 44px;*//*hack for some characters being cut of at the bottom*/
+	padding: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+ul.faqs li .top .left {
+	width: calc(100% - 80px);
+	float: left;
+	clear: none;
+}
+ul.faqs li .top .right {
+	float: right;
+	clear: none;
+	width: auto;
+	height: auto;
+	color: white;/* #00D47F #E0E0DD*/
+	text-align: center;
+	font-weight: bold;
+}
+/**
+ * Top expanded
+ */
+ul.faqs li.expand:target .top {
+	padding-bottom: 0px;
+	color: white; /*#E0E0DD*/
+}
+/**
+ * Bottom (in-active)
+ */
+ul.faqs li .bottom {
+	padding-left: 0px;
+	padding-right: 0px;
+	width: calc(100% - 80px);
+	display: none; /*default is hidden*/
+	clear: both;
+	float: left;
+	padding-bottom: 0px;
+	font-size: 18px;
+   line-height: 24px;
+	margin-top: 20px;
+	width: 75%;
+}
+ul.faqs li .bottom  {
+	color:rgba(255,255,255,0.7);/*we cant use opacity because issue with parent etc*/
+}
+ul.faqs li .bottom a {
+	color:rgba(255, 255, 255, 1.0);
+	text-decoration: none;
+}
+/**
+ * Bottom (active)
+ * - Note: The active state of the list item
+ * - Note: expand:target means active
+ * - Note: expand:target is set when link is clicked and url js call is made #q2 etc
+ */
+ul.faqs li.expand:target .bottom {
+	 display: block; /*show when active*/
+	 height: auto;
+}
+/**
+ * Disclosure btns
+ */
+ul.faqs li .top .right .minus {
+	display: none; /*hide when inactive*/
+}
+/**
+ * Disclosure btns - Expanded
+ */
+ul.faqs li.expand:target .top .right .plus {
+	display: none;/*hide when active*/
+	color: white;/*#E0E0DD*/
+}
+ul.faqs li.expand:target .top .right .minus {
+	display: block;/*show when active*/
+	color: white;/*#E0E0DD*/
+}

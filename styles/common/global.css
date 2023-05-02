@@ -1,0 +1,26 @@
+@import "download.css";
+@import "default.css";
+.page { /*Maybe put the width in body?*/
+	width: 960px;/*Avoids resizing when window is too small etc*/
+	align-items: center; /*horizontal*/
+	display: flex;
+   flex-direction: column;
+}
+/*Elements*/
+.headline {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 12px;
+	opacity: 0.7;
+}
+.description {
+	text-align: center;
+	padding: 12px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: normal;
+	opacity: 0.7;
+	width: 640px;
+}
