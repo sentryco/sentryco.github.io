@@ -5,6 +5,8 @@
 	}
 	#link_container a {
 		padding: 24px;
+		padding-left: 12px;
+		padding-right: 12px;
 		font-size: 22px;
 	}
 }
