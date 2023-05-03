@@ -47,7 +47,7 @@ ul.faqs li .top {
 	margin: auto;
 	overflow: auto;
 	overflow-y: hidden;/* hides the scrll-bar, bug */
-   /*line-height: 44px;*//*hack for some characters being cut of at the bottom*/
+   line-height: 28px;/*hack for some characters being cut of at the bottom*/
 	padding: 0px;
 	padding-top: 6px;
 	padding-bottom: 6px;
