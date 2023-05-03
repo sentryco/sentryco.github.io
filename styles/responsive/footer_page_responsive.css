@@ -1,6 +1,8 @@
 @media screen and (max-width: 600px) {
 	#link_container {
 		padding: 48px;
+		padding-left: 24px;
+		padding-right: 24px;
 		padding-bottom: 72px;
 	}
 	#link_container a {
