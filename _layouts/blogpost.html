@@ -1,0 +1,12 @@
+---
+layout: wrapper
+---
+<main class="blogpost">	<!-- Adds ability to target blogpost page in css -->
+	{% include component/header/header.html %}<!-- We add header from includes -->
+	<div class="page" id="post"> <!-- Blog post page -->
+		{% include component/blog_post/blog_post_header.html %} <!-- Blog post header  -->
+		{{ content }} <!-- Adds the markdown content -->
+		{% include component/blog_post/blog_post_footer.html %} <!-- Blog post footer -->
+	</div>
+	{% include component/footer/footer.html id="footer" %} <!-- Adds the site footer -->
+</main>

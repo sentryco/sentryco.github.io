@@ -1,0 +1,75 @@
+## Has text content for views on the front page
+## Fix: rename to front.yml?
+product: 
+  ## subheader: "Product demonstration"
+  ## Conveniently manage and sync passwords offline
+  ## How the <em>offline sync</em><br>really works
+  ## Sync and manage your passwords offline 
+  ## We are pioneering password managment that sync offline 
+  header: "Manage and sync your<br>credentials <em>offline</em>" ## Product demonstration
+  text: 'Through <a href="/#KRgb">distributed databases</a> and <a href="/#ELeo">local P2P</a>. We are pioneering credential-management that sync automatically offline.' ## Fix: ⚠️️ maybe Use span to highlight macOS and iOS?
+feature:
+  ## subheader: "Product features"
+  ## All the features<br><em>you need</em>
+  ## Next generation privacy and security features
+  ## <em>Enhanced</em> security features<br>to keep you safe
+  ## A modern credential manager with all you need
+  ## All the features you excpect<br>from a<em> modern</em> credential manager
+  ## "Exclusive security features<br>that keeps <em>you safe</em>"
+  ## With security features <br>that keeps <em>you safe</em>
+  header: "A <em>fully</em> featured<br>credential-manager" ## Product Features
+  ## 'This is a selection of the key features in the app. There are additional features not listed here. Find out more on the <a href="https://testflight.apple.com/join/jAGTGTRd">App-store</a>'
+  text: 'Available for macOS and iOS. With support for iPadOS coming soon. Sign up to our <a href="#bottom_menu">Newsletter</a> to get notified about product news' ## ""
+compare:
+  ##subheader: "Product comparison"
+  ## Changing the game with first to market features 
+  ## The only completly offline credential manager on the market
+  ## <em>How we compare</em> with<br>the competition
+  ## The alternatives are <em>not sustainable</em> in the long run 
+  ## The <em>inevitable</em> choice<br>everyone should make
+  header: 'How we <em>compare</em> with<br> the competition' ## Product comparison
+  ## The monthly price represents the annualy billed package. Please refer to our <a href="#pricing_page">price table</a> for more information. You can learn more about our <a href="/support/#s6q4">open-source policy</a>.
+  ## Discover our <a href="/support/#s6q4">open-source policy</a>
+  ## Inspired by <a href="https://en.wikipedia.org/wiki/Self-sovereign_identity">self-sovereign</a> principles. 
+  ## add text regarding how cloud based products kep failing, see the faq for a good blurb on this 
+  ## With <em>online password managers</em> you will always be at <em>risk of compromise</em> if someone gets access to your master password, or someone with access to the the cloud <em>leaks your data</em>. As has often happened in the past: <a href="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers">Hackers stole encrypted LastPass password vaults</a>
+  ## We offer offline capabilities that enable you to have full control over your digital credentials. Here is a competitor breakdown.
+  ## "Here's how our product compares to similar products in the market." 
+  ## Fix: ⚠️️ Use div instead of h2? or p span?
+  text: 'Cloud connected credential managers have problems: <a href="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers">Hackers stole encrypted LastPass password vaults</a>. Moving credentials offline solves this.' 
+faq:
+  ## subheader: "Questions And Answers"
+  ## Comprehensive support is a click away
+  ## Security and privacy is complete science fiction for most people
+  ## Discover the answer<br>to <em>any question</em>
+  ## All your security and privacy<br>questions <em>answered</em>
+  header: "Common questions<br> and <em>answers</em>"
+  ## , please contact us via <a href="mailto:andre@sentry.co">email</a> or 
+  text: 'If you have any further questions visit the <a href="/support/">support page</a>' ## "These represent a short list of our most frequently asked questions."
+price:
+  ## subheader: "Product pricing"
+  ## Managing passwords offline is the inevitable choice everyone will make
+  ## The choice for the self-sovergine individul 
+  ## A priceless investment for the most precious data your have
+  ## The best investment you will ever make
+  ## Peace of mind does not have a price
+  ## <em>Peace of mind</em> is worth every penny
+  ## <em>More affordable</em> than<br>the competiton 
+  ## An option for everyone 
+  ## Peace of mind<br>is <em>priceless</em>
+  ## Buy once or subscribe<br>via <em>in-app-purchase</em>
+  header: "One purchase <em>covers</em><br>all your devices" ## Subscription Plans, Product pricing
+  ## All purchases are refundable at any time, easily, from within the app, no questions asked. Read more about our <a href="/support/#s6q8">Return policy</a>
+  text: 'Available through apple in-app-purchase. All purchases are <a href="/support/#I5Fl">refundable</a>' ## "Available as <em>in-app-purchases</em> from within the application"  
+download: 
+  ##subheader: "Product download"
+  ## A digital shelter, in an uncertain future landscape
+  ## Available for<br>apple platforms <em>today!</em>
+  ## Your future<br>self will <em>thank you</em>
+  ## The choice for the self-soveregin individuel 
+  ## <em>Level up</em> your security<br>and privacy today!
+  ## 
+  ## <em>Offline</em> your<br>credentials today!
+  header: "Built <em>exclusivly</em> for<br>apple devices" ## Thank<br>self will <em>thank you</em>
+  ## It´s safe to install the TestFlight version, all data will migrate automatically upon official release to the app store. Read more about how <a href="/support/#s6q7">TestFlight data migration</a> is handled.
+  text: 'All data from TestFlight will <a href="/support/#A38b">migrate automatically</a> when released to the app store.' ## "Onboard in less than a minute. Requires <em>no user registration</em>"

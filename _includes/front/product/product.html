@@ -1,0 +1,12 @@
+<!-- ✨ Product page ✨ -->
+<!-- Fix: consider using more descriptive class names for the div elements, such as product-page, product-video, product-header, product-header-title, product-header-text, product-videos, and contextual-text, -->
+<div class="page" id="product_page"><!-- Product Video -->
+	{% include component/front/page_header.html title=site.data.page.product.header text=site.data.page.product.text subheader=site.data.page.product.subheader %}
+	{% include component/front/download_container.html %}
+	<div id="videos">
+		{% for item in site.data.product %}
+			{% include front/product/product_item.html %}
+		{% endfor %}
+	</div>
+</div><!-- End of product page -->
+

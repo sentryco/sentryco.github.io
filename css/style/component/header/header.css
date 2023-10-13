@@ -1,0 +1,50 @@
+@import "nav.css";
+/**
+ * Header - logo, title, nav
+ */
+.header {
+	background-color: var(--debug-bg-22);
+	height: 120px;
+	margin-top: 32px;
+	/* FlexBox */
+	display: flex;
+	flex-direction: row; /* Arrange horizontally */
+}
+/**
+ * Header item (title, logo, nav)
+ */
+.header .header_item {
+	min-width: 0;
+	min-height: 0;
+	width: 0px; /* ⚠️️ Hack to make grow work */
+	/* Flex */
+	flex-grow: 1; /* Fills the space */
+}
+/**
+ * Company title text
+ */
+.header #title {
+	background-color: var(--debug-bg-20);
+	height: 100%;
+	align-items: center;
+	/* FlexBox */
+	display: flex;
+}
+.header #title #title_text {
+	background-color: var(--debug-bg-10);
+	margin-left: 6px;
+	margin-right: 6px;
+	/* Styling */
+	font: var(--text-xl-bold);
+	font-size: 32px;/* Custom size */
+	color: var(--primary-lower);
+	text-decoration: none;
+}
+/**
+ * Fix: seems like we can't add filter to this svg. might be something wrong with the svg. see how we do it with feather icons etc.
+ */
+.header #title .logo_img { 
+	width: auto; /* aspet ratio based */
+	height: 48px; /* prefer 100% of header */
+	aspect-ratio: 1 / 1;
+}

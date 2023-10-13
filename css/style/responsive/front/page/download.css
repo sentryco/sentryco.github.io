@@ -1,0 +1,19 @@
+/**
+ * Download
+ */
+ @media screen and (max-width: 600px) {
+    /**
+     * Download page
+     */
+	 .download_page_container {
+	 	display: flex;
+	 	flex-direction: column;
+	 	row-gap: 24px; /*Vertical gap space*/
+	 }
+	 /**
+     * Download item
+     */
+	 .dowload_item {
+		width: 100%;
+	 }
+ }

@@ -1,0 +1,24 @@
+<!-- consider adding poster - poster: 
+	The poster attribute allows you to specify an image that will be displayed 
+	before the video starts playing. This can be useful to give the user a preview 
+	of the video content. -->
+
+<!-- preload: The preload attribute allows you to specify whether the video should 
+	be loaded when the page loads (auto), only when the user clicks play (none), 
+	or when the page loads but only metadata is loaded (metadata). -->
+	
+<!-- auto: The video should be loaded when the page loads. This means that the entire video file will be downloaded, even if the user doesn't end up watching the entire video.-->
+<!-- metadata: Only the metadata for the video should be loaded when the page loads. This means that the browser will only download information about the video, such as its duration and dimensions, but not the entire video file. The video will only be downloaded when the user clicks the play button.-->
+<!-- none: The video should not be loaded when the page loads. This means that the video will only be downloaded when the user clicks the play button.-->
+<!-- This is the video element used in the product view -->
+<div class="vid">
+	<div class="image_box">
+		<img alt="img" src="{{ '/assets/images/bezel.png' | prepend: site.baseurl }}"> <!--bezel.png bezeliphone12.png-->
+	</div>
+	<div class="video_box">
+		<video autoplay loop muted playsinline preload="auto">
+			<source src="{{ '/assets/video/' | prepend: site.baseurl }}{{ item.url }}"> <!-- ⚠️️ Might need base url trick from subcontent html to work online etc -->
+			Sorry, your browser doesn't support embedded videos.
+		</video>
+	</div>
+</div>

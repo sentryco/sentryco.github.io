@@ -1,0 +1,19 @@
+@import "compare_row_footer.css";
+@import "compare_row.css";
+@import "compare_column.css";
+@import "compare_row_header.css";
+/**
+ * Table - grid
+ * - Note: we sort it in columns and rows instead of using the grid css because its easier to parse nested yml, and hiding columns for responsive mobile screen etc
+ * - Note: it could probably be done with grid too if we do more research etc, maybe a future update
+ */
+ .page#product_compare .table {
+	background-color: var(--debug-bg-32);
+	/*background-color: green;*/
+	padding-top: 48px; /*space between header text and table*/
+	width: 100%;
+	height: auto;
+	/* FlexBox */
+	display: flex;
+	flex-direction: row; /* horizontal */
+}

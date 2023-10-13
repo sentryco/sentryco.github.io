@@ -1,0 +1,10 @@
+<!-- Video container -->
+<!-- Fix: more descriptive class names for the div elements, such as video-container, video-box-container, video-title, and video-text, -->
+<div class="video_container"><!-- Beginning of item -->
+	<div class="video_box_container">
+		{% include component/front/video_box.html videoURL="" imageURL="" %}<!-- We add video element as include, as we reuse it other places --> <!-- videoURL="strong_password.mp4" imageURL="biometric_security_iphone.png" -->
+	</div>
+	<div id="vid_title">{{item.title}}</div>
+	<div id="vid_text">{{item.text}}</div>
+	<div id="vid_link"><a href="{{item.link}}">Learn more</a></div>
+</div><!-- end of item -->

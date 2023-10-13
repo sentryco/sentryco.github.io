@@ -1,0 +1,18 @@
+<!-- ✨ FAQ page ✨ -->
+<!-- Fix: more descriptive class names for the div elements, such as faq-page and subtext-container, -->
+<!-- Important: We loop the faq first so that faq decide order-->
+<div class="page" id="faq_page">
+	{% include component/front/page_header.html title=site.data.page.faq.header text=site.data.page.faq.text subheader=site.data.page.faq.subheader %}
+	<ul class="faqs"><!-- Start of faq list -->
+		{% for faq in site.data.faq %} <!-- Make a list of ids to include and filter on that list -->
+			{% for support in site.data.support %} <!-- Pull data from support.yml to have one source of truth etc -->
+				{% for item in support.list %} <!-- Loop through the list array in the support object -->
+					<!-- Executed for each item in the list -->
+					{% if item.id == faq.id %}
+						{% include front/faq/faq_item.html %} <!-- Faq_item -->
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+		{% endfor %}
+	</ul> <!-- End of faq list -->
+</div><!-- End of FAQ page  --> 

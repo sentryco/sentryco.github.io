@@ -1,0 +1,72 @@
+/**
+ * About page
+ */
+.page#about {
+	background-color: var(--debug-bg-18);
+	padding: 64px 15%;
+	padding-top: 0px;
+	/*Style*/
+	text-align: left;
+}
+/* Page header title */
+.page#about h1 {
+	background-color: var(--debug-bg-14);
+	/*padding-top: 24px;*/
+	/*padding: var(--default-header-padding-top-bottom) 0;*/ /* Represents top and bottom padding, respectively */
+	width: 100%;
+	height: auto;
+	/* Styling */
+	text-align: center;
+	font: var(--text-xxl-bold); /* Use CSS variable for font family */
+    color: var(--primary-low); /* Use CSS variable for title color */
+}
+/**
+ * Sub Header
+ */
+.page#about h2 {
+	padding: 24px 0;
+	/*Style*/
+	font: var(--text-xl-bold);
+	font-size: 32px; /* custom */
+	color: var(--primary-low);
+}
+/**
+ * Fix: ⚠️️ use a different elment p or span or?
+ */
+.page#about h3 {
+	padding: 24px 0 12px;
+	/*Style*/
+	font: var(--text-lg-bold);
+	color: var(--primary-low);
+}
+/**
+ * Bread text
+ */
+.page#about p {
+	padding: 0 0 24px;
+	/*Style*/
+	font: var(--text-sm); /* font size and family */
+	color: var(--primary-medium);
+	width: 100%;
+	line-height: 1.4;
+}
+/**
+ * - Note: When using **text** in markdown
+ */
+/*.page#about p strong {
+	color: var(--primary);
+}*/
+/**
+ * Link - text
+ */
+.page#about a {
+	text-decoration: none;
+	color: var(--accent-color);
+}
+/**
+ * Link text hover
+ */
+.page#about a:hover {
+	text-decoration: underline;
+	color: var(--primary);
+}

@@ -1,0 +1,50 @@
+@import "footer_links.css";
+@import "footer_newsletter.css";
+@import "footer_about.css";
+/**
+ * Footer page
+ */
+.footer {
+	background-color: var(--debug-bg-25); /*debug*/
+	padding-top: 96px;/*space above footer*/
+	height: auto;
+}
+/**
+ * All footer items
+ */
+.footer_item_container {
+	width: 100%;
+	height: auto;
+	/* FlexBox */
+	display: flex;
+	flex-direction: row;
+	column-gap: 12px;/* Horisontal spacing */
+}
+/**
+ * Footer item
+ */
+.footer_item {
+	height: auto;
+	flex-grow: 1;
+}
+/**
+ * Header text for each footer row item
+ */
+.footer_item h1 {
+	background-color: var(--debug-bg-24);/* Debug */
+	width: auto; /* ⚠️️ For some reason this has to be set to auto */
+	padding: 0px 0px 6px; /* Top padding is 0px, right and left paddings are 0px, bottom padding is 6px */
+	/* Styling */
+	font: var(--text-lg-bold);
+	color: var(--primary-low);
+}
+/**
+ * Description text (about and news letter description text)
+ */
+ .footer_item #text {
+	padding: 12px 0 0px; /* Represents top, bottom, and right padding, respectively */
+	/* Style */
+	font: var(--text-xs);
+	line-height: 1.4;
+	color: var(--primary-high);
+}

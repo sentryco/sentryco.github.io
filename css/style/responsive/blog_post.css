@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+	/**
+	 * Blog-post
+	 */
+	.page#post {
+		padding: 0;
+	}
+	.blog_post_header {
+		flex-direction: column;
+	}
+}

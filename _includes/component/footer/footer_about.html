@@ -1,0 +1,14 @@
+<!-- Footer about component -->
+<div class="footer_item" id="about"> <!-- About ( text / links ) -->
+    <h1>Sentry</h1> <!-- Title -->
+    <div id="text"> <!-- About -->
+        {{site.data.footer.about}}
+    </div>
+    <div class="link_container"> <!--  Social media links -->
+        {% for item in site.data.footer.social %} <!-- Pulls variables from social.yml -->
+            <a href="{{item.url}}" class="link"> <!-- Social media link -->
+                <img src="{{'/assets/svg/' | prepend: site.baseurl}}{{item.svg}}" class="icon"> <!-- Get link from item.link -->
+            </a>
+        {% endfor %}
+    </div>
+</div>

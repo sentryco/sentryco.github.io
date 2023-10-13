@@ -1,0 +1,34 @@
+/**
+ * Color - common among styles (allows linking)
+ * - Note: Theme colors - more on wikipedia webcolors: https://en.wikipedia.org/wiki/Web_colors
+ * - Note: Monochrome color theme - chromax, chromatic
+ */
+ :root { 
+	/* General colors */
+	--clear-color: rgba(0,0,0,0); /* clear - used for debugging fix: rename to just clear fix rename to clear */
+	/* Primary whites */
+	--primary: rgba(255, 255, 255, 1.0);
+	--primary-lower: rgba(255, 255, 255, 0.9);
+	--primary-low: rgba(255, 255, 255, 0.8);
+	--primary-medium: rgba(255, 255, 255, 0.6);
+	--primary-high: rgba(255, 255, 255, 0.4);
+	--primary-higher: rgba(255, 255, 255, 0.2);
+	/* Secondary - blacks*/
+	--secondary: rgba(0, 0, 0, 1);
+	--secondary-lower: rgba(0, 0, 0, 0.9);
+	--secondary-low: rgba(0, 0, 0, 0.8);
+	--secondary-medium: rgba(0, 0, 0, 0.6);
+	--secondary-high: rgba(0, 0, 0, 0.4);
+	--secondary-higher: rgba(0, 0, 0, 0.2);
+	/* Accent */
+	--accent-color: #6F7BF7; /* Fix rename to accent etc */
+}
+/**
+ * Border for boxes
+ */
+:root {
+	--border-thickness: 2px;
+	--border-color: var(--primary-higher);
+	--border-style: var(--border-thickness) solid var(--border-color);
+	/* --border-style-hover: var(--border-thickness) solid var(--primary-high); */
+}

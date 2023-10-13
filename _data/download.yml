@@ -1,0 +1,46 @@
+## Data for the download page
+- title: For iOS
+  svg: smartphone.svg
+  text: Requires <em>iOS 16.1</em> and up
+  button: Download for iOS ## Download on the App Store
+  url: "https://testflight.apple.com/join/jAGTGTRd"
+  state: active
+  context: Publicly available on TestFlight
+  list:
+    - title: Version 1.0.7 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
+    - title: <a href="/support/#XsYY">Dedicated native application</a>
+    ##- title: Tiny app size ~27MB
+    - title: Integrated iOS AutoFill extension
+    ##- title: Light-mode / Dark-mode
+    - title: Supports iPhone 8 - 15
+- title: For macOS
+  svg: monitor.svg
+  text: Requires <em>macOS 13.3+</em> Ventura
+  button: Download for macOS ## Download on the App Store
+  url: "https://testflight.apple.com/join/jAGTGTRd"
+  state: active
+  context: Publicly available on TestFlight
+  list:
+    - title: Version 1.0.7 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
+    - title: <a href="/support/#XsYY">Dedicated native application</a>
+    ##- title: Tiny app size ~26MB
+    - title: Integrated macOS AutoFill extension
+    ##- title: Light-mode / Dark-mode
+    - title: Supports intel and Apple silicon
+- title: For iPadOS
+  svg: tablet.svg
+  text: Requires <em>iPadOS 16.1</em> and up
+  button: Coming soon
+  url: "" ## Pull download link from somewhere central as well?
+  state: inactive
+  context: In development
+  list:
+    - title: Version 1.0.7 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
+    - title: <a href="/support/#XsYY">Dedicated native application</a>
+    ##- title: Tiny app size ~27MB
+    - title: Integrated iPadOS AutoFill extension
+    ##- title: Light-mode / Dark-mode support
+    - title: Supports Arm and Apple silicon

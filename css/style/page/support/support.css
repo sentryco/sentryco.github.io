@@ -1,0 +1,37 @@
+@import "faq_type.css";
+/* Page title */
+.page#support h1 {
+	background-color: var(--debug-bg-14);
+	width: 100%;
+	height: auto;
+	/* Styling */
+	text-align: center;
+	font: var(--text-xxl-bold); /* Use CSS variable for font family */
+    color: var(--primary-low); /* Use CSS variable for title color */
+}
+/**
+ * Support page header title (for each view)
+ */
+.page#support .header_title {
+	background-color: var(--debug-bg-9);
+	padding-top: 24px;/* Adds spacing for each section */
+	/*Styling*/
+	font: var(--text-xl); /* Use CSS variable for font family */
+    color: var(--primary-lower); /* Use CSS variable for title color */
+}
+/*
+ * Header text (Description)
+ * - Note: Styling is the same as page.css
+ */
+.page#support .header_text {
+	background-color: var(--debug-bg-8);
+	/* Styling */
+	font: var(--text-xs);
+}
+.page#support {
+	background-color: var(--debug-bg-19);
+	padding-top: 0px;
+}
+.page#support  ul.faqs {
+	padding-top: 24px;/* Adds spacing for each section */
+}

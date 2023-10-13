@@ -1,0 +1,32 @@
+<!-- Download item -->
+<!-- Fix: rename to download-card, icon-container, title-container, text-container, list-container, list-item, checkmark-container, list-item-text, button-container, button-icon-container, button-text-container, and subtext-container, -->
+<div class="dowload_item" id="{{e.state}}"> <!-- State can be active or in-active -->
+	<div class="download_icon"><!-- Icon element -->
+		<img src="assets/svg/{{e.svg}}" class="icon"><!-- svg -->
+	</div>
+	<div class="download_title">{{e.title}}</div><!-- download title -->
+	<div class="download_text">{{e.text}}</div><!-- download text -->
+	<div class="download_list"><!-- Download-sales-points -->
+		{% for item in e.list %} <!-- Loop through list -->
+			<div class="download_list_item"><!-- Start of list-item -->
+				<div class="download_list_item_icon"><!-- check icon -->
+					<img src="assets/svg/check.svg" class="icon"> <!-- svg -->
+				</div>
+				<div class="download_list_item_text"> <!-- Text bellow the list -->
+					{{item.title}}
+				</div>
+			</div><!-- End of list-item -->
+		{% endfor %}
+	</div><!-- End of item-list -->
+	<a href="{{e.url}}" class="download_button">
+		<div class="download_button_icon"> <!-- Icon in the download button -->
+			<img src="assets/svg/arrow-down-circle.svg" class="icon"> <!-- svg -->
+		</div>
+		<div class="download_button_text"> <!-- Text in the download button -->
+			{{e.button}}
+		</div>
+	</a>
+	<div class="dowload_button_context_text"><!--  Fix: ⚠️️ Maybe rename to subtext? -->
+		{{e.context}} <!-- Text bellow the download button -->
+	</div>
+</div><!-- End of download-item -->

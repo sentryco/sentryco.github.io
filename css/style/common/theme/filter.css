@@ -1,0 +1,11 @@
+/**
+ * Filters - for coloring svg icons
+ */
+:root {
+	/* White */
+	--primary-filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(506%) hue-rotate(147deg) brightness(118%) contrast(90%);
+	/* Black */
+	--secondary-filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(0%) hue-rotate(306deg) brightness(104%) contrast(104%);
+	/* Accent - purple */
+	--accent-filter: brightness(0) saturate(100%) invert(39%) sepia(96%) saturate(744%) hue-rotate(208deg) brightness(104%) contrast(94%);
+}

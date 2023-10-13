@@ -1,0 +1,60 @@
+/**
+ * Video-container
+ * Fix: rename file to product_item.css?
+ */
+#videos .video_container { /* Fix: ⚠️️ Rename to video_item */
+	background-color: var(--debug-bg-4); /* Debug */
+	height: auto;
+	/* FlexBox */
+	flex-grow: 1;
+}
+.video_box_container {
+	background-color: var(--debug-bg-9);
+	padding-left: 64px; /* Don't unify these, it doesn't work for some reason */
+	padding-right: 64px; /* ⚠️️ These decide the height of the device ⚠️️ */
+}
+/**
+ * Title text for video
+ */
+#videos .video_container #vid_title {
+	background-color: var(--debug-bg-3);/*debug*/
+	width: 100%;
+	padding: 48px 0 6px 0; /* Represents padding for the top and bottom of the element */
+	/* Styling */
+	font: var(--text-lg-bold);
+	color: var(--primary);
+	line-height: 1; /* Don't add fixed hight with this and borderbox etc */
+	text-align: center;
+}
+/**
+ * Description text for video
+ */
+#videos .video_container #vid_text {
+	background-color: var(--debug-bg-7);/*debug*/
+	padding: 6px 0 6px 0; /* Represents padding for the top and bottom of the element */
+	width: 100%;
+	/* Styling */
+	font: var(--text-xs);
+	color: var(--primary-medium);
+	text-align: center;
+}
+/**
+ * Link
+ */
+ #vid_link {
+	background-color: var(--debug-bg-24); /*debug*/
+	padding: 0px;
+	text-decoration: none;
+	font: var(--text-sm);
+	color: var(--accent-color); /* Use CSS variable for link color */
+	width: 100%;
+	text-align: center;
+ }
+ #vid_link a,  #vid_link a:visited {
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+#vid_link a:hover {
+	color: var(--primary-low);
+}
+

@@ -1,0 +1,15 @@
+@import "download_button.css";
+@import "download_item.css";
+@import "download_list.css";
+
+.page#download_page {
+	background-color: var(--debug-bg-16); /*debug*/
+}
+.download_page_container {
+	padding-top: 48px;
+	width: 100%;
+	/* Flex */
+	display: flex;
+	flex-direction: row;
+	column-gap: 24px;
+}

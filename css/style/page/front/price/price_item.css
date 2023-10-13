@@ -1,0 +1,110 @@
+/*
+Fix:
+You could also consider using a more descriptive class name for 
+the .price_item selector, such as .price-card,
+to make it easier to understand its purpose.
+*/
+/**
+ * Price card
+ */
+.price_item {
+	width: 0px; /* I guess this is imp for the flex? */
+	padding: 24px 32px 12px; /* Represents top, right, and bottom padding, respectively */
+	/* FlexBox */
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Style */
+	background-color: var(--clear-color);
+	border: var(--border-style);
+	border-radius: 15px;
+}
+/*
+ * Price icon element
+ */
+.price_icon {
+	width: 64px;
+	height: 64px;
+	margin: 12px 0px;/* Represents top and bottom margin, respectively */ 
+	padding: 12px;/* Padding around svg icon was 16 */
+	border-radius: 32px; /*48, 32px*/
+	/*style*/
+	border: 4px solid var(--accent-color);
+    background-color: var(--accent-color); /* Use CSS variable for background color */
+}
+/**
+ * price icon SVG
+ */
+.price_icon .icon {
+	width: 100%;
+	/* FlexBox */
+	display: flex;
+	justify-content: center;
+	/*Style*/
+	opacity: 0.8;
+	filter: var(--primary-filter);
+}
+.price_item:hover .icon {
+	opacity: 1.0;
+}
+/**
+ * Title text in the price-card
+ */
+.price_title {
+	padding: 12px 0; /* Represents top and bottom padding, respectively */
+	/* Styling */
+	text-align: center;
+	background-color: var(--debug-bg-8);/* Debug */
+	font: var(--text-xl-bold); /* Font weight, font size, and font family */
+	color: var(--primary);
+}
+/**
+ * Text that explains the prizing model
+ */
+.price_text {
+	background-color: var(--debug-bg-3); /* Debug */
+	padding-bottom: 12px;
+	/* Styling */
+	font: var(--text-xs);
+	text-align: center;
+	line-height: 1.6;/* Adds breathing space between the lines */
+	color: var(--primary-high);
+}
+/**
+ * Highlighted text
+ */
+.price_text em {
+	color: var(--primary-low);
+}
+/**
+ * Link
+ */
+.price_text a {
+	color: var(--accent-color);
+}
+/* link - hover */
+.price_text a:hover {
+	color: var(--primary-low);
+}
+/**
+ * Has the price value
+ */
+.price_value {
+	margin: 6px 0; /* Represents top and bottom margin, respectively */
+	padding: 12px 0 6px; /* Represents top, bottom, and right padding, respectively */
+	/* Styling */
+	text-align: center;
+	font: var(--text-lg);
+	color: var(--accent-color); /*filter: var(--primary-filter); */
+}
+/**
+ * Text bellow price
+ */
+.price_subtext {
+	padding: 0px 0 12px; /* Represents top, bottom, and right padding, respectively */
+	/* Styling */
+	text-align: center;
+	font: var(--text-xxxs);
+	color: var(--primary-high);
+}

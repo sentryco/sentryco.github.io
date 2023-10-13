@@ -1,0 +1,8 @@
+<!-- This is the general wrapper all pages use -->
+<!doctype html>
+<html lang="en"><!-- The wrapper, front and subpage use this wrapper file, most pages uses this wrapper -->
+	{% include component/head.html %}<!-- All pages has the same header -->
+	<body> <!-- Website html code -->
+		{{ content }} <!-- Content from layout and .md is inserted here -->
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Compare_column -->
+<div class="table_column"><!-- Compare_column item -->
+	<div class="row_item" id="value"> <!-- Row_item (first) -->
+		{% if e.item.link == 'none' %} <!-- If value is "check" -->
+			{{e.item.header}}<!-- Plain text header -->
+		{% else %} <!-- If value is not "check" or "x" -->
+			<a href="{{e.item.link}}">{{e.item.header}}</a> <!-- Create link header -->
+		{% endif %}
+	</div><!-- End of row -->
+	{% for item in e.item.list %}<!-- Create list -->
+		<!-- Fix: Use a more descriptive name for the second div element, such as id="row-value". -->
+		<!-- Fix: More descriptive name for the svg files, such as checkmark.svg and x-mark.svg, respectively. -->
+		<div class="row_item" id="value"> <!-- Row item -->
+			<!--Fix: More descriptive name for the div elements with id="check" and id="x", such as id="check-icon" and id="x-icon", respectively.-->
+			{% if item[1] == 'check' %} <!-- If value is "check" -->
+				<div class="row_icon" id="check"> <!-- check icon -->
+					<img src="assets/svg/check.svg" class="icon" alt="checkmark"> <!-- check svg -->
+				</div>
+			{% elsif item[1] == 'x' %} <!-- If value is "x" -->
+				<div class="row_icon" id="x"><!-- x icon -->
+					<img src="assets/svg/x.svg" class="icon" alt="x-mark"> <!-- x svg -->
+				</div>
+			{% else %} <!-- If value is not "check" or "x" -->
+				{% assign match = nil %} <!-- -->
+				{% for link in site.data.comparelinks %} <!-- Pull data from comparelinks.yml -->
+					{% if item[0] == link[0] %} <!-- Compare item key and link key -->
+						{% assign match = link[1] %} <!-- Assign link value -->
+					{% endif %}
+				{% endfor %}
+				{% if match != nil and e.item.link == 'none' %}<!-- Must be in the feature column and have a match -->
+					<a href="{{ match }}" class="compare_link">{{ item[1] }}</a>
+				{% else %}
+					{{ item[1] }} <!-- Soon, price, title etc -->
+				{% endif %}
+			{% endif %}
+		</div><!-- End of row -->
+	{% endfor %}
+</div><!-- End of column -->

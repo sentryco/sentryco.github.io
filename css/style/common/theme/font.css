@@ -1,0 +1,49 @@
+/**
+ * Font-family styles
+ */
+:root {
+	--font-family-default: 'Helvetica', 'Arial', sans-serif;
+	--font-family-primary: 'Montserrat', sans-serif; /* Consider using: bodoni (its similar to MOntserrat) */
+	--font-family-secondary: 'Open Sans', sans-serif; /* helvetica neue could also be used (OpenSans issimilar in style to Montserrat, but has a slightly softer look. Closer to helvetica.)*/
+	/*--font-family-tertiary: 'Lato', sans-serif;*/ /*lato (known for it's readability and clean design). */
+	/*--font-family-quaternary: 'Roboto', sans-serif;*/ /* **roboto** (clean and modern look, similar to Montserrat.)*/
+}
+/**
+ * Font size styles
+ */
+:root {
+	--font-biggest: 44px; /* Not in use, deprecate? */
+	--font-biggest-alt: 42px; /* Used for page header title */
+	/* Fix add 32px? */
+	--font-bigger: 28px;
+	--font-big: 24px;
+	--font-big-alt: 22px;
+	--font-medium: 20px;
+	--font-medium-alt: 18px;
+	--font-small: 16px;
+	--font-small-alt: 14px;
+}
+/**
+ * Font packs (weight, size, font-family) 
+ */
+:root {
+	/*Normal*/
+	--text-xxxs: normal var(--font-small-alt) var(--font-family-secondary);
+	--text-xxs: normal var(--font-small) var(--font-family-secondary);
+	--text-xs: normal var(--font-medium-alt) var(--font-family-secondary);
+	--text-sm: normal var(--font-medium) var(--font-family-secondary);
+	--text-md: normal var(--font-big-alt) var(--font-family-primary);
+	--text-lg: normal var(--font-big) var(--font-family-primary);
+	--text-xl: normal var(--font-bigger) var(--font-family-primary);
+	--text-xxl: normal var(--font-biggest-alt) var(--font-family-primary);
+	--text-xxxl: normal var(--font-biggest) var(--font-family-primary); /* Not in use, deprecate? */
+	/*Bold*/
+	--text-xxs-bold: bold var(--font-small) var(--font-family-secondary);
+	--text-xs-bold: bold var(--font-medium-alt) var(--font-family-secondary);
+	--text-sm-bold: bold var(--font-medium) var(--font-family-secondary);
+	--text-md-bold: bold var(--font-big-alt) var(--font-family-primary);
+	--text-lg-bold: bold var(--font-big) var(--font-family-primary);
+	--text-xl-bold: bold var(--font-bigger) var(--font-family-primary);
+	--text-xxl-bold: bold var(--font-biggest-alt) var(--font-family-primary);
+	--text-xxxl-bold: bold var(--font-biggest) var(--font-family-primary); /* Not in use, deprecate? */
+}

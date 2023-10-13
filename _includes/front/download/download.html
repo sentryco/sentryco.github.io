@@ -1,0 +1,11 @@
+<!-- Download-page (shows download cards for different operating systems) -->
+<!-- Fix: More descriptive class names for the div elements, such as download-page, download-card-container, and subtext-container -->
+<div class="page" id="download_page">
+	{% include component/front/page_header.html title=site.data.page.download.header text=site.data.page.download.text subheader=site.data.page.download.subheader %}<!-- Product download -->
+	<!-- Download-container -->
+	<div class="download_page_container">
+		{% for e in site.data.download %} <!-- Pull download-cards from the download.yml-->
+			{% include front/download/download_card.html %} <!-- we have this item as an include, so the code is more modular  -->
+		{% endfor %}
+	</div> <!-- End of download-page-container -->
+</div><!-- End of download-page -->

@@ -1,0 +1,41 @@
+/**
+ * About - content section (nav)
+ */
+.footer_item#content {
+	background-color: var(--debug-bg-11);/* Debug */
+	flex-grow: 0.8;
+	width: 0px;
+}
+/**
+ * Legal links
+ */
+.footer_item#legal {
+	background-color: var(--debug-bg-10);/* Debug */
+	flex-grow: 1.2;
+	width: 0px;
+}
+/**
+ * Links and legal
+ */
+.footer_item #nav { /* Container */
+	padding-top: 12px;
+	/*Flexbox*/
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px; /* Vertical spacing between items */
+}
+/**
+ * For nav links and legal
+ */
+.footer_item #nav .nav_item {
+	padding: 0; /* Fix: needed? */
+	/*Styling*/
+	text-decoration: none;
+	font: var(--text-xs);
+	color: var(--primary-medium);
+	line-height: 1.4;
+}
+.footer_item #nav .nav_item:hover {
+	text-decoration: underline;
+	color: var(--primary);
+}

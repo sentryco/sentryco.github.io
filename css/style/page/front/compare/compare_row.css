@@ -1,0 +1,101 @@
+@import "compare_row_icon.css";
+:root {
+	/* Compare grid - alternates etc */
+	 --grid-primary-bg: var(--clear-color); 
+	 --grid-secondary-bg: var(--clear-color);  
+	 --grid-tertiary-bg: var(--clear-color); 
+}
+/**
+ * Row item
+ */
+.row_item { /* ⚠️️ Rename to .table_row or table_item? as row col is difficult sometimes to know which is which */
+	height: 56px;
+	width: 100%;
+	/* FlexBox */
+	display: flex;
+	flex-direction: row;
+	/* Styling */
+	border-top: var(--border-style); 
+	/*Text*/
+	color: var(--primary);
+	font: var(--text-xxs);
+	text-align: center;
+}
+/**
+ * Row item (Feature) / left (first column)
+ */
+.table_column:first-child .row_item {
+	background-color: var(--grid-primary-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/**
+ * Row item (First) / alternating colors (firt column)
+ * Fix: ⚠️️ we can target 1n instead?
+ */
+.table_column:first-child .row_item:nth-child(2n) {
+	background-color: var(--grid-secondary-bg);
+}
+/**
+ * Row item - Title text for middle items in the grid (none first column items)
+ */
+.row_item#title {
+	background-color: var(--grid-primary-bg); 
+	/*Text*/
+	font: var(--text-xxs);
+}
+/**
+ * Value text for middle items in the grid
+ */
+.row_item#value {
+	background-color: var(--grid-secondary-bg);
+	/* Flex */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*Styling*/
+	border-left: var(--border-style);/*color of most borders*/
+}
+/**
+ * X: 1st, Y: 1st (Checker look and feel)
+ */
+.table_column:nth-child(2n) .row_item#value:nth-child(2n) {
+	background-color: var(--grid-tertiary-bg);
+}
+/**
+ * X: 2st, Y: 1nd (Checker look and feel)
+ */
+.table_column:nth-child(2n) .row_item#value {
+	background-color: var(--grid-secondary-bg);
+}
+/**
+ * X: 1nd, Y: 2nd (Checker look and feel)
+ */
+.row_item#value:nth-child(2n) {
+	background-color: var(--grid-secondary-bg);
+}
+/**
+ * X: 2nd, Y: 2nd (Checker look and feel)
+ */
+.row_item#value {
+	background-color: var(--grid-primary-bg);
+}
+/**
+ * Last column, middle rows (value rows, non top or footer rows)
+ */
+.table_column:last-child .row_item#value {
+	border-right: var(--border-style); /* Table border to the right */
+}
+/**
+ * Highlight the first 3 rows in the first column
+ */
+.table_column:first-child .row_item:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:last-child) a.compare_link {
+	color: var(--primary-medium);
+}
+.table_column .row_item#value a.compare_link:hover {
+	color: var(--accent-color);
+}
+.table_column .row_item#value a:hover {
+	color: var(--accent-color);
+}

@@ -1,0 +1,13 @@
+---
+layout: wrapper
+---
+<!-- ⚠️️ Fix: More descriptive class names for the div elements, such as about-page, about-header, about-page-wrapper, and about-footer, -->
+<!-- ⚠️️ Fix: We can probably derive the id etc from dynamic values, we can use site.page.title, but its "About" atm, uppercase issue  -->
+<main class="about">	<!-- adds ability to target about page in css -->
+	{% include component/header/header.html %}<!-- we add header from includes -->
+	<div class="page" id="about">
+		<h1>About</h1>
+		{{ content }} <!-- Adds the wrapper + markdown inside the wrapper -->
+	</div>
+	{% include component/footer/footer.html id="footer" %}<!-- Adds the footer -->
+</main>

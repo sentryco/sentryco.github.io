@@ -1,0 +1,25 @@
+<!-- Pricing page -->
+<!-- Fix: consider using more descriptive class names for the div elements, such as price-page, price-toggle-container, price-toggle, price-toggle-yearly, price-toggle-monthly, price-container, and contextual-text, -->
+<div class="page" id="pricing_page">
+	<div id="price_yearly"> <!-- Needed for toggle to work -->
+		<div id="price_monthly"> <!-- Needed for toggle to work -->
+			{% include component/front/page_header.html title=site.data.page.price.header text=site.data.page.price.text subheader=site.data.page.product.subheader %}
+			<div class="price_toggle_container">
+				<div class="price_toggle"><!-- Price toggle -->
+					<a href="/#price_yearly" class="switch_thumb" id="on"> <!-- default -->
+						Yearly <!-- On -->
+					</a>
+					<a href="/#price_monthly" class="switch_thumb" id="off"> <!-- custom -->
+						Monthly <!-- Off -->
+					</a>
+				</div>
+			</div>
+			<div class="price_container"> <!-- Contains all price-cards -->
+				{% for e in site.data.price %} <!-- Loop through the price array in the site.data object -->
+				<!-- Code to be executed for each e in the price array -->
+					{% include front/price/price_item.html %}
+				{% endfor %}
+			</div><!-- End of price_container -->
+		</div>
+	</div>
+</div><!-- End of Pricing page -->

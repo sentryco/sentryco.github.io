@@ -1,0 +1,17 @@
+## Product data
+## Product videos (Shows the product on the front page)
+- title: 1. Store locally ## title
+  text: All credentials are stored locally on the device only w/ T2 Secure enclave. Protected with a master-key and Face-id / Touch-id ## Manage your passwords easily with inutivie UI / UX ## 
+  url: store.mp4 ## biometric.mp4 ## video url
+  link: /#sEAr
+- title: 2. Sync offline
+  text: Sync your credentials automatically via local peer-to-peer communication w/ BlueTooth. Supports standby-mode ## Changes are auto-synced to all your devices over local P2P
+  url: sync.mp4 ## strong_password.mp4
+  link: /#ELeo
+- title: 3. AutoFill anywhere
+  text: AutoFill account credentials and passwords in all supported apps and browsers. Without leaving the app. ## Authenticate with FaceID / TouchID
+  url: autofill.mp4 ## passbook_intro.mp4 ## kinetic.mp4
+  link: /support/#Yc6X
+#- title: 1. Setup
+#  text: Easily add your mac or another device ## Add other devices you want to keep synced, like your mac
+#  url: biometric.mp4

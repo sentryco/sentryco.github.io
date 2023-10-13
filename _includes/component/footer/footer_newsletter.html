@@ -1,0 +1,19 @@
+<!-- Newsletter component -->
+<div class="footer_item" id="newsletter">
+    <h1>Newsletter</h1>
+    <div id="text">
+        {{site.data.footer.newsletter}}
+    </div>
+    <!-- Ref: https://stackoverflow.com/questions/13649872/can-i-make-an-svg-image-button -->
+    <form action="https://passbook.us18.list-manage.com/subscribe/post?u=2db5d8d44a0bb05f25765ce0e&amp;id=2f3a4ea7fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""> <!-- Begin Mailchimp Signup Form -->
+        <input type="email" value="Your email here" name="EMAIL" class="email_text" id="mce-EMAIL"/> <!-- text-field input element --> <!-- class="required email" Your email address here --> <!-- <div id="input">Your email here</div> subscribe -->
+        <button class="submit_button" type="submit" value="Sign up" name="Submit now" id="mc-embedded-subscribe"> <!-- button element --><!-- <input type="submit" value="Sign up" name="Submit now" id="mc-embedded-subscribe" class="button"> -->
+            <div class="submit_button_icon"><!-- button svg icon -->
+                <img src="{{'/assets/svg/mail.svg' | prepend: site.baseurl}}" class="icon">
+            </div>
+            <div class="submit_button_text"> <!-- button text -->
+                Submit now
+            </div>
+        </button>
+    </form> <!-- End mc_embed_signup -->
+</div> <!-- <div class="submit_button"></div> -->

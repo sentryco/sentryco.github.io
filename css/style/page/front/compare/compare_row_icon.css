@@ -1,0 +1,37 @@
+/**
+ * Row icon - background
+ */
+ .row_icon {
+	width: 20px;
+	height: 20px;
+	margin: 4px;
+	padding: 2px;
+	/* Styling */
+	background-color: var(--accent-color);
+	border-radius: 10px;
+	border: 1px solid var(--accent-color);
+}
+/**
+ * Row Icon - SVG
+ */
+.row_icon .icon {
+	width: 100%;
+	/*Flex*/
+	display: flex;
+	justify-content: center;
+	/*Style*/
+	filter: var(--primary-filter);
+}
+/**
+ * X-icon - background
+ */
+.row_icon#x {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+/**
+ * X-icon - svg
+ */
+.row_icon#x .icon {
+	filter: var(--secondary-filter); 
+}

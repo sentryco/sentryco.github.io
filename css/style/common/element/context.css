@@ -1,0 +1,29 @@
+/**
+ * The textbox bellow each page
+ */
+ .contextual_text {
+	background-color: var(--debug-bg-16);/* debug */
+	width: 100%;
+	clear: both;
+	padding: 48px 15%;/*top,bottom and left,right*/
+	/* Styling */
+	text-align: center;
+	font: var(--text-xs);
+    line-height: 1.6; /* lineheight multiplier */
+    color: var(--primary-high); /* Use CSS variable for context color */
+}
+/**
+ * Link
+ */
+.contextual_text a {
+	color: var(--accent-color); /* Use CSS variable for link color */
+}
+.contextual_text a:hover, .contextual_text a:hover:visited {
+	color: var(--primary); /* Use CSS variable for hover color */
+}
+/**
+ * https://stackoverflow.com/questions/7291873/disable-color-change-of-anchor-tag-when-visited
+ */
+.contextual_text a:visited {
+	color: var(--accent-color); /* Use CSS variable for link color */
+}

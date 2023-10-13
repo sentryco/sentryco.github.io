@@ -1,0 +1,28 @@
+@import "price_item.css";
+@import "price_list.css";
+@import "price_toggle.css";/* Adds the toggle price feature */
+/*
+Fix: 
+You could also consider using a more descriptive class name for the 
+.price_container selector, such as .price-container, 
+to make it easier to understand its purpose.
+*/
+/**
+ * ⚠️️ Fix: add some more description
+ */
+.page#pricing_page {
+	background-color: var(--debug-bg-2); /* debug */
+}
+/**
+ * Container with prices
+ */
+.price_container {
+	background-color: var(--debug-bg-19); /* debug */
+	width: 100%;
+	height: auto;
+	padding-top: 12px;
+	/* FlexBox */
+	display: flex;
+	flex-direction: row;
+	column-gap: 24px;
+}

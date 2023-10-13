@@ -1,0 +1,23 @@
+@import "feature_item.css";
+/**
+ * Feature-page
+ */
+.page#product_features {
+	background-color: var(--debug-bg-16); /* Debug */ 
+}
+/**
+ * Feature grid
+ */
+#feature_grid {
+	background-color: var(--debug-bg-33);
+	/*Metrics*/
+	padding-top: 48px;
+	width: 100%;
+	height: auto;
+	/* Grid-Element */
+	display: grid;
+	grid-template-columns: repeat(4, 250px); /* Horizontal was 4 */
+    grid-template-rows: repeat(2, 250px); /* Vertical was 3 */ /* align-content: space-around; */
+    justify-content: space-between; /* Grows space between when size change */
+	grid-gap: 24px 12px; /* Represents the horizontal and vertical gap between grid columns */
+}

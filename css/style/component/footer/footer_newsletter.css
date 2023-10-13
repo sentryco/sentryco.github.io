@@ -1,0 +1,91 @@
+/**
+ * Newsletter
+ */
+.footer_item#newsletter {
+	background-color: var(--debug-bg-22);/*debug*/
+	flex-grow: 1.4;
+	width: 0px;
+}
+/**
+ * Email text (Newsletter)
+ */
+.email_text {
+	margin: 24px 0 0; /* Represents top margin */
+	height: 42px;
+	width: 100%; 
+	/* FlexBox */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* Styling */
+	background-color: var(--email-background-color); 
+	text-decoration: none;
+	border-radius: 8px;
+	border: var(--border-style);
+	/* Text */
+	color: var(--primary-medium); 
+	font: var(--text-xs);
+	text-align: center;
+}
+.email_text:hover {
+	border-color: var(--primary-high); 
+	color: var(--primary-lower); 
+}
+/**
+ * Send button (Newsletter)
+ */
+.submit_button {
+	cursor: pointer;/* Adds finger-pointer to the button */
+	/*Metrics*/
+	margin: 12px 0 0 0; /* Represents margin for the top of the element */
+	height: 42px;
+	width: 100%;
+	/*FlexBox*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*Styling*/
+	background-color: var(--accent-color);
+	border-radius: 8px;
+	border: 4px solid var(--accent-color);
+}
+/**
+ * Icon element in submit btn
+ */
+.submit_button_icon {
+	width: 24px;
+	height: 24px;
+	margin: 4px;
+	border-radius: 12px;
+	padding: 4px;
+}
+/**
+ * Email icon svg
+ */
+.submit_button_icon .icon {
+	width: 100%;
+	margin-top: 2px;
+	/*FlexBox*/
+	display: flex;
+	justify-content: center;
+	/*Styling*/
+	opacity: 0.8;
+	filter: var(--primary-filter);
+}
+.submit_button:hover .submit_button_icon .icon {
+	opacity: 1.0;
+}
+/**
+ * Submit button text
+ */
+.submit_button_text {
+	width: auto;
+	/*Styling*/
+	font: var(--text-xs);
+	text-decoration: none;
+	color: var(--primary-lower); 
+}
+.submit_button:hover .submit_button_text {
+	text-decoration: underline;
+	color: var(--primary);
+}

@@ -1,0 +1,16 @@
+<!-- Blog post footer  -->
+<div class="blog_post_footer"> <!-- Blog post footer -->
+    {% if page.previous.url %} <!-- If there is a prev post -->
+        <a href="{{page.previous.url}}" class="prev_blog_post_button"> <!-- Add link to prev post -->
+            Previous blog post
+        </a>
+    {% endif %}
+    {% if page.next.url and page.previous.url %} <!-- If there is a prev and next post -->
+         <span class="blog_post_seperator"> / </span> <!-- Seperator -->
+    {% endif %}
+    {% if page.next.url %} <!-- If there is a next post -->
+        <a href="{{page.next.url}}" class="next_blog_post_button"> <!-- Adds link to next post -->
+            Next blog post
+        </a>
+    {% endif %}
+</div>

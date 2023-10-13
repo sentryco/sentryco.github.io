@@ -1,0 +1,10 @@
+@import "faq_list.css";
+@import "faq_item.css";
+@import "faq_item_top.css";
+@import "faq_item_bottom.css";
+/**
+ * FAQ page
+ */
+.page#faq_page {
+	background-color: var(--debug-bg-15); /* Debug */
+}

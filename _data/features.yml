@@ -1,0 +1,73 @@
+## Features data
+## - Note: Mobile use 2x6 grid, Non-mobile use 4x3 grid
+## row 1 (non-mobile)
+- title: Offline sync
+  svg: refresh-cw.svg
+  text: Sync password data completly offline. (Even works in standby) ## Sync offline. Even works in standby
+  link: "/#ELeo"
+  state: active
+- title: Secure sharing
+  svg: share-2.svg
+  text: Quickly share password data with someone else (Secured by E2EE) ## Quickly share account info
+  link: "/support/#pR42"
+  state: active
+- title: AutoFill
+  svg: log-in.svg
+  text: AutoFill in your favourite apps and browsers. (Supports one tap) ## AutoFill in safari and applications
+  link: "/support/#Yc6X"
+  state: active
+- title: History
+  svg: calendar.svg
+  text: Roll back any unintended password change that might occure ## Roll back any account change
+  link: "/support/#yR78"
+  state: active
+## row 2 (non-mobile)
+- title: One time code
+  svg: clock.svg
+  text: 2FA One-time-password support for TOTP and HTOP (URL or QR) ## Full 2FA support TOTP / HTOP
+  link: "/support/#TcKa"
+  state: active
+- title: Biometry
+  svg: eye.svg
+  text: Authenticate access to the app biometrically with (Face-ID / Touch-ID) ## Authenticate with Face-ID / Touch-ID
+  link: "/support/#qx5A"
+  state: active
+- title: Master key
+  svg: key.svg
+  text: Use your own custom master-password to secure access to the app ## Authenticate with your own password
+  link: "/support/#rhd2"
+  state: active
+## - title: iPadOS support
+##   svg: tablet.svg
+##   text: Dedicate native support for iPadOS is currently in development ## iPadOS support (Coming soon)
+##   state: inactive
+## row 3 (non-mobile)
+- title: Passkeys
+  svg: lock.svg
+  text: A custom and more secure implementation of PassKeys is coming soon ## Passkeys (Coming soon)
+  link: "/support/#y6Br"
+  state: inactive
+## - title: Chrome support
+##   svg: chrome.svg
+##   text: macOS Chrome browser support for AutoFill is coming soon ## Chrome extension (Coming soon)
+##   state: inactive
+## - title: Android support
+##   svg: smartphone.svg
+##   text: Native support for Android mobile and table is on our roadmap
+##   state: inactive
+## - title: Windows support
+##   svg: monitor.svg
+##   text: Native Windows support is coming later when our resources free up
+##   state: inactive
+##- title: Auto Backup
+##  svg: database.svg
+##  text: Auto backup (Coming soon)
+##  state: inactive
+##- title: Password Audit
+##  svg: search.svg
+##  text: Password audit (Coming soon)
+##  state: inactive
+##- title: Auto password
+##  svg: globe.svg
+##  text: Auto password (Coming soon)
+##  state: inactive

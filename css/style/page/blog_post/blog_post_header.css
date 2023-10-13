@@ -1,0 +1,70 @@
+/**
+ * Header
+ */
+.blog_post_header {
+	background-color: var(--debug-bg-15);
+	width: 100%;
+	height: auto;
+	/*FlexBox*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+/**
+ * Header title
+ */
+.blog_post_title {
+	background-color: var(--debug-bg-8);
+	width: auto;
+	height: auto;
+	padding: 24px;
+	/* Styling */
+	color: var(--primary-low);
+	text-align: left;
+	font: var(--text-xl-bold); /* font weight and size */
+}
+/**
+ * Date
+ */
+.blog_post_date {
+	background-color: var(--debug-bg-30);
+	width: auto;
+	height: auto;
+	padding: 24px;
+	/* Styling */
+	text-align: right;
+	color: var(--primary-medium);
+	font: var(--text-xxs); /* font size and weight */
+}
+/**
+ * fix: not sure what this does
+ */
+main.blogpost .page#post h3 #read {
+	background-color: var(--debug-bg-4);
+	/*Styling*/
+	color: var(--primary-high);
+	font: var(--text-xs); /* font weight and size */
+	margin-left: 12px;
+}
+/**
+ * H3 styling markdown -> ###
+ */
+main.blogpost .page#post h3 {
+	background-color: var(--debug-bg-29);
+	padding: 12px 24px; /* top and bottom padding is 12px, right and left padding is 24px */
+	/* Styling */
+	color: var(--primary-low);
+	font: var(--text-xs) /* font weight and size */
+}
+/**
+ * Sub header from markdown
+ */
+main.blogpost .page#post h2 {
+	background-color: var(--debug-bg-28);
+	padding: 12px 24px;
+	/* Styling */
+	color: var(--primary-low);
+	text-align: left;
+	font: var(--text-lg-bold); /* font weight and size */
+}

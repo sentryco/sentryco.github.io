@@ -1,0 +1,59 @@
+/**
+ * About section
+ */
+.footer_item#about {
+	background-color: var(--debug-bg-1);/* debug */
+	/* Metrics */
+	width: 0px;
+	flex-grow: 2;
+	height: auto;
+}
+.footer_item#about #text {
+	padding-right: 24px;
+}
+/**
+ * Link
+ */
+ .footer_item#about #text  a {
+	color: var(--accent-color); /* Use CSS variable for link color */
+}
+.footer_item#about #text a:hover, .footer_item#about #text a:hover:visited {
+	color: var(--primary); /* Use CSS variable for hover color */
+}
+/**
+ * Fix: ⚠️️ Needs better styling
+ */
+.footer_item .link_container {
+	height: 46px;
+	width: 100%;
+	padding-top: 24px;
+	/* Flex */
+	display: flex;
+	flex-direction: row;
+	column-gap: 16px;/* Horizontal spacing */
+}
+/**
+ * Link in "content container / legal container"
+ */
+.footer_item .link_container .link {
+	height: 24px; 
+	width: 24px; 
+	border-radius: 50%;
+}
+/**
+ * Link item SVG icon
+ */
+.footer_item .link_container .link .icon {
+	width: 100%;
+	/* FlexBox */
+	display: flex;
+	justify-content: center;
+	/* Style */
+	filter: var(--accent-filter);
+}
+/**
+ * SVG icon on hover
+ */
+.footer_item .link_container .link:hover .icon {
+	filter: var(--primary-filter);
+}

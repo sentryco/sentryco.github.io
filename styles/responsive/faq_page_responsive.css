@@ -1,9 +1,0 @@
-@media screen and (max-width: 600px) {
-	ul.faqs {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
-	ul.faqs li .bottom {
-		width: 100%;
-	}
-}

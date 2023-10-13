@@ -1,0 +1,50 @@
+/*
+Fix: 
+- You could rename the .vid selector to something more descriptive, such as .video-container, to make it easier to understand its purpose.
+- You could rename the .image_box selector to something more descriptive, such as .bezel-image-container, to make it easier to understand its purpose.
+- You could rename the .video_box selector to something more descriptive, such as .video-container, to make it easier to understand its purpose.
+- You could consider using CSS variables for the colors to make it easier to change them later on.
+- You could also consider using a more consistent naming convention for the colors, such as using all lowercase letters and separating words with hyphens.
+*/
+/**
+ * Fix: ⚠️️ rename this element, its too unambigious
+ */
+.vid {
+	position: relative;/* 👈 this is key */
+}
+/**
+ * This is the bezel I guess? fix: ⚠️️ Rename to bezel_img_box?
+ */
+.image_box {
+  height: 100%; /* 👈 this is key*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/**
+ * Bezel img element
+ */
+.image_box img {
+	width: 100%;
+	z-index: 30000;
+}
+/**
+ * Container of the video Fix: Rename to video_box_container?
+ */
+.video_box {
+	 position: absolute;
+	 top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: flex; /* Center video */
+   justify-content: center;
+   align-items: center;
+}
+/**
+ * Video element
+ */
+.video_box video {
+	width: 83%; /* Scale video to fit inside png */
+}

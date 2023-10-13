@@ -1,0 +1,57 @@
+/**
+ * Product
+ */
+@media screen and (max-width: 600px) {
+	/**
+	 * Videos
+	 */
+	#videos {
+		background-color: var(--debug-bg-11);
+		padding: 24px 0; /* Represents padding for the top and bottom of the element */
+		/* Flex */
+		flex-direction: column;
+		row-gap: 24px;
+	}
+	/**
+	 * Video container fix: ⚠️️ still in use?
+	 */
+	#videos .video_container {
+		padding: 0 32px; /* Represents padding for the left and right of the element */
+		/* Flex */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	/**
+	 * Video element
+	 */
+	#videos .video_container #video {
+		height: auto;
+		aspect-ratio: 1 / 2;
+		width: 100%;
+	}
+	/**
+	 * Description text for video
+	 */
+	#videos .video_container #vid_text {
+		width: 100%;
+	}
+}
+/**
+ * Button
+ */
+ @media screen and (max-width: 600px) {
+	/**
+	 * Container
+	 */
+	#download_container {
+	   width: 100%;
+	}
+	/**
+	 * Download button
+	 */
+	#download_container .download_button {
+	   width: 100%;
+	   height: 64px;
+	}
+ }

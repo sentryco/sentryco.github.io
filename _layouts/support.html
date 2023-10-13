@@ -1,0 +1,19 @@
+---
+layout: wrapper
+---
+<!-- ⚠️️ Fix: We can probably derive the id etc from dynamic values, it's uppercase atm -->
+<main class="support">	<!-- Adds ability to target about page in css -->
+	<!-- Include the header.html file as a partial in the support.html file -->
+	{% include component/header/header.html %} 
+	<div class="page" id="support"><!-- ⚠️️ Fix: We can probably derive the id etc from dynamic values -->
+		<h1>Support</h1>
+		{% include component/support/support_links.html %}<!-- Support link component (horisontal) -->
+		{% include component/support/support_list.html %}<!-- Support page list (vertical)  -->
+	</div> <!-- End of faq_container  -->
+	<div class="contextual_text">
+		<!-- Output the value of the support key in the context.yml data file -->
+		{{ site.data.context.support }}
+	</div>
+	<!-- Include the footer.html file as a partial in the support.html file and assign the id attribute of the included file to "footer" -->
+	{% include component/footer/footer.html id="footer" %} 
+</main>

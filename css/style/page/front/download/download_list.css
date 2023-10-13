@@ -1,0 +1,70 @@
+/**
+ * List
+ */
+.download_list {
+	margin: 6px 0; /* Represents top and bottom margin */
+	/* Flex */
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px; /* Vertical spacing */
+}
+/**
+ * List item
+ */
+.download_list_item {
+	display: flex;
+	flex-direction: row;
+	column-gap: 8px; /* Horizontal space between text and icon */
+}
+/**
+ * list item icon
+ */
+.download_list_item_icon {
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	margin-top: 4px;
+	border-radius: 10px;
+	/*Style*/
+	background-color: var(--accent-color); 
+	border: 1px solid var(--accent-color); 
+}
+/**
+ * list item Icon SVG
+ */
+.download_list_item_icon .icon {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	filter: var(--primary-filter); 
+}
+/**
+ * list item icon - ⚠️️ Inactive ⚠️️ 
+ */
+.dowload_item#inactive .download_list_item_icon {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+/**
+ * icon svg - ⚠️️ Inactive ⚠️️
+ */
+.dowload_item#inactive .download_list_item_icon .icon {
+	filter: var(--primary-filter); 
+}
+/**
+ * list item - Text
+ */
+.download_list_item_text {
+	color: var(--primary-medium);
+	font: var(--text-xs);
+	line-height: 1.4;
+}
+/**
+ * Links
+ */
+.download_list_item_text a {
+	color: var(--accent-color);
+}
+.download_list_item_text a:hover {
+	color: var(--primary);
+}

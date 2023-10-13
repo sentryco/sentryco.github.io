@@ -1,0 +1,54 @@
+/**
+ * CSS reset to remove default styles applied by the browser
+ * - Note: Set margin, padding, border, font-size, font, and vertical-align to 0 for all elements
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/**
+ * Set line-height to 1 for the body element
+ */
+body {
+	line-height: 1;
+}
+/**
+ * Remove list-style for ordered and unordered lists
+ */
+ol, ul {
+	list-style: none;
+}
+/**
+ * Remove quotes for blockquote and q elements
+ */
+blockquote, q {
+	quotes: none;
+}
+
+/**
+ * Remove content for blockquote:before, blockquote:after, q:before, and q:after pseudo-elements
+ */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/**
+ * Collapse table borders and spacing
+ */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * Set box-sizing to border-box for all elements
+ * - Note: Add box-sizing property to the * selector to ensure consistent box sizing across different elements.
+ */ 
+* {
+	box-sizing: border-box;/*this can break things*/
+}

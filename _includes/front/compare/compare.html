@@ -1,0 +1,12 @@
+<!-- Product_compare (Shows product compare table) -->
+<!-- Fix: more descriptive class names for the div elements, such as product-page, compare-table, and info-box,-->
+<div class="page" id="product_compare">
+	{% include component/front/page_header.html title=site.data.page.compare.header text=site.data.page.compare.text subheader=site.data.page.compare.subheader %}<!-- Product download -->
+	<!-- Fix: ⚠️️ We also need to make flex with lists, row of cols etc? -->
+	<div class="table">
+		<!-- Fix: rename e to column? -->
+		{% for e in site.data.compare %} <!-- Pull column-items from compare.yml -->
+			{% include front/compare/compare_column.html %} <!-- we have this item as an include, so the code is more modular  -->
+		{% endfor %}
+	</div><!-- End of table -->
+</div><!-- End of product_compare -->

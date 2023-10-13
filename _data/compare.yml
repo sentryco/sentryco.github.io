@@ -1,0 +1,127 @@
+## Data for the product compare table (nested dictionary)
+- item: ## item is the same as a row
+    header: Features ## Top left row (first row in the column)
+    link: "none" ## none means dont make this a link, use normal text
+    list: ## Rows in the column bellow first row
+       offlinesync: Offline sync
+       offlinedatabase: Offline database
+       quickshare: Secure share
+       autofill: AutoFill
+       2fa: One time code
+       nativeapplication: Native application
+       history: History
+       #masterkey: Master key
+       passkeys: Passkeys
+       chromeautoFill: Chrome AutoFill
+       ipados: iPadOS
+       ##androidwindowssupport: Android / Windows
+       opensource: OpenSource
+       price: Price
+- item:
+    header: Sentry
+    link: "https://www.sentry.co/"
+    list:
+       offlinesync: check
+       offlinedatabase: check
+       quickshare: check
+       autofill: check
+       2fa: check
+       nativeapplication: check
+       history: check
+       #masterkey: check
+       passkeys: Soon
+       chromeautoFill: Soon
+       ipados: Soon
+       ##androidwindowssupport: Later
+       opensource: "30%"
+       price: $ 2.49 / Month
+- item:
+    header: 1Password
+    link: "https://www.1Password.com/"
+    list:
+       offlinesync: x
+       offlinedatabase: x
+       quickshare: x
+       autofill: check
+       2fa: check
+       nativeapplication: x
+       history: check
+       #masterkey: check
+       passkeys: check
+       chromeautoFill: check
+       ipados: check
+       ##androidwindowssupport: check
+       opensource: x
+       price: $ 2.99 / Month
+- item:
+    header: StrongBox
+    link: "https://www.strongbox.com/"
+    list:
+       offlinesync: x
+       offlinedatabase: check
+       quickshare: x
+       autofill: check
+       2fa: check
+       nativeapplication: x
+       history: check
+       #masterkey: check
+       passkeys: x
+       chromeautoFill: x
+       ipados: check
+       ##androidwindowssupport: x
+       opensource: 100%
+       price: $ 4.99 / Month
+- item:
+    header: BitWarden
+    link: "https://www.bitwarden.com/"
+    list:
+       offlinesync: x
+       offlinedatabase: x
+       quickshare: x
+       autofill: check
+       2fa: check
+       nativeapplication: x
+       history: check
+       ## masterkey: check
+       passkeys: Soon
+       chromeautoFill: check
+       ipados: check
+       ## androidwindowssupport: check
+       opensource: 100%
+       price: $ 0.99 / Month
+- item:
+    header: Chrome
+    link: "https://google.com/chrome/"
+    list:
+       offlinesync: x
+       offlinedatabase: x
+       quickshare: x
+       autofill: check
+       2fa: check
+       nativeapplication: x
+       history: x
+       ##masterkey: x
+       passkeys: check
+       chromeautoFill: check
+       ipados: check
+       ##androidwindowssupport: check
+       opensource: x
+       price: Free
+- item: ## Has to be last, so we get rounded corners for the table for mobile websites
+    header: KeyChain
+    link: "https://www.apple.com/keychain/"
+    list:
+       offlinesync: x
+       offlinedatabase: x
+       quickshare: x
+       autofill: check
+       2fa: check
+       nativeapplication: check
+       history: x
+       #masterkey: x
+       passkeys: check
+       chromeautoFill: x
+       ipados: check
+       ## androidwindowssupport: x
+       opensource: x
+       price: Free

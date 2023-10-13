@@ -1,0 +1,26 @@
+@import "style/common/reset.css"; /* Reset must come first */
+/* Common */
+@import "style/common/default.css";/* Generic page content */
+/* Header / Footer */
+@import "style/component/header/header.css";
+@import "style/component/footer/footer.css";
+/**
+ * Page
+ * - Note: We load these from the pov of the active html
+ * - Fix: ⚠️️ Figure out how to merge css into one file in jekyll (do research)
+ */
+{% if page.title == 'About' %} /* Only import if page is about */
+@import "style/page/about/about.css";
+{% else if page.title == 'Support' %} /* Only import if page is support */
+@import "style/page/support/support.css";
+{% else if page.title == 'Blog' %} /* Only import if page is blog */
+@import "style/page/blog_grid/blog_grid.css";
+{% else %}
+@import "style/page/front/front.css";
+@import "style/page/blog_post/blog_post.css";
+{% endif %}
+/**
+ * Responsive
+ * - Note: Has to be the last css, in order to override defaults
+ */
+@import "style/responsive/responsive.css";

@@ -1,0 +1,7 @@
+/**
+ * Container
+ */
+ul.faqs {
+	background-color: var(--debug-bg-16);
+	padding-top: 48px;
+}

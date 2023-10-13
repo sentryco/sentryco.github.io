@@ -1,0 +1,35 @@
+/*General*/
+@import "component/header.css";
+@import "component/footer.css";
+/*Front*/
+{% if page.title == 'About' %} /* Only import if page is about */
+@import "about.css";/* import about css here */
+{% else if page.title == 'Support' %}
+@import "support.css";/* import support css here */
+{% else if page.title == 'Blog' %}
+@import "blog_grid.css"; /* import blog css here */
+{% else %}
+@import "front/front.css";
+@import "blog_post.css";/* This is here because we can't target via title yet */
+{% endif %}
+/* Default */
+@media screen and (max-width: 600px) {
+	body {
+		max-width: auto; /* Maximum width for non-mobile devices */
+	    min-width: auto;/* Minimum width for non-mobile devices */
+		padding-left: 24px; /* Adds spacing on the left of all content */
+		padding-right: 24px; /* Adds spacing on the right of all content */
+	}
+	.page {
+		width: auto;
+	}
+}
+/**
+ * Global
+ */
+@media screen and (max-width: 600px) {
+	/* Extra */
+	.contextual_text {
+		text-align: center;
+	}
+}

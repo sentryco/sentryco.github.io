@@ -1,0 +1,11 @@
+<!-- ✨ Feature page ✨ -->
+<!-- Fix: more descriptive class names for the div elements, such as feature-page, feature-header, feature-grid, and subtext-container, -->
+<div class="page" id="product_features">
+	<!-- Fix: ⚠️️ Use h1 and p -->
+	{% include component/front/page_header.html title=site.data.page.feature.header text=site.data.page.feature.text subheader=site.data.page.feature.subheader %}
+	<div id="feature_grid">
+		{% for feature in site.data.features %}
+			{% include front/feature/feature_grid_item.html %}
+		{% endfor %}
+	</div>
+</div><!-- End of feature page -->

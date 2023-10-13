@@ -1,0 +1,20 @@
+<!-- blog grid container  -->
+<!-- Fix: ⚠️️ Add the blog type when we add paginator v2 -->
+<!-- <div class="blog_type">Change-log - Announcments - Product updates</div> -->
+<div class="blog_grid_container"> <!-- Column list -->
+    {% for post in paginator.posts %} <!-- This loops through the paginated posts -->
+    <a href="{{ post.url }}" class="blog_grid_item">
+        <!-- ⚠️️ Fix: Might need baseurl, See jekyll docs -->
+        <div class="blog_grid_item_title"> <!-- title -->
+            {{ post.title }}
+        </div>
+        <div class="blog_grid_item_date"> <!-- date -->
+            {{ post.date | date_to_string }}
+        </div>
+        <div class="blog_grid_item_text"> <!-- text -->
+            {{ post.excerpt }}
+        </div>
+        <div class="link">Read more</div> <!-- Read more link  -->
+    </a>
+    {% endfor %}
+</div><!-- End of blog_grid_container -->

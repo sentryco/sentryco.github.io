@@ -1,0 +1,28 @@
+<!-- Price item -->
+<!-- Fix: more descriptive class names for the div elements, such as price-card, svg-icon, price-title, price-text, price-list, price-list-item, price-list-item-icon, price-list-item-text, price-box, price-value, and price-subtext,  -->
+<div class="price_item" id="{{e.id}}"><!-- Price-card -->
+	<div class="price_icon"><!-- svg-icon -->
+		<img src="assets/svg/{{e.svg}}" class="icon">
+	</div>
+	<div class="price_title">{{e.title}}</div>
+	<div class="price_text">{{e.text}}</div>
+	<div class="price_list">
+		{% for item in e.list %} <!-- Loop through the list array in the e object -->
+		<!-- Code to be executed for each item in the list -->
+		<div class="price_list_item">
+			<div class="price_list_item_icon">
+				<img src="assets/svg/check.svg" class="icon">
+			</div>
+			<div class="price_list_item_text">
+				{{item.title}}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="price_box">
+		<div class="price_value">
+			{{e.price}}
+		</div>
+		<div class="price_subtext">{{e.context}}</div>
+	</div>
+</div><!-- End price_item -->

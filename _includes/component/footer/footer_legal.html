@@ -1,0 +1,9 @@
+<!-- Company legal links -->
+<div class="footer_item" id="legal">
+    <h1>Legal</h1>
+    <div id="nav">
+        {% for item in site.data.footer.legal %}
+            <a href="/legal/{{ item.link }}" class="nav_item">{{ item.title }}</a>
+        {% endfor %}
+    </div>
+</div>

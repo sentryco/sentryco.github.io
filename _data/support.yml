@@ -1,0 +1,212 @@
+## Support page data (we link these in faq.yml, as such we need random ids, see readme on how to generate these)
+## - Fix: ⚠️️ We should use short form UUID's for perma links etc
+## - Note: Use double qoutes when writing some special characters etc like urls
+- title: Security ## Security category
+  description: Questions and answers regarding encryption and security ## Context text
+  list: ## QA List
+   - q: Who has access to my data? ## Question
+     a: You are the only one who can access your data. Our app is based on the concept of <em>self-custody</em>. which means that only you have access to your passwords and other authentication credentials. We strongly believe in <a href="https://en.bitcoin.it/wiki/Non-custodial_wallet">non-custodial principles</a> that are gaining popularity with rise of web3. By storing less of our personal information in the cloud, as a result, we believe that the world will become more democratic and less vulnerable to security incidents. ## Answer
+     id: 3FXG
+   - q: What if I forget my master password?
+     a: If you forget your master password. You can still access the app by using your <em>biometrics</em> (Face-ID / Touch-ID), provided you have activated biometry authentication in the app. If you only use a master password, we suggest writing it down or making a <em>backup on a USB-stick or iCloud</em>. However, if you have completely forgotten your master password, we cannot help you since there is <em>no back-door</em> to your data. This is intentional and by design to ensure the security of your data.
+     id: gEQx
+   - q: 'What encryption is used?' ## This is also in FAQ
+     a: 'Our encryption methods solely rely on the <em>native encryption</em> API´s provided through Apple´s <a href="https://developer.apple.com/documentation/cryptokit/">CryptoKit</a> (external link). This includes <a href="https://en.wikipedia.org/wiki/ChaCha20-Poly1305">ChaCha20 / Poly1305</a> and <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie Hellman</a> (external link), and <a href="https://en.wikipedia.org/wiki/Salsa20">salsa20</a> (external link). We ensure that <em></em>all stored user-data, app-data is encrypted. Additionally, we encrypt all <a href="/support/#ELeo">local network communication</a> with <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">E2EE</a> (external link) (end-to-end-encryption). Furthermore, all data stays <a href="/support/#sEAr">offline</a>, so anyone attempting to gain access to your data would require physical access to your device and surpass the security measures you set up, such as <a href="/support/#rhd2">master-password</a> and biometric authentication.'
+     id: CzH2
+   - q: Where is the data stored?
+     a: The data is stored in an <em>encrypted database</em> on your device only. We never have access to any of your data or credentials. The private encryption keys are safely stored in your device's T2 hardware chip, also known as the <a href="https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web">Secure enclave</a> (external link). You can access it only through a <em>master password</em> or <em>biometric authentication</em>. Currently, there are no known ways to hack or gain unauthorized access to the Secure Enclave. Any potential risks to the Secure Enclave would be quickly patched by Apple to ensure your data remains safe. Additionally, the app will soon support <a href="https://en.wikipedia.org/wiki/YubiKey">YUBI key</a> (external link) as an added security measure.
+     id: sEAr
+   - q: How can I set a master-password?
+     a: 'To set a master password, navigate to the preferences menu in the app and select the <em>security option</em>. From there, click on the <em>"Set Master Password"</em> button and follow the on-screen instructions. Finally, make sure to turn on the <em>"Activate Master Password"</em> toggle.'
+     id: rhd2
+   - q: How can I activate biometric authentication?
+     a: 'To activate Face-ID / Touch-ID, navigate to the preferences menu in the app and select the <em>security option</em>. From there, toggle the <em>"Active biometric authentication"</em> toggle button and follow the on-screen instructions to finalize the activation.'
+     id: qx5A
+   - q: How strong is the password entropy?
+     a: 'We create a <em>"secure-byte-array"</em> by using <em>nonce generator</em>: <a href="https://en.wikipedia.org/wiki/Cryptographic_nonce">Cryptographic nonce</a> (external link) from Apple´s native encryption API, which we then use as the basis when generating passwords configured with the configuration "recipe" that you choose. This <em>"config-recipe"</em> uses a combination of characters, numbers, and words to create strong password that are <em>difficult to brute force</em>. The <em>nonce data</em> is generated using various entropy sources on your device, such as sound, motion, hardware fluctuations, and internet activity. These sources combined provide <em>statistically strong entropy</em>, which is crucial for creating strong passwords. Our goal is to add <em>more entropy features</em> that will inform you of the <em>strength of your password</em> in terms of the <em>time it would take to brute force it</em>. As <em>quantum computing</em> is becoming more prevalent, this feature will be more important than ever. We will also create statistical tools to verify the <em>underlying entropy</em>.'
+     id: 3GTQ
+   - q: Why should I trust Sentry with my passwords? ## This is also in FAQ
+     a: Sentry only <em>store data on users devices</em>. Internet communication can be monitored in apples <a href="https://support.apple.com/en-us/HT212958">App Privacy Report</a> (external link) under "Settings -> Privacy". By default we only request data from industry standard <a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">NTP services</a> (external link) and apples AppStore (In order to manage payment). If telemetry is activated (Opt-out) we send <em>annonomized data</em> regarding usage to google analytics (Errors and time used etc). We never send personal information.
+     id: 7I0e
+- title: Network ## Network category
+  description: Questions and answers regarding local network syncing and sharing
+  list:
+   - q: How does the peer-to-peer communication work?
+     a: BlueTooth doesn't have it´s own P2P communication framework for data transfers, so we created one that is <em>highly secure and reliable</em>. It's our secret sauce, but we can tell you that it works great, even when devices are in <a href="/support/#j4cR">standby-mode</a>. As a side note, the new official Bluetooth mesh framework is more suitable for short bursts of message relays to IOT devices, rather than as a communication layer for  <a href="/support/#KRgb">distributed databases</a> and data transfers.
+     id: ELeo
+   - q: Is the local communication encrypted?
+     a: 'Yes, we do not use the default Bluetooth encryption as it can be difficult for users to activate and has been proven in the past to be insecure. Instead, we utilize the <em>industry standard 256-bit</em> <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">End-to-End Encryption</a> (external link) (E2EE) provided by Apple for <em>setting up connections</em> and <em>transmitting data</em> in the peer-to-peer network. Additionally, we have implemented a unique step where users must verify a <em></em>confirmation code during the initial <em>"handshake-process"</em> when devices are added to prevent any potential Man-in-the-Middle attacks <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">MITM</a> (external link). This extra security measure is the first of it´s kind in the industry. We also use the <em>confirm-code-handshake-protocol</em> when users use our proprietary <em></em>
+     <a href="/support/#pR42">secure-quick-share</a> feature to share account information with other users.'
+     id: rDYn
+   - q: Does it work in flight-mode?
+     a: Yes, you can use it <em>without</em> an internet connection. As long as Bluetooth is enabled, all features will be <em>fully functional</em>.
+     id: I7vH
+   - q: How many devices can synchronise simultaneously?
+     a: Currently, we allow <em>up to 8 devices</em> to sync simultaneously. However, in the future, we plan to upgrade the communication protocol to support an <em>unlimited number of devices</em>.
+     id: 3kA3
+   - q: How do I add more devices to sync with?
+     a: To add more devices to sync with, go to <em>preferences in the app</em> and <em>select devices</em>. Tap the add button and follow the instructions in the <em>wizard</em> that appears. On the other device, go to preferences and <em>select devices</em> to set it to pairing mode. The process takes a few seconds and you will receive a  an <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">end-to-end-encrypted</a> (external link) <em>confirmation-code</em> to ensure you are <em>connecting to the intended device</em> and to avoid any potential (man-in-the-middle) attack vectors <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack">MITM</a> (external link).
+     id: CqKO
+   - q: How does synchronisation work if my device is in standby-mode?
+     a: To facilitate <a href="/support/#ELeo">peer-to-peer communication</a>, we use Bluetooth as it's the only network protocol that allows direct communication between <em>multiple devices</em>. Unlike WiFi, which requires a router to function properly. Many public wifi points also block inter-communication between devices. Bluetooth also supports connections in <em>low-energy standby-mode</em>, which means we can connect to devices even when they're in standby mode.
+     id: j4cR
+   - q: What is a distributed database?
+     a: Unlike a cloud database, which store all data in one centralized location, a <a href="https://en.wikipedia.org/wiki/Distributed_database">distributed database</a> (external link) is a database structure that is designed to be <em>spread out across multiple devices</em>. Whenever these devices come into contact with one another, <em>the databases automatically merge together</em>. Each database on each device retains it´s own reversible <a href="/support/#yR78">history</a> of all changes made. To further ensure the safety of the data, <em>automatic database backups</em> are built-in as a failsafe in case a database gets corrupted due to hardware failure or other events that may lead to database corruption.
+     id: KRgb
+   - q: 'How does the "secure-quick-share" functionality work?'
+     a: 'To utilize the quick share feature, start by choosing the entry you wish to share. Next, locate and press the share button, which will prompt a popup with additional instructions. On the receiving device, tap the add button found on the main screen of the application, which will then prompt another popup. Locate and press the "receive entry" button at the bottom. The receiving device should now appear on the other device. Select it and follow the on-screen instructions. To ensure that the entry is sent to the correct recipient, ensure that the confirmation codes match.'
+     id: pR42
+- title: Data ## Data category
+  description: Questions and answers regarding data migration. Import, export and backups etc
+  list:
+   - q: What if I lose my device? How do I recover?
+     a: You can recover your passwords from <em>any device you own</em>. Or <a href="/support/#fEty">recover</a> from a USB stick / cloud based backup file. Password protected with your own <em>personal password</em>. We recommend using a strong password if you want to store a backup in the cloud.
+     id: cBFM
+   - q: How do I import my passwords from my current password manager?
+     a: 'First, <em>export your accounts</em> from your current password manager to a file. Then, go to the preferences section of the app and select <em>import accounts</em>. Choose the file you just exported and follow the onscreen instructions. We support all major password managers, including <a href="https://www.1password.com/">1password</a>, <a href="https://www.lastpassword.com/">lastpassword</a>, <a href="https://www.keeper.com/">keeper</a>, <a href="https://www.apple.com/keychain">keychain</a>, <a href="https://www.bitwarden.com/">bitwarden</a>, and more. In the future, we plan to support even more password managers through the cvs format.'
+     id: 6vuQ
+   - q: How do I export my passwords to another password manager?
+     a: Currently, we only support exporting in <em>clear-text-json-format</em>. To do this, go to preferences and select "export data" <em>without adding a password</em>. The exported file will be saved as <em>backup.data file</em> and can be opened in any text reader app. We advise against using GPT to convert the data format since using GPT is not always secure. However, we are working on releasing better export options to support all major password managers.
+     id: zoaX
+   - q: How do I store a backup of my data in iCloud?
+     a: To store a backup in iCloud, go to the app's preferences and select "export." <em>Choose a strong password</em> that cannot be easily guessed or brute-forced in case someone gains access to the backup data file in the future. We suggest using a <a href="https://en.wikipedia.org/wiki/Cryptocurrency_wallet">12-24 word mnemonic phrase</a> (external link), which you can generate from our app when you create a password for a login-entry. When prompted to choose a location to save the backup.data file, opt for a location in your iCloud space.
+        It's important to ensure that you can <em>still access iCloud</em> in case you lose access to all your devices. You can recover most iCloud accounts through SMS, so make sure you have access to your personal phone number. It may also be wise to write down your iCloud password, as well as the password and OTP code for the email connected to your iCloud account. Keep in mind that iCloud and email access recovery schemes <em>may change over time</em>, so this recommendation could become outdated or modified in the future. In any case. With enough effort it should be possible to recover an iCloud account, you might have to prove identity with apple etc.
+           To be safe, we recommend keeping a backup of your data offline on a USB drive, with or without a strong password. <em>The level of recoverability</em> is up to you, but most people will recover their data from any of the devices they own.
+           It is rare to lose all your devices at the same time, but in case this happens. We will soon support additional devices like apple watch and apple vision. Rendering the need for extra backups as unimportant to the majority of users.
+           You can also use <em>other cloud endpoints</em>, like <a href="https://www.dropbox.com/">dropbox</a> or <a href="https://onedrive.live.com/">OneDrive</a> etc.
+           If you need help generating a secure <em>mnemonic-phrase</em>, you can do so when creating a password for a login entry in our app. In the future, we plan to let you easily generate these phrases during the export process.
+     id: fEty
+   - q: How do I store a backup of my data on a USB stick?
+     a: 'To do this, you can use the macOS app and follow these steps: 1. go to <em>preferences</em>, 2. click the <em>export button</em>, 3. and when prompted, add a <em>strong password</em> or leave it blank if you prefer. 4. Then, select the USB stick <em>as your destination</em> and you´re all set. If you want to do the same process on an iPhone, you will need to have an iPhone 15 with usb-c, or use a USB stick that supports lightning-port or use a USB to lightning dongle. You can find the usb stick with lightning support <a href="https://www.apple.com/shop/product/HNTY2ZM/A/sandisk-128gb-ixpand-flash-drive-go">here</a> (external link) and for the dongle you can visit this <a href="https://www.apple.com/no/shop/product/MD821ZM/A/lightning-til-usb-kamera-adapter">link</a> (external link)' 
+     id: ALwq
+   - q: How do I remove all data from the app?
+     a: If you want to <em>remove all data</em> from the app, there are a couple of options available to you. First, you can <em>delete the app entirely</em>, which will delete all data associated with it. Alternatively, you can go to the preferences of the app and press on the <em>clear-all-data button</em> to wipe the data from the app. Keep in mind that if you simply remove entries and empty the trash, the data will still be stored as "tombstone" entities in the database. While it is technically possible to recover this data, it would require access to the private key, which is currently not possible. We plan on improving our "data-purging-process" in the future.
+     id: 77p9
+   - q: How do I reinstate my backup?
+     a: To start, please ensure that you have cleared all previous entry data on all connected devices. This is to prevent any duplicate entries from being created. Once you have done this, navigate to the <em>preferences section</em> of the app and press the <em>"import data"</em> button. Choose your <em>backup.data file</em> and <em>enter the password</em> if you have set one before. Follow the onscreen instructions to complete the process. Please note that your <a href="/support/#yR78">history</a> is not restored from backup files. In the future, we plan to integrate a data clearing feature into the import wizard and improve how we handle duplicates.
+     id: 1Sfm
+   - q: How can I undo an unintended change?
+     a: Every entry has a unique history from it´s creation date to the most recent change. To reverse a change, enter edit mode for the entry you want to undo. Then, click on the history button and a popup will appear with an overview of all changes. Find the change you want to recover, copy it, and paste it back into the entry.
+     id: yR78
+- title: 2FA ## 2FA category
+  description: Questions and answers regarding 2FA / OTP (One time passwords)
+  list:
+   - q: How do I import my OTP codes from the google authenticator app?
+     a: To begin, open the <em>Google Authenticator app</em> and click on the <em>"prefrences" button</em>. From there, select <em></em>"export" and choose the account you wish to transfer. Once selected, a QR code will appear. In our app, create a new entry and <em>press the QR button</em> to scan the code. If you're using a Mac, take a screenshot of the QR code and open it via the entry QR image button. It's important to note that Google Authenticator may prompt you to remove the account after showing the QR code. If you intend to remove the account, press "finish." If not, select the option to keep the account and then press "finish" or cancel the operation. Please note that we currently do not support batch import of multiple OTPs from Google Authenticator, but we will be adding this feature soon.
+     id: TcKa
+   - q: How do I add a new OTP code?
+     a: To add a new OTP code on a Mac, save the QR code image and then open it in a login-entry by pressing the <em>OTP-image-button</em>. For iOS, tap the <em>OTP-camera-button</em> in the login entry and scan the QR code. It's also a good idea to save the recovery QR code in an entry note in case the OTP provider requires additional verification in the future. Please note that we will be adding support for adding a OTP-QR-image-button to the iOS app soon.
+     id: dggG
+   - q: How can I add OTP codes from other apps?
+     a: There are three options. Firstly, scan an <em>OTP-QR-code</em> on your iPhone. Secondly, if you have the <em>OTP-credential-URL</em>, you can paste it into an <em>OTP-entry-text-field</em> when an entry is set to <em>edit-mode</em>. Lastly, if you only have a <em></em>picture-based-OTP-QR-code, you can open this in the macOS app by clicking the QR-image.button, next to the <em>OTP-entry-input-field</em>. Note that support for adding OTP QR images for the iOS app will soon be available.
+     id: InoA
+   - q: How do I export OTP codes from the app?
+     a: To export OTP codes from the app, set the entry view to "edit-mode" and copy the <em>OTP-URL</em> to your <em>clipboard</em>. You can then paste the OTP-credential into Google Authenticator or other OTP apps.
+     id: k8IV
+- title: AutoFill ## AutoFill category
+  description: Questions and answers regarding using AutoFill
+  list:
+   - q: How can I activate AutoFill in iOS?
+     a: Firstly, navigate to the <em></em>system-preferences on your iPhone. Then press the <em>passwords and AutoFill</em> button. After that, choose Sentry as your <em>AutoFill provider</em>. This will enable you to automatically fill in passwords in <em>Safari</em> and other <em>compatible applications</em>.
+     id: Yc6X
+   - q: How can I activate AutoFill in macOS?
+     a: First, go to the <em>system-preferences</em> on your Mac and press on <em>"Passwords - AutoFill."</em> Next, select Sentry as your preferred <em>AutoFill provider</em>. By doing this, you'll be able to automatically fill in passwords on <em>Safari</em> and in other <em>compatible applications</em>.
+     id: DUfD
+   - q: Why does AutoFill not work for chrome?
+     a: 'There seems to be a <em>disagreement</em> between Apple and Google over password-management. Google is suggesting that users store their passwords in their own data-servers and use Chrome passwords. This has made it difficult for them to incorporate <em>Apple´s macOS autofill API</em> into the Chrome browser. To follow the progress of the implementation, you can click on this link: <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1170065">https://bugs.chromium.org/p/chromium/issues/detail?id=1170065</a> (external link) Autofill works in Chrome for iOS, but if nothing happens with the Apple-Google standoff soon, we may have to <em>create our own AutoFill extension</em> for Chrome for macOS. This will require installing an extension from the Chrome app store.'
+     id: 08Vd
+- title: Privacy ## Privacy category
+  description: Questions and answers regarding user and data privacy
+  list:
+   - q: Can I turn off the upgrade-alert feature?
+     a: We use <a href="https./github.com/sentryco/UpgradeAlert">UpgradeAlert</a> to remind users to update their apps. In iOS, this happens automatically unless you've turned off automatic app updates. However, in macOS <em>it's not automatic by default</em> unless you've turned it on. So, when there's an update available, we'll prompt you with a popup in the app that includes a direct link to the app store so you can update the app. You probably won't see this too often for iOS, because you should have already gotten the update. This feature requires the app to use Apple's app store API to check if there's an update available. If you'd like to disable this internet call, you can go to the app's Preferences and turn it off in the <em>Privacy section</em>. However, we encourage you to keep your apps updated because it'll keep them more secure and working well together. Sometimes we might upgrade our proprietary network protocol, and they won't always be backward compatible. If that happens, nothing bad will happen and we will inform you how to proceed, but it's better to <em>stay updated and enjoy smooth operations</em> now and in the future.
+     id: b476
+   - q: Can I turn of google analytics telemetry?
+     a: Our app uses Google Analytics to enhance it's performance by analyzing user behavior, detecting errors, and measuring session duration. This helps us identify areas that require improvement, such as compatibility issues with new OS updates. Please note that we only collect data <em>related to user behaviour</em> and do not gather any identifiers, personal information, passwords, or metadata. You can disable this feature by going to the <em>preferences section</em> and selecting the privacy option. Then press the telemetry toggle to off position.
+     id: nO1d
+   - q: Can I turn of internet-calls to NTPTime services?
+     a: The <a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">NTPTime</a> (external link) feature improves the <em>accuracy of database entries</em>. However, if you keep your device clock accurate, it is safe to turn off this feature. When there is no centralized server, it is essential for devices to have the <em>same time</em> to ensure accuracy. Therefore, relying on a single source of truth, such as a NTP time service, is more precise in determining the time of an event. In the event entry time accidentally deviates significantly, it is always possible to recover new data in the <a href="/support/#yR78">history feature</a> of an entry.
+     id: j24F
+   - q: Can I turn of internet-calls to Apple app-store?
+     a: Yes, it's technically possible if you purchase the <a href="/#pricing_page">Lifetime package</a>. This will limit communication with Apple's App Store server to just the initial purchase and never again. Unlike the subscription packages which will authenticate the licenses monthly / yearly. You'll need to <em>restore the purchase</em> on any future devices you add. This can be done during <em>onboarding</em> or in <em>preferences</em> later. If you migrate a device to a new device, the purchase will <em>carry over</em> and no connection to Apple's servers will be made. Unfortunately, we can't add export/import features for the purchase because it's not possible to verify the legitimacy of the purchase other than through apples servers. With the <a href="/#pricing_page">Lifetime package</a> and by turning off other internet-based features in the app's preferences, you can effectively make the app <em>completely offline</em>.
+     id: mFIG
+   - q: Are there any other internet services the app connects to?
+     a: We have plans to integrate a <em>"2FA-recommendation-feature"</em>, <a href="https://haveibeenpwned.com/">haveibeenpwned.com</a> auditing, <em>web-fav-icon downloader</em> integration for rare brand icons, and a <em>password-recipe-recommendation</em> feature. These features will require an internet-call to download data from the internet. However, they will be optional and can <em>easily be disabled</em> in the app's preferences section. Our focus is for the app to operate completely offline if the user wishes it to be and we will <em>never intentionally compromise</em> this for any other agendas.
+     id: 4pYi
+   - q: Is it possible to verify which internet services the app connects to?
+     a: You can go to the device <em>preferences section</em>, then select <em>Privacy</em>, and finally, click on <em>App-Privacy</em>. There, you can check which internet-services the app has called upon. Here is a link to <a href="https://support.apple.com/en-us/HT212958">App Privacy Report</a> (external link) where you can learn more about app privacy.
+     id: Ngjj
+   - q: Is my account data stored in iCloud if I have iCloud backup activated?
+     a: If you have iCloud backup activated, your account data is currently stored in iCloud. However, we will soon be making it optional in the preferences. Rest assured that your <em>data is encrypted</em> and can only be accessed by your <em>biometry</em> or <em>master-password</em>.
+     id: yxGc
+   - q: Does the app comply with GDPR and CCPA regulations?
+     a: We understand that <em>GDPR</em> and <em>CCPA</em> regulations are concerned with storing and processing user data outside of user devices. However, our product <em>does not process</em> any data in the cloud, so these concerns <em>do not apply to us</em>.
+     id: qXOy
+   - q: Does my credential data ever leave my device?
+     a: Your passwords and data are <em>securely stored</em> on the devices <em>only you</em> have access to. All data is transmitted through <em>local Bluetooth peer-to-peer communication</em> exclusively. No data is ever transferred or stored outside of your personal peer-to-peer network and local distributed database system. We use industry-standard 256-bit <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">E2EE</a> (external link) provided by Apple APIs to encrypt all data transmissions. The encryption keys are stored in the <a href="https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web">Secure enclave</a> (external link) T2 hardware chip  on your device, ensuring that only the app itself has access to the private keys used in the end-to-end encryption (E2EE) transfer protocol. The private key for E2EE is <em>not accessible</em> by the user and cannot be exported or imported.
+     id: 64VF
+   - q: What third-party frameworks is used in the app?
+     a: We utilize <em>two external open-source frameworks</em>, namely <a href="https://github.com/tikhop/TPInAppReceipt">TPInAppReceipt</a> (external link) and <a href="https://github.com/swhitty/SwiftDraw">SwiftDraw</a> (external link). These libraries facilitate offline support for in-app purchases and allow for SVG rendering in the app. We did not develop these frameworks ourselves as they are complicated and will eventually be substituted by more modern ways of solving the underlying problems they solve. Our aim is to <em>not depend</em> on any external dependencies in our code at all. We have forked the repositories and pinned the specific code versions we use, thereby eliminating any risk of third-party supply chain attacks. We have <em>inspected and verified</em> all the code provided and made sure that they do what they intend to do. We <em>do not use any closed-source</em> third-party SDK's.
+     id: 7mlp
+   - q: What supply-chain services are used when deploying the app?
+     a: Our code is securely stored in an enterprise account on <a href="https://www.github.com/">GitHub</a> (external link), which is protected by 2FA. We deploy our app using apple <a href="https://developer.apple.com/xcode-cloud/">xCode-cloud</a> (external link) integration, which is also protected by 2FA. We do not use any other continuous-integration tools for the app code, but we utilize various CI tools for our public open-source <a href="https://www.github.com/sentryco/">frameworks</a>, including <a href="https://CodeBeat.co">CodeBeat</a> (external link) and <a href="https://github.com/features/actions">Github actions</a> (external link). To ensure safety, we do not grant external CI tools access to our GitHub organization account. The only tool that has access to our GitHub organization account is <em>the Apple xCode cloud</em>, which pulls code from GitHub during the deployment of new test-flight or app-store release.
+     id: FyCN
+- title: Misc ## Misc category
+  description: Questions and answers regarding miscellaneous topics
+  list:
+   - q: What account types are supported?
+     a: We currently support <em>Login-entry</em>, <em>Payment-Card-entry</em>, <em>WiFi-entry</em>, and <em>Secure-Note-entry</em>. We are also planning to add more account types in the near future, including <em>Seed-entry</em>, which is ideal for storing <a href="https://en.wikipedia.org/wiki/Cryptocurrency_wallet">Cryptocurrency wallet</a> (external link) that are more secure when be kept offline.
+     id: tPcX
+   - q: What is the purpose of archiving entries?
+     a: Most users have <em>multiple accounts</em>, but only use a <em>small fraction</em> of them regularly. By archiving an entry (press the entry more-button to access this feature), you can still access the account without it appearing in your main list or AutoFill. If you decide to use the account regularly again, you can easily un-archive the entry the same way you archived it.
+     id: VLAQ
+   - q: What if you go out of business? What happens to my data?
+     a: Our product <em>does not require any sign-up</em> and <em>does not rely on a central server</em> in the cloud. The app is completely <em>self contained</em> and works <em>entirely offline</em> without any need for remote server communication. In the unlikely event that we go out of business, our app will still be functional as 30% of the code is already open-source, and we will release the remaining 70% to a public repository under a suitable opensource license on GitHub. We would then aim to convert our company into an ideal organization so that we can continue to maintain our business account with Apple and keep the app updated through community support. All funds generated from this would go towards the maintainers and covering minimum operational costs. However, we do not anticipate going out of business as we are currently breaking even at around 3000 active users. Since day 1, we have automated as much as possible to make our operations as <em>efficient and autonomous</em> as possible. This includes automated tests, deployments, app-store-screenshots, release notes, code reviews, bug-checks, code-linting, code-security checkups, auditing, and other aspects of our organization. The only things that are not automated are coding and business development. At some point, we believe that our product will be self-sufficient and require minimal oversight from the maintainers.
+     id: Llh1
+   - q: Is the app open-source?
+     a: 'Partly, we have made approximately <em>20-30%</em> of our product´s source code available as open-source on our <a href="https://github.com/sentryco">Sentryco GitHub page</a>. You can inspect or use these frameworks in your own projects as they are licensed under the <em>MIT license</em>. The frameworks that are available as open-source include <a href="https://github.com/sentryco/UpgradeAlert">UpgradeAlert</a>,
+        <a href="https://github.com/sentryco/Telemetry">Telemetry</a>,
+        <a href="https://github.com/sentryco/Logger">Logger</a>,
+        <a href="https://github.com/sentryco/DarkMode">DarkMode</a>,
+        <a href="https://github.com/eonist/CommonCell">CommonCell</a>,
+        <a href="https://github.com/eonist/WizardHelper">WizardHelper</a>,
+        <a href="https://github.com/eonist/UserDefaultSugar">UserDefaultSugar</a>,
+        <a href="https://github.com/eonist/FileSugar">FileSugar</a>,
+        <a href="https://github.com/eonist/JSONSugar">JSONSugar</a>,
+        <a href="https://github.com/eonist/Spatial">Spatial</a>,
+        <a href="https://github.com/eonist/SVGWrapper">SVGWrapper</a>,
+        <a href="https://github.com/eonist/With">With</a>,
+        <a href="https://github.com/eonist/TestRunner">TestRunner</a>,
+        <a href="https://github.com/eonist/UITestSugar">UITestSugar</a>,
+        <a href="https://github.com/sentryco/KeyChainExport">KeyChainExport</a>, Additionally, our <a href="https://github.com/sentryco/sentryco">Sentry website</a> is also open-source. We have chosen not to release the entire codebase as open-source to prevent clones on the app-store that could mishandle user data and damage our reputation. However, we plan to release more open-source frameworks as they mature internally.'
+     id: 9QSE
+   - q: Do you support YUBI Key?
+     a: We're currently in the process of implementing this feature and we will announce support as soon as it's available.
+     id: IxBV
+   - q: Do you support Passkeys (Fido2)?
+     a: We're currently in the process of implementing this feature and we will announce support as soon as it's available.
+     id: y6Br
+   - q: Are you audited by an external audit company specialising in security?
+     a: We strive to have our code audited by an external company specializing in security on a regular basis, preferably weekly. However, the cost and potential exposure of our company's intellectual property are concerns. We are looking forward to the availability of offline on-prem AI auditing service, which could potentially be used with low cost on every release we make, and verify builds publicly. This service will not risk leaking our company IP as it will be on-prem and offline. As soon as we have sufficient funding, we will engage an auditing company to verify that our current code is as secure as we believe it is. Our <a href="https://www.github.com/eonist/TestRunner/">testing suite</a> (external link) is continually expanding and improving with each release, covering more edge cases and features. You can also review all our open-source publicly on our <a href="https://github.com/sentryco/">Sentry Github account</a> (external link), You can find out more about our thorough <a href="https://eon.codes/blog/2022/11/24/the-art-of-automating-qa/">testing routines</a> (external link). All our proprietary and public code is thoroughly tested, as can be seen in our public repositories. We also document our code extensively to ensure it is easy to maintain and avoid inserting mistakes in future updates. Our code quality is above the highest industry standard, as evidenced by our CodeBeat score in many of our opensource repositories, with <em>near full score</em> in most cases.
+     id: kQbx
+   - q: Will my data migrate from TestFlight to AppStore?
+     a: Yes. All database data, private encryption keys and user settings will <em>automatically migrate</em> between TestFlight and AppStore (and vis-verca)
+     id: A38b
+   - q: How can I claim a refund?
+     a: In the app, go to the <em>preferences section</em>, then press the <em>payments button</em>, and finally press the <em>refund purchase button</em>. This will prompt a <em>popup from apple</em> that will take you the rest of the way. Refunds are processed by apple within 48 hours.
+     id: I5Fl
+   - q: Why is the password manager offline?
+     a: 'With <em>online password managers</em> you will always be at <em>risk of compromise</em> if someone gets access to your master password, or someone with access to the the cloud <em>leaks your data</em>. As has often happened in the past: <a href="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers">Hackers stole encrypted LastPass password vaults</a> (external link)'
+     id: d8j8
+   - q: Why are dedicated native apps more secure?
+     a: 'Native apps are generally <em>considered more secure</em> than hybrid apps using electron or eeact-native because they run directly on the operating system, allowing them to leverage the built-in security features and permissions of the platform. This tighter integration with the OS provides better isolation from potential threats, as opposed to Electron apps, which rely on web technologies and a built-in browser engine, potentially exposing them to more - <em>security vulnerabilities</em>. Additionally, native apps can benefit from timely security updates and patches provided by the platform, further enhancing their security posture. Another benefit of native apps is that they - <em>use less space and memory</em> than non-native apps. Dedicated native apps are apps that are built for their native OS. And do not reply on native hybrid solutions like <a href="https://developer.apple.com/mac-catalyst/">Apple Mac Catalyst</a>. (external link)'
+     id: XsYY
+   - q: Is there going to be Android and windows support?
+     a: 'When the time is right. It might be sooner or later'
+     id: psY2
+   - q: What about apple watch and vision pro support?
+     a: 'When the time is right. It might be sooner or later'
+     id: y78G
+   - q: When is the iPad app going to be launched?
+     a: "It is in development. We are building it as a standalone app. Not a scaled up iOS or a scaled down macOS app. But we need to streamline more of the UI/UX code in iOS and macOS to ensure that we don't create too much complexity when adding another OS target to our workload and responsibilities"
+     id: rx4K

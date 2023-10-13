@@ -1,0 +1,7 @@
+@import "compare_table.css";
+/**
+ * Compare view
+ */
+.page#product_compare {
+	background-color: var(--debug-bg-18); /*debug*/
+}
