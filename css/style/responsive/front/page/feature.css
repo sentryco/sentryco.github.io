@@ -8,10 +8,34 @@
     */
   #feature_grid {
      background-color: var(--debug-bg-19);
-     grid-template-columns: repeat(2, 250px);/* Horizontal */
-     grid-template-rows: repeat(4, 250px); /* Vertical was 6 */ /* align-content: space-around; */
+     grid-template-columns: repeat(2, 220px);/* Horizontal */
+     grid-template-rows: repeat(4, 220px); /* Vertical was 6 */ /* align-content: space-around; */
      justify-content: space-between; /* Grows space between when size change */
      grid-column-gap: 12px;/* Horizontal gap */
      grid-row-gap: 24px;/* Vertical gap */
+  }
+  /**
+  * Item Icon - active
+  */
+  .grid_item_icon {
+    margin-top: 12px; 
+  }
+  /**
+  * Title-text for feature item
+  */
+  .grid_item_title {
+    font: var(--text-sm-bold);
+  }
+  /**
+  * Description text for feature item
+  */
+  .grid_item_text {
+    font: var(--text-xxxs);
+  }
+  /**
+  * Link
+  */
+  .grid_item_link {
+    font: var(--text-xxs);
   }
 }

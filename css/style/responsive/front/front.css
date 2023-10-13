@@ -13,4 +13,7 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+    .header_title br {
+        display: none;
+    }
 }
