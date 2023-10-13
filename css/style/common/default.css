@@ -12,6 +12,7 @@ html {
  * Body
  */
 body {
+   width: auto;
    max-width: 1440px; /* Maximum width for non-mobile devices */
    min-width: 1090px;/* Minimum width for non-mobile devices */
 	/* Fix ⚠️️ Add min width */
