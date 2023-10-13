@@ -17,6 +17,8 @@
 	 */
 	#videos .video_container {
 		padding: 0 32px; /* Represents padding for the left and right of the element */
+		padding-left: 0px; /* Don't unify these, it doesn't work for some reason */
+		padding-right: 0px; /* ⚠️️ These decide the height of the device ⚠️️ */
 		/* Flex */
 		display: flex;
 		flex-direction: column;
@@ -27,7 +29,7 @@
 	 */
 	#videos .video_container #video {
 		height: auto;
-		aspect-ratio: 1 / 2;
+		/*aspect-ratio: 1 / 2;*/
 		width: 100%;
 	}
 	/**
@@ -36,6 +38,7 @@
 	#videos .video_container #vid_text {
 		width: 100%;
 	}
+	
 }
 /**
  * Button

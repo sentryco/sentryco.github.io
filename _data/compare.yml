@@ -8,14 +8,14 @@
        quickshare: Secure share
        autofill: AutoFill
        2fa: One time code
-       nativeapplication: Native application
+       nativeapplication: Native apps
        history: History
        #masterkey: Master key
        passkeys: Passkeys
        chromeautoFill: Chrome AutoFill
        ipados: iPadOS
        ##androidwindowssupport: Android / Windows
-       opensource: OpenSource
+       opensource: Open-source
        price: Price
 - item:
     header: Sentry

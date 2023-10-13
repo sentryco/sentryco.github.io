@@ -5,17 +5,18 @@
  * Default variables for the html
  */
 html {
-   background-color: var(--secondary); /* Use CSS variable for body background color */ 
+   background-color: var(--secondary);/*blue;*/ /* Use CSS variable for body background color */ 
    font-family: var(--font-family-default); /* Use CSS variable for font family */
-   margin: auto; /* Centers things */
+   /*margin: auto; *//* Centers things */
 }
 /**
  * Body
  */
 body {
+   /*background-color: red;*/
    max-width: 1440px; /* Maximum width for non-mobile devices */
    min-width: 1090px;/* Minimum width for non-mobile devices */
 	/* Fix ⚠️️ Add min width */
    padding: 0 var(--default-page-padding);
-   margin: auto; /* Centers things */
+   /*margin: auto;*/ /* Centers things */
 }

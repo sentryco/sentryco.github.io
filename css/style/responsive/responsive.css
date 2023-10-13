@@ -14,20 +14,23 @@
 {% endif %}
 /* Default */
 @media screen and (max-width: 600px) {
-	html {
-		width: auto;
-	}
-	body {
-		width: auto;
-	}
+	
 	/*.page {
 		width: auto;
 	}*/
+	html {
+		width: 100%;
+		max-width: 600px;
+		min-width: 100%;
+		margin: auto;
+	}
 	body {
-		max-width: auto; /* Maximum width for non-mobile devices */
-	    min-width: auto;/* Minimum width for non-mobile devices */
-		padding-left: 24px; /* Adds spacing on the left of all content */
-		padding-right: 24px; /* Adds spacing on the right of all content */
+		width: 100%;
+		margin: auto;
+		max-width: 600px; /* Maximum width for non-mobile devices */
+	    min-width: 100%;/* Minimum width for non-mobile devices */
+		padding-left: 12px; /* Adds spacing on the left of all content */
+		padding-right: 12px; /* Adds spacing on the right of all content */
 	}
 }
 /**

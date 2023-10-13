@@ -22,12 +22,14 @@
 	--font-medium-alt: 18px;
 	--font-small: 16px;
 	--font-small-alt: 14px;
+	--font-tiny: 12px;
 }
 /**
  * Font packs (weight, size, font-family) 
  */
 :root {
 	/*Normal*/
+	--text-xxxxs: normal var(--font-tiny) var(--font-family-secondary);
 	--text-xxxs: normal var(--font-small-alt) var(--font-family-secondary);
 	--text-xxs: normal var(--font-small) var(--font-family-secondary);
 	--text-xs: normal var(--font-medium-alt) var(--font-family-secondary);
