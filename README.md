@@ -59,7 +59,7 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 ### Todo:
 - Quickly try the list blog grid with images. 
 - Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp
-- Align the download btns like the price btns
+- Align the download btns like the price btns (the dl boxes are also not equal in width)
 
 ```html
 <video autoplay loop muted playsinline controls preload="auto" poster="{{ '/assets/images/video-poster.jpg' | prepend: site.baseurl }}">
