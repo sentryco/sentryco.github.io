@@ -14,14 +14,20 @@
 {% endif %}
 /* Default */
 @media screen and (max-width: 600px) {
+	html {
+		width: auto;
+	}
+	body {
+		width: auto;
+	}
+	/*.page {
+		width: auto;
+	}*/
 	body {
 		max-width: auto; /* Maximum width for non-mobile devices */
 	    min-width: auto;/* Minimum width for non-mobile devices */
 		padding-left: 24px; /* Adds spacing on the left of all content */
 		padding-right: 24px; /* Adds spacing on the right of all content */
-	}
-	.page {
-		width: auto;
 	}
 }
 /**
