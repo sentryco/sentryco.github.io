@@ -55,6 +55,7 @@
  * The text under the download button
  */
 .dowload_item .dowload_button_context_text {
+	background-color: var(--debug-bg-4); /*debug*/
 	padding-top: 0px;
 	padding-bottom: 12px;
 	font: var(--text-xxxs);

@@ -2,13 +2,14 @@
  * Price-list in price-card
  */
 .price_list {
-	height: auto;/* helps to pin the price container to the bottom */
+	background-color: var(--debug-bg-19); /* Debug */
+	height: auto;/* ⚠️️ Helps to pin the price container to the bottom */
 	margin: 12px 0; /* Represents top and bottom margin, respectively */
 	/* FlexBox */
 	flex-grow: 1;
 	display: flex;
-	flex-direction: column;
-	row-gap: 20px;/*16px Vertical space between items*/
+	flex-direction: column; /* ⚠️️ Helps to pin the download container to the bottom */
+	row-gap: 20px;/* 16px Vertical space between items */
 }
 /**
  * price list item
@@ -17,7 +18,7 @@
 	/* Flex */
 	display: flex;
 	flex-direction: row;
-	column-gap: 8px; /*horisontal space between items*/
+	column-gap: 8px; /* Horisontal space between items */
 }
 /**
  * List item icon
@@ -33,7 +34,7 @@
 	border: 1px solid var(--accent-color);
 }
 /**
- * SVG
+ * list item icon SVG
  */
 .price_list_item_icon .icon {
 	width: 100%;

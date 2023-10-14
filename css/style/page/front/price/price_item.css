@@ -8,6 +8,7 @@ to make it easier to understand its purpose.
  * Price card
  */
 .price_item {
+	background-color: var(--debug-bg-16);
 	width: 0px; /* I guess this is imp for the flex? */
 	padding: 24px 32px 12px; /* Represents top, right, and bottom padding, respectively */
 	/* FlexBox */
@@ -16,7 +17,6 @@ to make it easier to understand its purpose.
 	flex-direction: column;
 	align-items: center;
 	/* Style */
-	background-color: var(--clear-color);
 	border: var(--border-style);
 	border-radius: 15px;
 }
@@ -52,6 +52,7 @@ to make it easier to understand its purpose.
  * Title text in the price-card
  */
 .price_title {
+	background-color: var(--debug-bg-17);
 	padding: 12px 0; /* Represents top and bottom padding, respectively */
 	/* Styling */
 	text-align: center;
@@ -88,9 +89,10 @@ to make it easier to understand its purpose.
 	color: var(--primary-low);
 }
 /**
- * Has the price value
+ * Has the price value $ 2.99 etc
  */
 .price_value {
+	background-color: var(--debug-bg-12);
 	margin: 6px 0; /* Represents top and bottom margin, respectively */
 	padding: 12px 0 6px; /* Represents top, bottom, and right padding, respectively */
 	/* Styling */
@@ -102,6 +104,7 @@ to make it easier to understand its purpose.
  * Text bellow price
  */
 .price_subtext {
+	background-color: var(--debug-bg-13);
 	padding: 0px 0 12px; /* Represents top, bottom, and right padding, respectively */
 	/* Styling */
 	text-align: center;

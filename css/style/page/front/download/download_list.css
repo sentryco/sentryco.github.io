@@ -2,8 +2,11 @@
  * List
  */
 .download_list {
+	background-color: var(--debug-bg-21); 
 	margin: 6px 0; /* Represents top and bottom margin */
+	height: auto; /* ⚠️️ Helps to pin the download container to the bottom */
 	/* Flex */
+	flex-grow: 1; /* ⚠️️ Helps to pin the download container to the bottom */
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px; /* Vertical spacing */

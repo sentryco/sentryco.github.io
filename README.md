@@ -56,6 +56,11 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 - Clamp in fluid layouts (very comprehensive tut): https://blog.logrocket.com/flexible-layouts-without-media-queries/
 - Has nice blog design: https://astroship.web3templates.com/blog and coloring in darkmode
 
+### Videos:
+- Record video without red circle w/ Quicktime via lightning cable. Record video. Then choose iPhone
+- Export to 720p in Quicktime -> Export (to get the file size down. 1-3mb for 15-30 sec vid is fine)
+- Use adobe express online video converter https://www.adobe.com/express/ to conver mov to mp4
+
 ### Todo:
 - Quickly try the list blog grid with images. 
 - Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp

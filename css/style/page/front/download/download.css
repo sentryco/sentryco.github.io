@@ -6,6 +6,7 @@
 	background-color: var(--debug-bg-16); /*debug*/
 }
 .download_page_container {
+	background-color: var(--debug-bg-24); /*debug*/
 	padding-top: 48px;
 	width: 100%;
 	/* Flex */

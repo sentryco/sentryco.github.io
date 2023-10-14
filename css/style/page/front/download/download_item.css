@@ -2,6 +2,7 @@
  * Download item (icon, list, download-button)
  */
 .dowload_item {
+	background-color: var(--debug-bg-25); /*debug*/
 	height: auto;
 	padding: 24px 32px 12px; /* Sets padding to top/bottom and left/right */
 	/* Flex */
