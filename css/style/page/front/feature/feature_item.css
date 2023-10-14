@@ -6,14 +6,14 @@
  * Feature item
  */
 .grid_item {
+	background-color: var(--debug-bg-13); 
 	/* FlexBox */
 	display: flex;
 	flex-direction: column;
-	align-items: center;/*center horizontal*/
-	justify-content: center; /*center vertically*/
+	align-items: center;/* center horizontal */
+	justify-content: center; /* center vertically */
 	padding: 4px;
 	/*Styling*/
-	background-color: var(--clear-color); /* D8D8D8 background-color: midnightblue;*/
 	border: var(--border-style);
 	border-radius: 15px;
 }
@@ -23,7 +23,7 @@
 .grid_item_icon {
 	width: 48px;
 	height: 48px;
-	margin: 24px 24px 12px; /* Represents top, right, and bottom margin, respectively */
+	margin: 12px 24px 12px; /* Represents top, right, and bottom margin, respectively */
 	padding: 8px;
 	border-radius: 50%;
 	/* Styling */
