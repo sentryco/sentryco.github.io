@@ -6,6 +6,11 @@ Website for sentry.co
 - Uses anonymised Google analytics (GDPR friendly)
 - CNAME file must match the used domain
 
+### Testing
+- Use Google chrome developer mode to test responsive layouts at smaller sizes
+- Test on actual Devices iPad / iPhone
+- Test online. Sometimes serverside is different from local host
+
 ### Design system
 - Headline font: Monteserrat
 - Text font: Open sans
