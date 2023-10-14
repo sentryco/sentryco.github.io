@@ -60,6 +60,7 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 - Record video without red circle w/ Quicktime via lightning cable. Record video. Then choose iPhone
 - Export to 720p in Quicktime -> Export (to get the file size down. 1-3mb for 15-30 sec vid is fine)
 - Use adobe express online video converter https://www.adobe.com/express/ to conver mov to mp4
+- There is bezel for iPhone 11 Pro Max and iPhone 15 Pro Max. Make sure pixel ratio is correct b4 use.
 
 ### Todo:
 - Quickly try the list blog grid with images. 
