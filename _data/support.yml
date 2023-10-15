@@ -210,3 +210,6 @@
    - q: When is the iPad app going to be launched?
      a: "It is in development. We are building it as a standalone app. Not a scaled up iOS or a scaled down macOS app. But we need to streamline more of the UI/UX code in iOS and macOS to ensure that we don't create too much complexity when adding another OS target to our workload and responsibilities"
      id: rx4K
+   - q: Where can I see the macOS app in action?
+     a: "You can check out the video from the 1.0.0 launch. It shows how the interaction between an iPhone and a MacBook works: <a href="https://vimeo.com/836812210">Watch the video</a>"
+     id: w4K2
