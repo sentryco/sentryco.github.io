@@ -38,7 +38,7 @@ ul.faqs li:last-child {
  * Expanded
  * - Note: When the url targets with #id this style is applied
  */
-ul.faqs li.expand:target { /* Fix: ⚠️️ what is expand? */
+ul.faqs li.expand:target { /* Fix: ⚠️️ What is expand? */
 	background-color: var(--debug-bg-4);
 }
 ul.faqs li.expand a { /* ⚠️️ Remove forced underline from header text */

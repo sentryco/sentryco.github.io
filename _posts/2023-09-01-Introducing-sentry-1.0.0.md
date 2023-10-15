@@ -1,4 +1,4 @@
-Introducing Sentry 1.0 (An offline password manager for macOS and iOS) <!--more-->
+Introducing Sentry 1.0 (An offline credential manager for macOS and iOS) <!--more-->
 
 After 3 years of building in stealth (10k+ dev hours, with more than $400.000 in funding) our moonshot technology is finally seeing the light of day.
 

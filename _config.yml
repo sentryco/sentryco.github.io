@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sentry - Offline password manager # fix: rop the description or?
+title: Sentry - Offline credential manager # fix: rop the description or?
 email: email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Store and sync passwords offline. Available for iOS and macOS with support for more platforms coming soon.

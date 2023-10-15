@@ -22,8 +22,8 @@
  */
  ul.faqs li.expand:target .bottom {
 	background-color: var(--debug-bg-20);
-	 display: block; /* Show when active */
-	 height: auto;
+	display: block; /* Show when active */
+	height: auto;
 }
 /**
  * Link

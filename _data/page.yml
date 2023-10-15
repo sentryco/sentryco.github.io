@@ -32,7 +32,7 @@ compare:
   ## Discover our <a href="/support/#s6q4">open-source policy</a>
   ## Inspired by <a href="https://en.wikipedia.org/wiki/Self-sovereign_identity">self-sovereign</a> principles. 
   ## add text regarding how cloud based products kep failing, see the faq for a good blurb on this 
-  ## With <em>online password managers</em> you will always be at <em>risk of compromise</em> if someone gets access to your master password, or someone with access to the the cloud <em>leaks your data</em>. As has often happened in the past: <a href="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers">Hackers stole encrypted LastPass password vaults</a>
+  ## With <em>online credential managers</em> you will always be at <em>risk of compromise</em> if someone gets access to your master password, or someone with access to the the cloud <em>leaks your data</em>. As has often happened in the past: <a href="https://www.theverge.com/2022/12/22/23523322/lastpass-data-breach-cloud-encrypted-password-vault-hackers">Hackers stole encrypted LastPass password vaults</a>
   ## We offer offline capabilities that enable you to have full control over your digital credentials. Here is a competitor breakdown.
   ## "Here's how our product compares to similar products in the market." 
   ## Fix: ⚠️️ Use div instead of h2? or p span?
