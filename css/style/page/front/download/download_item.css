@@ -9,7 +9,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-grow: 1;
+	flex-grow: 1; /*ensures flex is equal*/
+	width: 100%; /*ensures flex is equal*/
 	row-gap: 16px;/* Vertical space between items */
 	/* Styling */
 	background-color: var(--clear-color); 

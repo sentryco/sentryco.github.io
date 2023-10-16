@@ -13,4 +13,5 @@
 	display: flex;
 	flex-direction: row;
 	column-gap: 24px;
+	flex: 1 0 0;/*The flex shorthand property sets the flex-grow, flex-shrink, and flex-basis properties in one line. In this case, we're setting flex-grow to 1, which tells the items to grow equally, and flex-basis to 0, which sets the initial width of the items to zero. The flex-shrink property is set to 0 by default, which prevents the items from shrinking beyond their content size.*/
 }
