@@ -72,6 +72,13 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 - Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp
 - Align the download btns like the price btns (the dl boxes are also not equal in width)
 
+### Future milestones:
+- Move to github action based jekyll hosting to get paginator v2 which has tagging :yum:
+- ...or move to github action based astro.space hosting
+- Incorporate video of macOS / iPadOS app
+- Add more responsive breakpoints (laptop and tablet size)
+
+
 ```html
 <video autoplay loop muted playsinline controls preload="auto" poster="{{ '/assets/images/video-poster.jpg' | prepend: site.baseurl }}">
 	<source src="{{ '/assets/video/' | prepend: site.baseurl }}{{ item.url }}">
