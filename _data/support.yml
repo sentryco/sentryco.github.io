@@ -178,7 +178,7 @@
         <a href="https://github.com/eonist/With">With</a>,
         <a href="https://github.com/eonist/TestRunner">TestRunner</a>,
         <a href="https://github.com/eonist/UITestSugar">UITestSugar</a>,
-        <a href="https://github.com/sentryco/KeyChainExport">KeyChainExport</a>, Additionally, our <a href="https://github.com/sentryco/sentryco">Sentry website</a> is also open-source. We have chosen not to release the entire codebase as open-source to prevent clones on the app-store that could mishandle user data and damage our reputation. However, we plan to release more open-source frameworks as they mature internally.'
+        <a href="https://github.com/sentryco/KeyChainExport">KeyChainExport</a>, Additionally, our <a href="https://github.com/sentryco/sentryco.github.io/">Sentry website</a> is also open-source. We have chosen not to release the entire codebase as open-source to prevent clones on the app-store that could mishandle user data and damage our reputation. However, we plan to release more open-source frameworks as they mature internally.'
      id: 9QSE
    - q: Do you support YUBI Key?
      a: We're currently in the process of implementing this feature and we will announce support as soon as it's available.
