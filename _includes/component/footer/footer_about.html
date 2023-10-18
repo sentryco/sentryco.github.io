@@ -6,7 +6,7 @@
     </div>
     <div class="link_container"> <!--  Social media links -->
         {% for item in site.data.footer.social %} <!-- Pulls variables from social.yml -->
-            <a href="{{item.url}}" class="link"> <!-- Social media link -->
+            <a href="{{item.link}}" class="link"> <!-- Social media link -->
                 <img src="{{'/assets/svg/' | prepend: site.baseurl}}{{item.svg}}" class="icon"> <!-- Get link from item.link -->
             </a>
         {% endfor %}
