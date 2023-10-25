@@ -70,6 +70,6 @@ download:
   ## <em>Level up</em> your security<br>and privacy today!
   ## 
   ## <em>Offline</em> your<br>credentials today!
-  header: "Built <em>exclusivly</em> for <br>apple devices" ## Thank<br>self will <em>thank you</em>
+  header: "Built <em>exclusively</em> for <br>apple devices" ## Thank<br>self will <em>thank you</em>
   ## It´s safe to install the TestFlight version, all data will migrate automatically upon official release to the app store. Read more about how <a href="/support/#s6q7">TestFlight data migration</a> is handled.
   text: 'All data from TestFlight will <a href="/support/#A38b">migrate automatically</a> when released to the app store.' ## "Onboard in less than a minute. Requires <em>no user registration</em>"
