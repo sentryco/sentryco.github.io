@@ -69,8 +69,9 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 
 ### Todo:
 - Quickly try the list blog grid with images. 
-- Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp
+- Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp ✅
 - Align the download btns like the price btns (the dl boxes are also not equal in width)
+- Do SEO testing o the site. Do research into which online service can help with this.
 
 ### Future milestones:
 - Move to github action based jekyll hosting to get paginator v2 which has tagging :yum:
