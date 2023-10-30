@@ -9,7 +9,7 @@ The goal was to create an aesthetically pleasing, symmetrical asterisk suitable 
 
 ## The design
 
-We want the mark to be legible at different sizes on both printed documents and websites. The logo bellow is slighly thinner than the first picture (it uses the inner cirle). We might revert to the thicker version (which use the outer circle) as it is a bit more legible. 
+We want the mark to be legible at different sizes on both printed documents and websites. The logo bellow is slighly thinner than the first picture (it uses the inner cirle). We might revert to the thicker version (which use the outer circle) as it is a bit more legible.
 
 <img alt="img" src="/assets/images/blog/IMG_0880.PNG" onload="this.width*=0.5">
 
