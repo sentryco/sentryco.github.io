@@ -8,7 +8,7 @@
   context: Publicly available on TestFlight
   list:
     ## FIX: somehow get this from general.yml?
-    - title: Version 1.0.8 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: Version 1.0.9 <a href="/blog/">change-log</a> ## Pull version number from .yml
     - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
     - title: <a href="/support/#XsYY">Dedicated native application</a>
     ##- title: Tiny app size ~27MB
@@ -24,7 +24,7 @@
   context: Publicly available on TestFlight
   list:
     ## FIX: somehow get this from general.yml?
-    - title: Version 1.0.8 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: Version 1.0.9 <a href="/blog/">change-log</a> ## Pull version number from .yml
     - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
     - title: <a href="/support/#XsYY">Dedicated native application</a>
     ##- title: Tiny app size ~26MB
@@ -40,7 +40,7 @@
   context: In development
   list:
     ## FIX: somehow get this from general.yml?
-    - title: Version 1.0.8 <a href="/blog/">change-log</a> ## Pull version number from .yml
+    - title: Version 1.0.9 <a href="/blog/">change-log</a> ## Pull version number from .yml
     - title: <a href="/support/#7mlp">Zero third-party SDK's</a>
     - title: <a href="/support/#XsYY">Dedicated native application</a>
     ##- title: Tiny app size ~27MB
