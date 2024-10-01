@@ -1,4 +1,5 @@
 # sentry.co
+
 Website for sentry.co
 
 ### General information
@@ -31,7 +32,6 @@ Website for sentry.co
 `css` has styles (styling)
 `assets` has svgs etc (images, svg etc)
 `legal` add doc for this
-
 
 ### Media queries:
 - Using **600px** as a breakpoint for a responsive media query is a common practice. However, it ultimately depends on the design and layout of your website. If you have a lot of content or a complex layout, you may want to consider using a larger breakpoint. Conversely, if your website is simple and has less content, you may be able to use a smaller breakpoint. It's important to test your website on different devices and screen sizes to ensure that it looks good and functions properly.
@@ -79,17 +79,17 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 - Move to github action based jekyll hosting to get paginator v2 which has tagging :yum:
 - Add more responsive breakpoints (laptop and tablet size)
 
-### Now
-- Put the new website online 👈 🏀
+### Now 
 - Make branded vimeo account etc 👈 
 - Add logo to linkedin, post video, remove some old posts, change bio 👈  
 - Add logo, video, Ipad and iphone images to IG (remove old posts), change bio 👈 
 - Add logo to twitter, pin video, remove old posts, change bio 👈
 - Change bio in PH to be more focused 👈 
-- Announce the website on slack and other channels. 
+- Announcement on the slack, change slack avatar and description. 
 
 ### Next
-- launch the website and change logos in SoMe, add video to vimeo. 
+- clean up the todo list in this readme
+- add a bit of padding above blog grid, check with debug colors
 
 ### Later
 - add the part about novel tech stack and patents to the introduction video 🚫 nope
