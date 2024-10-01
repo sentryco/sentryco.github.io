@@ -3,7 +3,7 @@ layout: wrapper
 ---
 <!-- ⚠️️ Fix: We can probably derive the id etc from dynamic values -->
 <main class="front"> <!-- Adds ability to target front page in css -->
-	{% include component/header/header.html %}<!-- we add header from includes -->
-	{{ content }} <!-- The content of the .md file is inserted here -->
-	{% include component/footer/footer.html %} <!-- we add footer from includes -->
+    {% include component/header.html %}
+	{{ content }}
+    {% include component/footer.html %}
 </main>

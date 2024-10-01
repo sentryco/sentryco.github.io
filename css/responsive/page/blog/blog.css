@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    /**
+     * blog-entries
+     */
+    .blog-entries {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: var(--default-horizontal-gap); /*horisontal gap*/
+        row-gap: var(--default-vertical-gap-extra-big); /*vertical gap*/
+    }
+    /**
+     * blog-entry
+     */
+    .blog-entry {
+        flex: 1;
+    }
+    /**
+     * page-indicator
+     */
+    .page-indicator {
+        width: 100%;
+    }
+}

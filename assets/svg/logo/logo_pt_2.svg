@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="84.8528137px" viewBox="0 0 120 84.8528137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-140, -157.5736)">
+            <g id="Group-6" transform="translate(140, 140)">
+                <rect id="Rectangle" x="5.68434189e-14" y="0" width="120" height="120"></rect>
+                <g id="Group-2" transform="translate(0, 0)" fill="#02B193">
+                    <g id="Group-5" transform="translate(-0, 17.5736)">
+                        <path d="M112.927662,14.140794 C117.440741,22.5679573 120,32.1983086 120,42.4264069 C120,58.9949494 113.284271,73.9949494 102.426407,84.8528137 L102.692925,84.5812802 C110.156372,76.8340519 110.148044,64.5512957 102.667942,56.8141889 L102.426407,56.5685425 L60,14.1421356 L112.927662,14.140794 Z" id="Path-Copy"></path>
+                        <path d="M52.9276623,0 C57.4407405,8.42716339 60,18.0575146 60,28.2856129 C60,44.8541554 53.2842712,59.8541554 42.4264069,70.7120198 L42.6929251,70.4404863 C50.1563717,62.693258 50.148044,50.4105018 42.6679421,42.6733949 L42.4264069,42.4277485 L5.68434189e-14,0.00134166634 L52.9276623,0 Z" id="Path-Copy-3" transform="translate(30, 35.356) rotate(-180) translate(-30, -35.356)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

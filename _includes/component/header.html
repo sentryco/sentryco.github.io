@@ -1,0 +1,15 @@
+<!-- Used as the header element in all pages of the site -->
+<header>
+	<div class="left">
+		<!-- Using span with class "logo-header-container" -->
+		<a href="{{ '/' | prepend: site.baseurl }}" class="logo-header-container">
+			<div class="header-logo">
+				<img src="{{ '/assets/svg/logo/logo.svg' | prepend: site.baseurl }}" alt="logo symbol" class="logo-symbol">
+			</div>
+			<h1>Sentry</h1>
+		</a>
+	</div>
+	<div class="right">
+		{% include component/nav.html %}<!-- We use element as include, as we reuse it other places, like the footer -->
+	</div>
+</header><!-- Header end -->

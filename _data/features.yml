@@ -1,24 +1,29 @@
 ## Features data
 ## - Note: Mobile use 2x6 grid, Non-mobile use 4x3 grid
 ## row 1 (non-mobile)
-- title: Offline sync
+- title: Local sync
   svg: refresh-cw.svg
-  text: Sync password data completly offline. (Even works in standby) ## Sync offline. Even works in standby
-  link: "/#ELeo"
+  text: Seamlessly sync your credentials offline. (Even works when devices are in standby) ## Sync offline. Even works in standby. or: Seamlessly sync your credentials offline.
+  link: "/support/#ELeo"
+  state: active
+- title: PassKeys
+  svg: key.svg
+  text: The new standard for authenticating online (coming soon) ## Passkeys (Coming soon)
+  link: "/support/#y6Br"
+  state: inactive
+- title: AutoFill
+  svg: unlock.svg #lock.svg or log-in.svg
+  text: Supports Safari and most other native apps. (One tap auth for login, password and passkeys) ## AutoFill in safari and applications
+  link: "/support/#Yc6X"
   state: active
 - title: Secure sharing
-  svg: share-2.svg
-  text: Quickly share password data with someone else (Secured by E2EE) ## Quickly share account info
+  svg: share.svg #share-2.svg
+  text: Send credentials offline to someone else (Secured by E2EE and rolling pin codes) ## Quickly share account info
   link: "/support/#pR42"
-  state: active
-- title: AutoFill
-  svg: log-in.svg
-  text: AutoFill in your favourite apps and browsers. (Supports one tap) ## AutoFill in safari and applications
-  link: "/support/#Yc6X"
   state: active
 - title: History
   svg: calendar.svg
-  text: Roll back any unintended password change that might occure ## Roll back any account change
+  text: Roll back any unintended changes to your credentials, made on any device ## Roll back any account change
   link: "/support/#yR78"
   state: active
 ## row 2 (non-mobile)
@@ -27,38 +32,21 @@
   text: 2FA One-time-password support for TOTP and HTOP (URL or QR) ## Full 2FA support TOTP / HTOP
   link: "/support/#TcKa"
   state: active
+- title: Pin code
+  svg: shield.svg
+  text: Add an optional pin-code. Can be added alongside other security measures ## Authenticate with your own password
+  link: "/support/#oxy4"
+  state: active
 - title: Biometry
   svg: eye.svg
   text: Authenticate access to the app biometrically with (Face-ID / Touch-ID) ## Authenticate with Face-ID / Touch-ID
   link: "/support/#qx5A"
   state: active
-- title: Master key
-  svg: key.svg
-  text: Use your own custom master-password to secure access to the app ## Authenticate with your own password
-  link: "/support/#rhd2"
+- title: Backup
+  svg: database.svg
+  text: Data is backed up on every device you own. Also supports usb-disks / cloud. ## Authenticate with your own password
+  link: "/support/#1Sfm"
   state: active
-## - title: iPadOS support
-##   svg: tablet.svg
-##   text: Dedicate native support for iPadOS is currently in development ## iPadOS support (Coming soon)
-##   state: inactive
-## row 3 (non-mobile)
-- title: Passkeys
-  svg: lock.svg
-  text: A custom and more secure implementation of PassKeys is coming soon ## Passkeys (Coming soon)
-  link: "/support/#y6Br"
-  state: inactive
-## - title: Chrome support
-##   svg: chrome.svg
-##   text: macOS Chrome browser support for AutoFill is coming soon ## Chrome extension (Coming soon)
-##   state: inactive
-## - title: Android support
-##   svg: smartphone.svg
-##   text: Native support for Android mobile and table is on our roadmap
-##   state: inactive
-## - title: Windows support
-##   svg: monitor.svg
-##   text: Native Windows support is coming later when our resources free up
-##   state: inactive
 ##- title: Auto Backup
 ##  svg: database.svg
 ##  text: Auto backup (Coming soon)

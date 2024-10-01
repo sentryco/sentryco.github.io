@@ -3,26 +3,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ⚠️️ What does this do again? -->
 	<!-- Meta-data -->
-	<meta name="keywords" content="Credential-manager, password-manager, passwords, credentials">
+	<meta name="keywords" content="Credential-manager, password-manager, passwords, credentials, authentication, self-so, open-source, privacy, security, encryption">
 	<meta name="author" content="Sentry">
 	<meta name="description" content="Offline credential manager"><!-- ⚠️️ Might not be needed as we define it in config.yml too -->
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title><!-- use site title if page title is not available -->
-	<!-- FavIcon -->
-	<link rel="icon" type="image/svg+xml" href="/assets/svg/favicon.svg">
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ '/css/site.css' | prepend: site.baseurl }}"><!--  we prepend base url so we have a common root -->
-	<!-- Google fonts start - Fix: add fonts as its own include? -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- Monteserrat  -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<!-- OpenSans -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<!-- Roboto -->
-	<!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">-->
-	<!-- Lato -->
-	<!--<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">-->
-	<!-- Google fonts end -->
-	<!-- Add the GA and crisp bot here -->
+	<!-- script -->
 	{% include component/script.html %}<!-- We have to reference relativly to root of _includes -->
 </head>

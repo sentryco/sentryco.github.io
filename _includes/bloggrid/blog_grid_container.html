@@ -1,0 +1,13 @@
+<!-- blog grid container  -->
+<div class="blog-entries"> <!-- Column list -->
+    {% for post in paginator.posts %} <!-- This loops through the paginated posts -->
+    <a href="{{ post.url }}" class="blog-entry">
+        <h3>{{ post.title }}</h3><!-- title -->
+        <div  class="text"">
+            <p>{{ post.excerpt }}</p><!-- text -->
+        </div>
+        <p class="date">{{ post.date | date_to_string }}</p><!-- date -->
+        <!-- <div class="link">Read more</div> -->  <!-- Read more link  -->
+    </a>
+    {% endfor %}
+</div><!-- End of blog_grid_container -->

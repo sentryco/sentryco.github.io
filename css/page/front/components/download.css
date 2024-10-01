@@ -1,0 +1,51 @@
+/**
+ * Styles for download section at the bottom of the front page
+ * - Description: has download-button and disclaimer
+ */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--default-vertical-padding-big); /* Adds padding above the text */
+    padding-bottom: var(--default-vertical-padding-big);
+    /* Ensure the full height is used for vertical centering, adjust as needed */
+    height: 100%;
+    margin: 0 auto; /* Centers the element horizontally */
+    /*Fix: ⚠️️ move to const*/
+    background-color: var(--foreground-color-alt); /* ⚠️️ debug -Changed to a darker gold tone */
+    /*background-color: var(--debug-bg-24);*/  /* ⚠️️ debug */
+    border-radius: var(--standard-border-radius);
+}
+/**
+ * Disclaimer
+ */
+.disclaimer {
+    color: var(--primary-medium);
+    text-align: center; /* Centers the text and the button horizontally */
+    font: var(--font-default-m-alt);
+    padding-top: var(--default-vertical-padding-small); /* Adds padding above the text */
+    padding-bottom: var(--default-vertical-padding-small); /* Adds padding below the text */
+}
+/**
+ * Download button 
+ * - Fix: ⚠️️ Reuse more button style with top buttons?
+ */
+.download-button {
+    text-align: center; /* Centers the text and the button horizontally */
+    display: inline-block; /* Ensures the element respects padding and border-radius */
+    padding: var(--default-horizontal-padding) calc(2 * var(--default-vertical-padding-big)); /* Adjust padding to ensure there's space around the text */
+    /*fix: ⚠️️ use 50% instead of 50px */
+    border-radius: 50px; /* High border-radius for a capsule shape */
+    color: var(--accent-color);
+    text-decoration: none; /* Removes underline from links */
+    background-color: var(--debug-bg-12);  /* ⚠️️ debug */
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+    font: var(--font-secondary-m);
+    margin-top: var(--default-vertical-padding-small); /* Adds 10px space above the paragraph */
+    margin-bottom: var(--default-vertical-padding-small); /* Adds 10px space below the paragraph */
+}
+.download-button:hover {
+    color: var(--primary);
+    box-shadow: inset 0 0 0 2px var(--primary);
+}

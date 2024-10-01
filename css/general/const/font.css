@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+/**
+ * Font-family styles
+ */
+ :root {
+    /*p, nav,*/
+	--font-family-default: 'IBM Plex Sans', sans-serif; /*'Helvetica', 'Arial', sans-serif*/
+    /*h1, h2, h3*/
+	--font-family-primary: 'Montserrat', sans-serif; /* Consider using: bodoni (its similar to MOntserrat) */
+	/*btn*/
+	--font-family-secondary: 'Source Sans Pro', sans-serif; /* was: 'Open Sans', sans-serifhelvetica neue could also be used (OpenSans issimilar in style to Montserrat, but has a slightly softer look. Closer to helvetica.)*/
+}
+/**
+ * Font-weight styles (normal, bold, etc)
+ */
+:root {
+    --font-family-default-weight: 400; /*p, nav,*/
+    --font-family-primary-weight: 700;  /*h1, h2, h3*/
+    --font-family-secondary-weight: 400; /*btn*/
+}
+/**
+ * Font size styles (xxxs, xxs, xs, s, m, l, xl, xxl, xxxl)
+ */
+ :root {
+    --font-xxxxxl: 80px;
+    --font-xxxxl: 48px;
+    --font-xxl: 32px;
+    --font-xl: 28px;
+    --font-l: 24px;
+	--font-m: 20px;
+    --font-m-alt: 18px;
+	--font-s: 16px;
+}
+/**
+ * Font packs (weight, size, font-family) (xxxs, xxs, xs, s, m, l, xl, xxl, xxxl)
+ */
+ :root {
+    /* default - p, nav,*/
+    --font-default-s: var(--font-family-default-weight) var(--font-s) var(--font-family-default);
+    --font-default-m: var(--font-family-default-weight) var(--font-m) var(--font-family-default);
+    --font-default-m-alt: var(--font-family-default-weight) var(--font-m-alt) var(--font-family-default);
+    --font-default-l: var(--font-family-default-weight) var(--font-l) var(--font-family-default);
+    --font-default-xl: var(--font-family-default-weight) var(--font-xl) var(--font-family-default);
+    /* primary - h1, h2, h3*/
+    --font-primary-s: var(--font-family-primary-weight) var(--font-s) var(--font-family-primary);
+    --font-primary-m: var(--font-family-primary-weight) var(--font-m) var(--font-family-primary);
+    --font-primary-l: var(--font-family-primary-weight) var(--font-l) var(--font-family-primary);
+    --font-primary-xl: var(--font-family-primary-weight) var(--font-xl) var(--font-family-primary);
+    --font-primary-xxl: var(--font-family-primary-weight) var(--font-xxl) var(--font-family-primary);
+    --font-primary-xxxxl: var(--font-family-primary-weight) var(--font-xxxxl) var(--font-family-primary);
+    --font-primary-xxxxxl: var(--font-family-primary-weight) var(--font-xxxxxl) var(--font-family-primary);
+    /* secondary - btn*/
+    --font-secondary-s: var(--font-family-secondary-weight) var(--font-s) var(--font-family-secondary);
+    --font-secondary-m-alt: var(--font-family-secondary-weight) var(--font-m-alt) var(--font-family-secondary);
+    --font-secondary-m: var(--font-family-secondary-weight) var(--font-m) var(--font-family-secondary);
+    --font-secondary-l: var(--font-family-secondary-weight) var(--font-l) var(--font-family-secondary);
+}

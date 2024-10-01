@@ -1,0 +1,48 @@
+/**
+ * Same as .blog-entry
+ */
+ .blog-entries > * {
+    border-radius: var(--standard-border-radius); /* Adds rounded corners to each child within the grid */
+}
+/**
+ * Single blog entries in the blog grid
+ * - Fix: ⚠️️ We will use grid later (from legacy), so no need to perfect flex %
+ */
+ .blog-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--foreground-color-alt); /* ⚠️️ debug - color for the container */
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    padding-left: var(--default-horizontal-padding-small);
+    padding-right: var(--default-horizontal-padding-small);
+}
+/**
+ * Blog entry h3
+ */
+.blog-entry h3 {
+    padding-bottom: var(--default-vertical-padding-small); /* Padding below the heading */
+    color: var(--primary-lower);
+    font: var(--font-primary-l);
+}
+/**
+ * blog entry p
+ */
+.blog-entry .text p {
+    padding-bottom: var(--default-vertical-padding-small); /* Padding below the paragraph */
+    color: var(--primary-medium); /* White color with 0.5 opacity */
+    font: var(--font-default-m-alt);
+    background-color: var(--debug-bg-3); /* ⚠️️ debug */
+}
+/**
+ * blog entry date element
+ */
+.blog-entry p.date {
+    margin-top: auto; /* Pushes the date to the bottom */
+    color: var(--primary-medium);
+    font: var(--font-default-m-alt);
+    padding-bottom: var(--default-vertical-padding-small);
+}

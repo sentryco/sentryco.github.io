@@ -1,0 +1,13 @@
+<!-- Feature grid item fix: rename to feature_item.html -->
+<!-- fix: ⚠️️ more descriptive class names for the div elements, such as feature-item, feature-icon, feature-title, and feature-text, -->
+<!-- fix: ⚠️️ rename to top-item? -->
+<a href="{{ feature.link }}" class="top-column" id="{{feature.state}}"><!-- Feature item -->
+	<div class="circle-icon"><!-- Feature icon -->
+		<img src="assets/svg/{{feature.svg}}" class="icon">
+	</div>
+    <div class="content">
+        <h3>{{feature.title}}</h3> <!-- Feature title -->
+        <p>{{feature.text}}</p><!-- Feature text -->
+    </div>
+    <div class="learn-more">Learn more</div>
+</a><!-- End of feature item -->

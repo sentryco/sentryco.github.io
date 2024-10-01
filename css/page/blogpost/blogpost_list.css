@@ -1,0 +1,25 @@
+/**
+ * Lists in a blog post
+ */
+ main.blogpost .container li {
+	background-color: var(--debug-bg-8);
+	font: var(--font-default-s);
+	line-height: 1.6;
+	color: var(--primary-low);
+	text-align: left;
+}
+main.blogpost .container ul {
+	background-color: var(--debug-bg-14);
+	padding-top: 0;
+	padding-right: var(--default-horizontal-padding);
+	padding-bottom: var(--default-vertical-padding-small);
+	padding-left: var(--default-horizontal-padding);
+	list-style: disc;
+	list-style-position: inside;
+}
+main.blogpost .container ol {
+	background-color: var(--debug-bg-15);
+	padding: var(--default-vertical-padding) var(--default-horizontal-padding);
+	list-style: decimal;
+	list-style-position: inside;
+}

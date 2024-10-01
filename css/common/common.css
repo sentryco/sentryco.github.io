@@ -1,0 +1,5 @@
+/*
+ * Common for all pages
+ */
+@import "components/header.css"; /*top bar with logo and nav*/
+@import "components/footer.css"; /*the bottom bar with social media and copyright*/

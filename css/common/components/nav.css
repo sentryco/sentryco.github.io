@@ -1,0 +1,45 @@
+/**
+ * Nav container of ul (⚠️️ not really needed ⚠️️)
+ */
+header nav {
+    background-color: #111; /* ⚠️️ debug -  background color added */
+    background-color: var(--debug-bg-27);  /* ⚠️️ debug */
+}
+/**
+ * Nav ul (has list items)
+ */
+header nav ul {
+    display: flex; /* Makes the ul a flex container */
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    gap: var(--default-vertical-gap); /* Adds spacing between each li item using gap instead of margin */
+}
+/**
+ * Nav ul li
+ */
+ header nav ul li {
+    background-color: #161616; /* Default red background for debugging */
+    background-color: var(--debug-bg-30);  /* ⚠️️ debug */
+    color: var(--primary); /* Sets the text color to white */
+}
+/**
+ * Nav ul li a (link)
+ */
+header nav ul li a {
+    color: var(--primary); /* Ensures text color of links is white */
+    font: var(--font-default-s);
+    text-decoration: none; /* Removes underline */
+    color: var(--primary-medium);
+}
+/**
+ * When a page is in focus -> Nav item text is highlighted
+ */
+header nav ul li a.active {
+    color: var(--primary);
+}
+/**
+ * On hover
+ */
+ header nav ul li a:hover {
+	color: var(--primary); /*--primary-low*/
+}

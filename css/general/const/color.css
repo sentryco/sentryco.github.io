@@ -1,0 +1,50 @@
+/*
+https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#system-colors
+body {
+  background-color: var(--dark-blue);
+}
+*/
+:root {
+/*dark - https://gist.github.com/lithammer/e9e68c131297c3158a654c0fdfc4111a */
+  --dark-gray-1: #8E8E93;
+  --dark-gray-2: #636366;
+  --dark-gray-3: #48484A;
+  --dark-gray-4: #3A3A3C;
+  --dark-gray-5: #2C2C2E;
+  --dark-gray-6: #1C1C1E;
+  /*light*/
+  --light-gray-1: #8E8E93;
+  --light-gray-2: #AEAEB2;
+  --light-gray-3: #C7C7CC;
+  --light-gray-4: #D1D1D6;
+  --light-gray-5: #E5E5EA;
+  --light-gray-6: #F2F2F7;
+}
+/**
+ * Color - common among styles (allows linking)
+ * - Note: Theme colors - more on wikipedia webcolors: https://en.wikipedia.org/wiki/Web_colors
+ * - Note: Monochrome color theme - chromax, chromatic
+ */
+ :root { 
+	/* General colors */
+	--clear-color: rgba(0,0,0,0); /* clear - used for debugging   */
+	/* Primary whites */
+	--primary: rgba(255, 255, 255, 1.0);
+	--primary-lower: rgba(255, 255, 255, 0.9);
+	--primary-low: rgba(255, 255, 255, 0.8);
+	--primary-medium: rgba(255, 255, 255, 0.6);
+	--primary-high: rgba(255, 255, 255, 0.4);
+	--primary-higher: rgba(255, 255, 255, 0.2);
+	/* Secondary - blacks*/
+	--secondary: rgba(0, 0, 0, 1);
+	--secondary-lower: rgba(0, 0, 0, 0.9);
+	--secondary-low: rgba(0, 0, 0, 0.8);
+	--secondary-medium: rgba(0, 0, 0, 0.6);
+	--secondary-high: rgba(0, 0, 0, 0.4);
+	--secondary-higher: rgba(0, 0, 0, 0.2);
+	/* Accent */
+	--accent-color: #50ffa8; /*#6F7BF7*/ /* Fix rename to accent etc */
+	--foreground-color: rgb(20, 20, 20); /* background color for elements */
+	--foreground-color-alt: rgb(12, 12, 12); /* background color for elements */
+	--background-color: rgb(10, 7, 7); /* text color for site */
+}

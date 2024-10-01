@@ -1,0 +1,64 @@
+@import "faq_item_top.css";
+@import "faq_item_bottom.css";
+/** 
+ * Faq
+ */
+ .faq {
+    /*width: var(--page-width);*/ /* Sets the width to 60% of its container */
+    margin: 0 auto; /* Centers the element horizontally */
+    display: flex; /* Ensures the container is a flex container */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    flex-direction: column; /* Stacks children vertically */
+    /*background-color: #040404;*/ /* ⚠️️ debug - Medium gray color for debugging */
+    background-color: var(--debug-bg-6); /* ⚠️️ debug */
+}
+/**
+ * Has all the faq sections
+ */
+ .faq-container {
+    flex-direction: column;
+    /*gap: 6px;*//**/ /* Sets the gap between each FAQ item */
+    width: 100%; /* Sets the width to 100% of its container */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;/**/ /* Sets the gap between each FAQ item */
+   /* background-color: #0e0e0e;*/ /* ⚠️️ debug -Changed to a darker gold tone */
+    /*background-color: var(--debug-bg-7);*/ /* ⚠️️ debug */
+    /**/
+}
+/**
+ * section-header
+ * - Description: The header for each section of the FAQ
+ */
+.faq-section h2.section-header {
+    /*font-family: var(--h1_font);
+    font-weight: var(--h1_font_weight);*/
+    /*font-size: 28px;*/ /* Increase font size for h2 */
+    font: var(--font-primary-xl);
+    text-align: left; /* Align text to the left */
+    background-color: rgb(20, 20, 20);
+    background-color: var(--debug-bg-8); /* ⚠️️ debug */
+    text-align: left; /* Aligns the question text to the left */
+    color: white;
+    padding-left: var(--default-horizontal-padding); /* Added top, right, bottom, and left padding */
+    padding-right: var(--default-horizontal-padding);
+   /* padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);*/
+}
+.faq-section .header_text {
+    font: var(--font-default-m);
+    text-align: left; /* Aligns the question text to the left */
+    color: var(--primary-medium);
+    padding-left: var(--default-horizontal-padding); /* Added top, right, bottom, and left padding */
+    padding-right: var(--default-horizontal-padding);
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+}
+.faqs {
+    background-color: var(--foreground-color-alt);
+    border-radius: var(--standard-border-radius);
+}
+.faq-item {
+    list-style: none;
+}

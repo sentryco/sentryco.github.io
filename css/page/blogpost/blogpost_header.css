@@ -1,0 +1,13 @@
+/**
+ * Date
+ */
+.blog_post_date {
+	background-color: var(--debug-bg-30);
+	width: auto;
+	height: auto;
+	padding: 24px;
+	/* Styling */
+	text-align: center;
+	color: var(--primary-medium);
+	font: var(--font-default-s); /* font size and weight */
+}

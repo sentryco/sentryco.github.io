@@ -1,0 +1,8 @@
+@media screen and (max-width: 600px) {
+    /**
+	 * Blog-post
+	 */
+    main.blogpost .container {
+        width: 100%;
+    }
+}

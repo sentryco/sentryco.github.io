@@ -2,11 +2,12 @@
 layout: wrapper
 ---
 <main class="blogpost">	<!-- Adds ability to target blogpost page in css -->
-	{% include component/header/header.html %}<!-- We add header from includes -->
-	<div class="page" id="post"> <!-- Blog post page -->
-		{% include component/blog_post/blog_post_header.html %} <!-- Blog post header  -->
+    {% include component/header.html %} <!-- we add header from includes -->
+	{% include blogpost/blog_post_header.html %} <!-- Blog post header  -->
+    <!-- Container -->
+	<div class="container"> <!-- Fix: ⚠️️ Rename to something specific -->
 		{{ content }} <!-- Adds the markdown content -->
-		{% include component/blog_post/blog_post_footer.html %} <!-- Blog post footer -->
+		{% include blogpost/blog_post_footer.html %} <!-- Blog post footer -->
 	</div>
-	{% include component/footer/footer.html id="footer" %} <!-- Adds the site footer -->
+	{% include component/footer.html id="footer" %} <!-- Adds the footer -->
 </main>

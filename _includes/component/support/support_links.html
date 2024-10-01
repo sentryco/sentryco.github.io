@@ -1,6 +1,0 @@
-<!-- Support links component (horizontal) -->
-<div class="faq_type"> <!-- Overview of avilable sub-category-faqs -->
-    {% for category in site.data.support %} <!-- Makes links of site categories: Security - Network - Data - 2FA - Privacy - Misc -->
-        <a href="#{{category.title}}">{{category.title}}</a> {% if forloop.last == false %} &nbsp;-&nbsp; {% endif %} <!-- add binding stroke after each link unless its at end, the forloop.last makes sure to not append binding stroke to last item-->
-    {% endfor %}
-</div>

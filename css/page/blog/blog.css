@@ -1,0 +1,21 @@
+@import "blog_entry.css";
+@import "blog_button.css";
+@import "blog_indicator.css";
+/**
+ * - Description: Pins the container to the center of the page
+ * - 1. align date element to the bottom. 
+ * - 2. keep the height of each element in the blog-entries the same, as the biggest item. 
+ * - 3. the desired outcome is to have date align to other dates in other blog-entries
+ */
+.blog-entries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row, each of equal size */
+    gap: var(--default-horizontal-gap-big); /* 24px gap both vertically and horizontally */
+    justify-content: space-between;
+    align-items: stretch; /* This will make all children of .blog-entries the same height */
+    /*width: var(--page-width);*/ /* Sets the width to 60% of its container */
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: var(--debug-bg-7); /* Consolidated background color */
+    padding-left: var(--default-horizontal-padding); /* adds the default padding to the left */
+    padding-right: var(--default-horizontal-padding); /* adds the default padding to the right */
+}

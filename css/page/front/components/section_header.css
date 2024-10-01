@@ -1,0 +1,48 @@
+/**
+ * section header container - represents the header above feature and download containers
+ */
+section.header-container {
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: var(--debug-bg-8);  /* ⚠️️ debug */
+}
+/**
+ * Header section
+ */
+section.header-container .header-section {
+    display: block;
+    padding-top: var(--default-vertical-padding-big);
+    padding-bottom: var(--default-vertical-padding-big);
+    background-color: #0c0c0c; /* ⚠️️ debug - color added */
+    background-color: var(--debug-bg-9); /* ⚠️️ debug */
+}
+/**
+ * h1 - headline
+ */
+section.header-container .header-section h1 {
+    padding-top: var(--default-vertical-padding-small);
+    background-color: var(--foreground-color-alt); /* ⚠️️ debug - Tomato red background for download title */
+    background-color: var(--debug-bg-10);  /* ⚠️️ debug */
+    text-align: center;
+    font-size: xx-large;
+    font: var(--font-primary-xxl);
+}
+/**
+ * p
+ */
+section.header-container .header-section p {
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    color: var(--primary-medium);
+    background-color: var(--debug-bg-11);  /* ⚠️️ debug */
+    max-width: 700px;
+    margin: 0 auto;
+    font: var(--font-default-m-alt);
+    text-align: center;
+}
+/**
+ * white link
+ * - Fix: ⚠️️ Add more specificity 
+ */
+section.header-container a.white-link {
+    color: var(--primary-medium);
+}

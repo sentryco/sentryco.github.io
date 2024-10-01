@@ -1,0 +1,55 @@
+/**
+ * Footer
+ */
+ @media screen and (max-width: 600px) {
+	/**
+     * footer
+     */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;  /*arrange horisontally*/
+        align-items: center; /* might not be needed*/
+        justify-content: center;  /*overrode default, might not be needed*/
+    }
+    /**
+     * left and right (common)
+     */
+    footer .left, footer .right {
+        width: 100%;
+    }
+    /**
+     * left
+     */
+    footer .left {
+        justify-content: center; 
+        padding-left: unset; /*override default*/
+    }
+    /**
+     * right
+     */
+    footer .right {
+        justify-content: center;  
+        padding-right: unset; /*override default*/
+    }
+    /**
+    * Left footer text
+    */
+    footer .left p {
+        font: var(--font-default-m);
+    }
+    /**
+     * SoMe icons
+     */
+    .social-media-icons {
+        display: flex;
+        flex-direction: row;  /* arrange children horizontally */
+    }
+    .social-media-icons .icon {
+
+        width: 45px;
+        height: 45px;
+        /*margin-left: 10px;
+        margin-right: 10px;*/
+    }
+}

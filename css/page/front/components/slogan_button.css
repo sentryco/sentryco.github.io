@@ -1,0 +1,61 @@
+/**
+ * Button container in the slogan
+ */
+.button_container {
+    background-color: var(--debug-bg-13);  /* ⚠️️ debug */
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers children along the row */
+    align-items: center; /* Centers children along the column */
+    flex-direction: row; /* Makes the main-axis horizontal */
+    gap: var(--default-horizontal-gap); /* Adds a 12px gap between the flex items */
+}
+/**
+ * Button font
+ */
+ .button_container > * {
+    font: var(--font-secondary-m-alt);
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+}
+/**
+ * left btn 
+ * - fix: ⚠️️ Rename to primary_action_button
+ */
+a.video_button {
+    padding-left: calc(2 * var(--default-horizontal-padding));
+    padding-right: calc(2 * var(--default-horizontal-padding));
+    background-color: var(--debug-bg-4);  /* ⚠️️ debug */
+    box-shadow: inset 0 0 0 2px var(--primary-high); /* Inner box shadow stroke of 2px that is white opacity 0.8 */
+    color: var(--primary-low); /* White text */
+    text-decoration: none; /* Remove underline from link */
+    /* fix: ⚠️️ probably use % for the border radius ? 50%? */
+    border-radius: 999px; /* Rounded corners like a capsule */
+}
+/**
+ * Hover state for video button
+ */
+a.video_button:hover {
+    text-decoration: none; /* Remove underline from link */
+    color: var(--primary);
+    box-shadow: inset 0 0 0 2px var(--primary-low);
+}
+/**
+ * Right btn 
+ * - fix: ⚠️️ Rename to feature_download_button? or secondary_action_button
+ */
+a.app_store_button {
+    display: inline-block; /* Ensures the element respects padding and border-radius */
+    padding-left: calc(2 * var(--default-horizontal-padding));
+    padding-right: calc(2 * var(--default-horizontal-padding));
+    /*- fix: ⚠️ use 50% instead of 999px */
+    border-radius: 999px; /* High border-radius for a capsule shape */
+    color: var(--accent-color); /*--dark-suntan-teal*/
+    text-decoration: none; /* Removes underline from links */
+    background-color: var(--debug-bg-5);  /* ⚠️️ debug */
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+    text-align: center; /* Centers the text and the button horizontally */
+}
+a.app_store_button:hover {
+    color: var(--primary);
+    box-shadow: inset 0 0 0 2px var(--primary);
+}

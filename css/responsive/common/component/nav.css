@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+  /**
+    * nav ul (has list items)
+    */
+    header nav ul {
+        display: flex; /* Makes the ul a flex container */
+        flex-direction: row; /* Stacks the children horizontally */
+        align-items: center; /* Centers the children vertically */
+        justify-content: center; /* Centers the children horizontally */
+        list-style: none; /* Removes bullet points from the list */
+        padding: 0; /* Removes default padding */
+        gap: 0px; /*override default*/
+        row-gap: 0px; /*override default*/
+        column-gap: 24px; /*wider spacing for mobile*/
+    }
+    header nav ul li a {
+       font: var(--font-default-xl);
+    }
+}

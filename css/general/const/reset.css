@@ -1,0 +1,8 @@
+ /* CSS Reset */
+ * {
+    margin: 0; /* Remove all margins from all elements */
+    padding: 0; /* Remove all padding from all elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: none; /* Remove borders from all elements */
+    outline: none; /* Remove outlines from all elements */
+}

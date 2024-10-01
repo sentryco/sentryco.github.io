@@ -1,0 +1,76 @@
+/**
+ * Content paragraph / text
+ */
+ main.blogpost .container p {
+	padding-top: var(--default-vertical-padding-small);
+	padding-bottom: var(--default-vertical-padding-small);
+	padding-left: var(--default-horizontal-padding);
+	padding-right: var(--default-horizontal-padding);
+	background-color: var(--debug-bg-7);
+	font: var(--font-default-s); /* font size and family */
+	color: var(--primary-medium);
+	text-align: left;
+	line-height: 1.6;
+}
+/**
+ * Post link
+ */
+main.blogpost .container a {
+	background-color: var(--debug-bg-8);
+	text-decoration: underline;
+	color: var(--primary-low); 
+}
+/**
+ * Image
+ */
+main.blogpost .container img {
+	margin: 0;
+	width: 100%; 
+	height: auto;
+	margin-top: var(--default-vertical-padding-small); /* 12px */
+	margin-bottom: var(--default-vertical-padding-small); /* 12px */
+	margin-left: 0;
+	margin-right: 0;
+	/* Styling */
+	background-color: var(--debug-bg-9);
+	display: block;
+}
+/**
+ * Styling for the 'read' ID within h3 tags in the main blogpost container.
+ * This style applies a specific background color, aligns text to the left,
+ * sets the text color, font properties, and left margin.
+ */
+ main.blogpost .container h3 #read {
+	background-color: var(--debug-bg-4);
+	text-align: left;
+	color: var(--primary-high);
+	font: var(--font-default-s); /* font weight and size */
+	margin-left: var(--default-horizontal-padding-small);
+}
+/**
+ * H3 styling markdown -> ###
+ */
+main.blogpost .container h3 {
+	background-color: var(--debug-bg-29);
+	padding-top: var(--default-vertical-padding-small);
+	padding-bottom: var(--default-vertical-padding-small);
+	padding-left: var(--default-horizontal-padding);
+	padding-right: var(--default-horizontal-padding);
+	/* Styling */
+	text-align: left;
+	color: var(--primary-low);
+	font: var(--font-default-s) /* font weight and size */
+}
+/**
+ * Sub header from markdown
+ */
+main.blogpost .container h2 {
+	background-color: var(--debug-bg-28);
+	padding-top: var(--default-vertical-padding-small);
+	padding-bottom: var(--default-vertical-padding-small);
+	padding-left: var(--default-horizontal-padding);
+	padding-right: var(--default-horizontal-padding);
+	color: var(--primary-low);
+	text-align: left;
+	font: var(--font-primary-l); /* font weight and size */
+}

@@ -18,48 +18,44 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sentry - Offline credential manager # fix: rop the description or?
-email: email@example.com
+title: Your awesome title # Title of the site, displayed in browser tabs and SEO titles
+email: andre@sentry.co # Public contact email, displayed in the site footer or contact page
 description: >- # this means to ignore newlines until "baseurl:"
-  Store and sync passwords offline. Available for iOS and macOS with support for more platforms coming soon.
+  Self-Sovereign Authentication and Password Management
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sentry.co" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: "<!--more-->"  #global excerpt separator for the blog posts
-permalink: pretty
-twitter_username: sentrydotco
-github_username:  sentrydotco
+permalink: pretty # permalink: This sets the permalink style for your posts/pages. 'pretty' means URLs will be built like /year/month/day/title/
+twitter_username: sentrydotco # twitter_username: Your Twitter username. This will be used in the social links section of your site.
+github_username:  sentrydotco # github_username: Your GitHub username. This will be used in the social links section of your site.
 
 # Build settings
-## theme: minima
+# theme: minima # ⚠️️ Comment this one out soon, we dont use a theme
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
+  - jekyll-feed # This plugin generates an Atom (RSS-like) feed of your Jekyll posts
+  - jekyll-paginate # This plugin provides traditional pagination for your Jekyll blog posts
   ##- jekyll-paginate-v2
 
 # Blog
-defaults:
+defaults: # Default settings for various aspects of your site
   -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
+    scope: # Defines the scope for which the default settings apply
+      path: "" # an empty string here means all files in the project. This sets the scope to all files.
+      type: "posts" # previously `post` in Jekyll 2.2. This specifies the type of documents within the scope.
+    values: # Values to apply within the defined scope.
       layout: "blogpost" ## Path to template used for blog-posts, not the blog overview
 
 # Extra
-andre:
- name: André J
- email: andre@sentry.co
- web: http://www.twitter.com/eoncodes
+andre: # The following lines define the contact information for André J
+ name: André J # Name of the contact person
+ email: andre@sentry.co # Email address of the contact person
+ web: http://www.twitter.com/eoncodes # Website or social media link of the contact person
 
 # Paginate:
-gems: [jekyll-paginate]
-paginate: 9
+gems: [jekyll-paginate] # This line includes the jekyll-paginate gem which is used for pagination in Jekyll.
+paginate: 6 # This line sets the number of posts per page to 6.
 paginate_path: "blog/page:num/" ##"page:num"
-## gems: [jekyll-paginate]
-##paginate: 6
-##paginate_path: "/page:num/" ## was "/blog/page:num/"
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

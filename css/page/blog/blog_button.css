@@ -1,0 +1,21 @@
+/**
+ * Prev and next btn
+ */
+ .prev-button, .next-button {
+    background-color: var(--debug-bg-8); /* ⚠️️ debug */
+    /* Padding to increase button size */
+    padding-left: var(--default-horizontal-padding-small);
+    padding-right: var(--default-horizontal-padding-small);
+    padding-top: var(--default-vertical-padding-extra-small);
+    padding-bottom: var(--default-vertical-padding-extra-small);
+    font: var(--font-secondary-m-alt);
+    color: var(--primary-high); /*--primary-low*/
+}
+/**
+ * Page indicator button link text (next and prev buttons)
+ * - Note: Shown when there is a page to navigate to
+ */
+ .page-indicator a {
+    color: var(--primary); /*dark-suntan-teal*/
+    background-color: var(--debug-bg-10); /* ⚠️️ debug */
+}

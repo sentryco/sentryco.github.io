@@ -1,0 +1,58 @@
+/**
+ * - fix: ⚠️️ Do overrides here with liquid expands etc
+ */
+@import "common/common.css";
+/**
+ * Pages
+ */
+{% if page.title == 'About' %} /* Only import if page is about */
+@import "page/about/about.css";/* import about css here */
+{% else if page.title == 'Support' %}
+@import "page/support/support.css";/* import support css here */
+{% else if page.title == 'Blog' %}
+@import "page/blog/blog.css"; /* import blog css here */
+{% else %}
+@import "page/front/front.css";
+@import "page/blog/blogpost.css";/* This is here because we can't target via title yet */
+{% endif %}
+
+/**
+ * Default
+ */
+@media screen and (max-width: 600px) {
+	/**
+	 * Documentation for Responsive Overrides
+	 * - This section contains CSS rules that apply for screens with a maximum width of 600px.
+	 * - These rules are intended to enhance the mobile user experience by adjusting layout, spacing, and other responsive behaviors.
+	 */
+	html {
+		width: 100%;
+		max-width: 600px;
+		min-width: 100%; /* Ensures that the minimum width of the html element is the full width of the viewport, preventing any smaller rendering size. */
+		margin: auto;
+	}
+	/**
+	 * Documentation for Responsive Overrides
+	 * - This section contains CSS rules that apply for screens with a maximum width of 600px.
+	 * - These rules are intended to enhance the mobile user experience by adjusting layout, spacing, and other responsive behaviors.
+	 */
+	body {
+		width: 100%;
+		margin: auto;
+		max-width: 600px; /* Maximum width for non-mobile devices */
+	    min-width: 100%;/* Minimum width for non-mobile devices */
+		padding-left: var(--default-horizontal-padding-small); /* Adds spacing on the left of all content */
+		padding-right: var(--default-horizontal-padding-small); /* Adds spacing on the right of all content */
+	}
+	/**
+	 * Documentation for Additional Responsive Overrides
+	 * - This section is intended to provide further modifications specifically for elements that have not been covered above.
+	 * - The focus is on ensuring that all components of the website provide a seamless and accessible user experience on mobile devices.
+	 */
+	main {
+		min-width: 100%;
+		width: 100%;
+		padding-left: var(--default-horizontal-padding-small);
+		padding-right: var(--default-horizontal-padding-small);
+	}
+}

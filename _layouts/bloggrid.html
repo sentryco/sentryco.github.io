@@ -1,18 +1,20 @@
 ---
 layout: wrapper
 ---
-<!--fix: Use the list based blog grid from the astro template (with img excerpt) (blg is gd validator) -->
-<!-- ⚠️️ Fix: We can probably derive the id etc from dynamic values, 
-	it's uppercase atm so you will have to change the css for that to work -->
+<!-- Fix: ⚠️️ Use the list based blog grid from the astro template (with img excerpt) (blg is gd validator) -->
+<!-- Fix: ⚠️️ We can probably derive the id etc from dynamic values, it's uppercase atm so you will have to change the css for that to work -->
 <main class="blog"> <!-- Adds ability to target download page in css -->
-	{% include component/header/header.html %} <!-- we add header from includes -->
+	{% include component/header.html %} <!-- we add header from includes -->
 	<!-- This exists because it's easier to work with modules, even tho this module is only used on place -->
-	<div class="page" id="blog"><!-- Blog page -->
-		<h1>Blog</h1>
-		<div class="top_paginator_container"><!-- for desktop website -->
-			{% include component/blog_grid/blog_paginator.html %} <!-- Adds the paginator navigation component -->
-		</div>
-		{% include component/blog_grid/blog_grid_container.html %} <!-- Blog grid container -->
-	</div><!-- End of page -->
-	{% include component/footer/footer.html id="footer" %} <!-- adds the footer -->
+	<!-- Slogan-->
+	<!-- Fix: ⚠️️ Move this to markdown? -->
+	<div class="slogan"> 
+		<h1>Stay tuned for product news and updates</h1>
+		<!-- fix: ⚠️️ Rename to blog-control-container ? -->
+	</div>
+	<!-- Blog entries container -->
+	<!-- Fix: ⚠️️ Maybe make UL LI ? -->
+	{% include bloggrid/blog_grid_container.html %} <!-- Blog grid container -->
+	{% include bloggrid/blog_paginator.html %} <!-- Adds the paginator navigation component -->
+	{% include component/footer.html id="footer" %} <!-- adds the footer -->
 </main>

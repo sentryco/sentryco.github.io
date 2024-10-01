@@ -1,0 +1,11 @@
+/* Existing styles */
+body {
+    background-color: var(--background-color); /*subtle near black*/
+    color: var(--primary); /* Sets the default text color to white */
+    font-size: 16px; /* Define a base font size if not already defined */
+}
+main {
+    min-width: 1024px;
+    width: 70%;
+    margin: 0 auto;
+}

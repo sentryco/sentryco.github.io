@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    /** 
+     * slogan
+     */
+    .slogan {
+        width: 100%; /*reset default non responsive value*/
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+    /**
+    * h1
+    */
+    .slogan h1 {
+        font: var(--font-primary-l);
+    }
+    /**
+     * p
+     */
+    .slogan p {
+        padding-left: var(--default-horizontal-padding); 
+        padding-right: var(--default-horizontal-padding);  
+        font: var(--font-default-m); 
+    }
+}

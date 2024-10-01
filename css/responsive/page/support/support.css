@@ -1,0 +1,8 @@
+/**
+ * Support
+ */
+@media screen and (max-width: 600px) {
+    .faq {
+        width: 100%;
+    }
+}

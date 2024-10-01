@@ -1,7 +1,0 @@
-/**
- * Gradient
- * - Note: Used to add gradient to header text. (At the moment we just use a plain color)
- */
-:root {
-  --header-hightlight-gradient: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%);
-}

@@ -1,0 +1,51 @@
+@import "nav.css";
+/**
+ * Header page - responsive
+ */
+ @media screen and (max-width: 600px) {
+  /**
+   * Header page (adds a bit more height for mobile)
+   */
+	 header {
+        width: 100%;
+        padding-top: var(--default-vertical-padding);
+        padding-bottom: var(--default-vertical-padding);
+        display: flex;
+        flex-direction: column;  /*arrange horisontally*/
+        align-items: center; /* might not be needed*/
+        justify-content: center;  /*overrode default, might not be needed*/
+	 }
+  header .left, header .right {
+      width: 100%; /*reset default non responsive value*/
+  }
+   /**
+    * Left
+    */
+    header .left {
+      justify-content: center; 
+      padding-left: unset; /*override default*/
+    }
+   /**
+    * Aligns logo and title vertically ⚠️️ Experimental ⚠️️
+    */
+   header .left .logo-header-container {
+      display: flex; /* Aligns children (logo and h1) */
+      flex-direction: row; /* Arrange children horizontally */
+      align-items: center; /* Centers children vertically */
+      gap: var(--default-horizontal-gap-small); /* Adds 6px space between the logo and the h1 */
+      height: 3em; /* Set height relative to font size of adjacent text */
+   }
+    /**
+     * Company title text
+     */
+	 header .left h1 {
+      font: var(--font-primary-xxxxl);
+	 }
+    /**
+     * Right
+     */
+    header .right {
+      justify-content: center;  
+      padding-right: unset; /*override default*/
+    }
+ }

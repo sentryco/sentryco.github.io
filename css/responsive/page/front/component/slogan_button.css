@@ -1,0 +1,23 @@
+/**
+ * Button container
+ */
+@media screen and (max-width: 600px) {
+    /**
+     * Responsive adjustments for button container and buttons on small screens
+     */
+    .button_container {
+        flex-direction: column; /* Changes layout to stack buttons vertically */
+        gap: var(--default-vertical-gap-big); /* Increases gap for vertical layout */
+        padding-left: var(--default-horizontal-padding-small); /* Consistent horizontal padding */
+        padding-right: var(--default-horizontal-padding-small); /* Consistent horizontal padding */
+    }
+    /**
+     * Styles for video and app store buttons in responsive view
+     */
+    .video_button, .app_store_button {
+       width: 100%; /* Ensures buttons use the full width of the device */
+       padding-top: var(--default-vertical-padding); /* Increased padding for better touch interaction */
+       padding-bottom: var(--default-vertical-padding); /* Increased padding for better touch interaction */
+       font: var(--font-secondary-l); /* Larger font for better readability on small screens */
+    }
+}

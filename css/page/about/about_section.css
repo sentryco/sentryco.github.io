@@ -1,0 +1,29 @@
+ /**
+  * section header 
+  */
+  main.about .container h3 {
+     font-size: 28px; /* Increase font size for h2 */
+     text-align: left; /* Align text to the left */
+     padding-top: var(--default-vertical-padding-small); /* Add padding below */
+     padding-bottom: var(--default-vertical-padding-small); /* Add padding below */
+     font: var(--font-primary-l);
+     background-color: var(--debug-bg-29); /* ⚠️️ debug */
+ }
+ /**
+  * Section P
+  */
+  main.about .container p {
+     font: var(--font-default-m-alt);
+     color: var(--primary-medium); /* White color with 50% opacity */
+     text-align: left; /* Align text to the left */
+     padding-top: var(--default-vertical-padding-small);
+     padding-bottom: var(--default-vertical-padding-small); /* Add padding below */
+     background-color: var(--debug-bg-2);  /* ⚠️️ debug */
+ }
+ main.about .container a {
+    text-decoration: underline;
+    color: var(--accent-color);
+ }
+ main.about .container a:hover {
+   color: var(--primary);
+}

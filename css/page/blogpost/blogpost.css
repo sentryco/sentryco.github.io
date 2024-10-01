@@ -1,0 +1,18 @@
+@import "blogpost_header.css";
+@import "blogpost_content.css";
+@import "blogpost_list.css";
+@import "blogpost_navigator.css";
+/**
+ * Blog-post
+ * - Fix: ⚠️️ we could add: min-height: 680px;  Or else elements might get too squeezed, still relevant?
+ */
+main.blogpost .container {
+    text-align: center;
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: #101010; /* Red color for debugging */
+    background-color: var(--debug-bg-14);  /* ⚠️️ debug */
+    padding-bottom: var(--default-vertical-padding-small); /* Add padding below */
+    padding-top: var(--default-vertical-padding-small); /* Add padding above */
+    padding-left: var(--default-horizontal-padding); /* adds the default padding to the left */
+    padding-right: var(--default-horizontal-padding); /* adds the default padding to the right */
+}

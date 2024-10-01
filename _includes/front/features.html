@@ -1,0 +1,16 @@
+<!--Features-->
+<section class="header-container">
+    <div class="header-section">  <!--  -->
+        <h1>Features</h1> <!-- Download Our App -->
+        <p>
+             Expect all the features of a modern credential manager, 
+             enhanced by unparalleled local sync that ensures complete self-sovereignty.
+        </p>
+    </div>
+</section>
+<!-- features container -->
+<div class="feature-container">
+    {% for feature in site.data.features %}
+        {% include front/feature_item.html %}
+    {% endfor %}
+</div>

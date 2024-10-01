@@ -1,26 +1,26 @@
-@import "style/common/reset.css"; /* Reset must come first */
-/* Common */
-@import "style/common/default.css";/* Generic page content */
-/* Header / Footer */
-@import "style/component/header/header.css";
-@import "style/component/footer/footer.css";
 /**
- * Page
+ * common and genereal
+ */
+@import "general/general.css"; /* default, colors, metrics, reset etc */
+@import "common/common.css"; /* common components like nav, header, footer etc */
+/**
+ * pages (toggle on titlte etc)
  * - Note: We load these from the pov of the active html
+ * - Fix: ⚠️️ Toggle css based on title, with liquid expands etc (do research)
  * - Fix: ⚠️️ Figure out how to merge css into one file in jekyll (do research)
  */
 {% if page.title == 'About' %} /* Only import if page is about */
-@import "style/page/about/about.css";
+@import "page/about/about.css"; /* Imports CSS specific to the About page */
 {% else if page.title == 'Support' %} /* Only import if page is support */
-@import "style/page/support/support.css";
+@import "page/support/faq.css"; /* Imports CSS specific to the Support page */
 {% else if page.title == 'Blog' %} /* Only import if page is blog */
-@import "style/page/blog_grid/blog_grid.css";
+@import "page/blog/blog.css"; /* Imports CSS specific to the Blog page */
 {% else %}
-@import "style/page/front/front.css";
-@import "style/page/blog_post/blog_post.css";
+@import "page/front/front.css"; /* Imports CSS specific to the Front page */
+/*fix: ⚠️️ detect title on front maybe?*/
+@import "page/blogpost/blogpost.css"; /* Imports CSS specific to individual blog post pages */
 {% endif %}
 /**
- * Responsive
- * - Note: Has to be the last css, in order to override defaults
+ * - Note: add responsive last so it overrides other styles 
  */
-@import "style/responsive/responsive.css";
+@import "responsive/responsive.css"; 

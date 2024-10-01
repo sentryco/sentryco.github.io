@@ -1,0 +1,15 @@
+/* common and general */
+@import "about_section.css";
+/**
+ * Container 
+ * - Description: Pins the container to the center of the page
+ */
+main.about .container {
+    text-align: center;
+    margin: 0 auto; /* Centers the element horizontally */
+    background-color: var(--debug-bg-28);  /* ⚠️️ debug */
+    padding-bottom: var(--default-vertical-padding-small); /* Add padding below */
+    padding-top: var(--default-vertical-padding-small); /* Add padding above */
+    padding-left: var(--default-horizontal-padding); /* adds the default padding to the left */
+    padding-right: var(--default-horizontal-padding); /* adds the default padding to the right */
+}

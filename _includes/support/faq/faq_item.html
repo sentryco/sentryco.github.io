@@ -1,0 +1,15 @@
+<!-- faq-item - Used in the faq_page and support_page -->
+ <!-- Fix: ⚠️️ More descriptive class names for the li element, such as faq-item, and for the child elements, such as faq-link, faq-question, faq-dropdown, faq-plus, faq-minus, and faq-answer, respectively. -->
+<li class="faq-item" id="{{item.id}}">   
+	<a href="#{{item.id}}" class="top">
+		<h2 id="left">{{item.q}}</h2>  <!-- FAQ_text -->  
+		<!-- fix: ⚠️️ make this a span? like legacy? -->
+		<div id="right" class="circle">
+			<img src="https://raw.githubusercontent.com/feathericons/feather/main/icons/plus.svg" alt="Plus Icon" class="centered-icon" id="plus">
+			<img src="https://raw.githubusercontent.com/feathericons/feather/main/icons/minus.svg" alt="Minus Icon" class="centered-icon" id="minus">
+		</div>
+	</a>
+	<div class="bottom">
+		{{item.a}} <!-- Expanded content, hidden by default -->
+	</div>
+</li>

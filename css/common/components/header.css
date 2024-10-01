@@ -1,0 +1,84 @@
+@import "nav.css";
+/**
+ * Header container
+ * - Note: Has left and right containers 
+ */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Aligns children to the left and right */
+    padding-top: var( --default-vertical-padding-big); /* Adds space at the top of the header */
+    padding-bottom: var( --default-vertical-padding-big); /* Adds space at the bottom of the header */
+    background-color: var(--debug-bg-28); /* ⚠️️ debug*/
+    margin: 0 auto; /* Centers the element horizontally */
+    text-align: center;
+}
+/**
+ * Left and right header
+ */
+ header > * { /* only direct children of an element */
+    width: 50%; /* Sets each side to take up half of the header's width */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+}
+/**
+ * Left content
+ */
+header .left {
+    justify-content: left;  
+    padding-left: var(--default-horizontal-padding);
+    background-color: var(--debug-bg-22); /* ⚠️️ debug */
+}
+/**
+ * Left header h1 (logo title)
+ * fix: ⚠️️ Try to let the height of this decide the height of the container
+ */
+header .left h1 {
+    font: var(--font-primary-xxl);
+    background-color: var(--debug-bg-24); /* ⚠️️ debug */
+}
+/**
+ * logo-header-container
+ * - Description: This container holds the logo and the main title (h1) of the header, aligning them horizontally and centering them vertically within the header's left section.
+ */
+header .left .logo-header-container {
+   height: 2em;
+   display: flex; /* Aligns children (logo and h1) horizontally */
+   align-items: center; /* Centers children vertically */
+   gap: var(--default-horizontal-gap); /* Adds 12px space between the logo and the h1 */
+   text-decoration: none; /* Removes underline from the link */
+   color: inherit; /* Inherits the text color from the parent element */
+   cursor: pointer; /* Indicates a clickable element, typically used for links */
+   background-color: var(--debug-bg-20); /* ⚠️️ debug */
+}
+/**
+ * Logo (icon)
+ */
+ header .left .logo-header-container .header-logo {
+    height: 100%; /* Use the full height of the parent */
+    aspect-ratio: 1; /* Ensures the width is equal to the height */
+    background-color: var(--debug-bg-21); /* ⚠️️ debug */
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+/**
+ * Logo (icon svg)
+ */
+header .left .logo-header-container .header-logo img.logo-symbol {
+    /*filter: var(--svg-white);*/
+    width: 100%; /* Sets the image width to 50% of it's parent */
+    height: 100%; /* Sets the image height to 50% of it's parent */
+}
+
+/**
+ * Right content (has nav)
+ */
+ header .right {
+    justify-content: right;  
+    padding-right: var(--default-horizontal-padding);
+    background-color: var(--debug-bg-23); /* ⚠️️ debug */
+}
+

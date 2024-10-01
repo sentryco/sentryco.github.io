@@ -1,0 +1,93 @@
+/**
+ * Footer
+ */
+footer {
+    margin: 0 auto; /* Centers the element horizontally */
+    display: flex;
+    justify-content: space-between; /* Aligns children to the left and right */
+    padding-top: var(--default-vertical-padding-big); /* Adds space at the top of the header */
+    padding-bottom: var(--default-vertical-padding-big); /* Adds space at the bottom of the header */
+    text-align: center;
+    color: var(--primary); 
+    background-color: var(--debug-bg-23); /* ⚠️️ debug */
+}
+/**
+ * Left and right footer
+ */
+footer > * {
+    width: 50%; /* Sets each side to take up half of the header's width */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    padding-top: var(--default-vertical-padding-small); 
+    padding-bottom: var(--default-vertical-padding-small);
+}
+/**
+ * Left footer
+ */
+footer .left {
+    padding-left: var(--default-horizontal-padding);
+    justify-content: left;  
+    background-color: var(--debug-bg-24);  /* ⚠️️ debug */
+}
+/**
+ * Left footer text
+ */
+footer .left p {
+    font: var(--font-default-s);
+    background-color: var(--debug-bg-26);  /* ⚠️️ debug */
+}
+/**
+ * Right 
+ */
+footer .right {
+    padding-right: var(--default-horizontal-padding);
+    justify-content: right;  
+    background-color: var(--debug-bg-22); /* ⚠️️ debug */
+}
+/**
+ * left h1
+ */
+footer .left h1 {
+    background-color: #111; /* ⚠️️ debug - Updated to a darker green for the logo title */
+}
+/**
+ * Social media icons container
+ */
+ footer .right .social-media-icons {
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center; /* Aligns the children vertically in the center */
+    padding-top: var(--default-vertical-padding-small); /* Adds 10px space above the paragraph */
+    padding-bottom: var(--default-vertical-padding-small); /* Adds 10px space below the paragraph */
+    background-color: var(--debug-bg-25);  /* ⚠️️ debug */
+    gap: var(--default-horizontal-gap);
+}
+/**
+ * Social media icon (background of icon)
+ */
+ footer .right .social-media-icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Makes the icon circular */
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    background-color: var(--bg-white);
+    cursor: pointer; /* Ensures the cursor changes to a pointer when hovering */
+}
+/**
+ * Social media icon image (svg)
+ */
+ footer .right .social-media-icons .icon img {
+    width: 70%;
+    height: auto; /* Maintains the aspect ratio of the image */
+    opacity: 0.8;
+    filter: var(--svg-white);
+}
+footer .right .social-media-icons .icon:hover {
+    background-color: var(--bg-dark-suntan-teal);
+}
+footer .right .social-media-icons .icon:hover img {
+    filter: var(--svg-dark-suntan-teal);
+}

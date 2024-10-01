@@ -1,0 +1,70 @@
+/**
+ * Feature section
+ */
+@media screen and (max-width: 600px) {
+    /** 
+     * Feature container
+     */
+    .feature-container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-column {
+        padding-left: var(--default-horizontal-padding);
+        padding-right: var(--default-horizontal-padding);
+        padding-top: var(--default-vertical-padding);
+        padding-bottom: var(--default-vertical-padding);
+    }
+    /** 
+     * Circle icon
+     */
+     .top-column .circle-icon {
+        width: 4em; /* Ensures the icon width is fixed */
+        height: 4em; /* Ensures the icon height is fixed */
+        border-radius: 50%; /* Maintains the circular shape */
+        flex-shrink: 0; /* Prevents the icon from shrinking */
+        display: flex; /* Ensures the container is a flexbox */
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically */
+    }
+    /**
+     * Circle icon img
+     */
+    .top-column .circle-icon img {
+        width: 50%;
+        height: auto;
+    }
+    /**
+     * Content
+     */
+     .top-column .content {
+        display: flex;
+        flex-direction: column; /* Stacks title and text vertically */
+        text-align: left; /* Aligns text to the left */
+        flex-grow: 1; /* Allows the content to take up remaining space */
+        margin-right: unset; /* No space between content and icon */
+        gap: 0px;
+    }
+    /**
+     * Content h3, p
+     */
+    .top-column .content h3,
+    .top-column .content p {
+        text-align: center /*right*/; /* Aligns text to the right */
+        padding-left: unset; /*reset default padding*/
+        padding-right: unset; /*reset default padding*/
+    }
+    /**
+     * Content h3
+     */
+    .top-column .content h3 {
+        margin-bottom: var(--default-vertical-padding-extra-small); /* Adds space below h3 */
+        font: var(--font-primary-l)
+    }
+    /**
+     * Content p
+     */
+    .top-column .content p {
+        font: var(--font-default-m);
+    }
+}

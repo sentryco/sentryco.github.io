@@ -1,9 +1,0 @@
-/* styles has not been added yet */
-@media screen and (max-width: 600px) {
-	/**
-	 * Sub-Category for faqs
-	 */
-	.faq_type {
-		font: var(--text-xs);
-	}
-}

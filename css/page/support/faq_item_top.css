@@ -1,0 +1,59 @@
+/**
+ * .faq-item .top
+ */
+.faq-item .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    padding-left: var(--default-horizontal-padding);
+    padding-right: var(--default-horizontal-padding);
+    text-decoration: none; /* removes link underline */
+}
+/**
+ * faq-item h2
+ */
+ .faq-item .top h2#left {
+    text-align: left; /* Aligns the question text to the left */
+    color: var(--primary-low);
+    font: var(--font-default-m);
+}
+/**
+ * icon container for the + and - icon
+ */
+ .faq-item .top .circle#right {
+    background-color: var(--debug-bg-3); /* ⚠️️ debug */
+    flex-shrink: 0; /* Prevents the item from shrinking */
+}
+/**
+ * svg
+ */
+ .faq-item .top .circle#right img.centered-icon {
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100%; /* Ensures the container takes full height of its parent */
+    width: 100%; /* Ensures the container takes full width of its parent */ /* Reduces the width to 80% of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    filter: invert(1) brightness(0.6);
+    padding: 4px;
+}
+/**
+ * Disclosure btns
+ */
+ .faq-item .top .circle#right img.centered-icon#minus {
+	display: none; /* Hide when inactive */
+}
+/**
+ * Disclosure plus-btn - Expanded
+ */
+.faq-item:target .top .circle#right img.centered-icon#plus {
+    display: none; /*Hide when active*/
+}
+/**
+ * Disclosure minus-btn - Expanded
+ */
+ .faq-item:target .top .circle#right img.centered-icon#minus {
+	display: block; /* Show when active */
+}

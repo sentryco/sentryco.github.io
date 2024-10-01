@@ -1,0 +1,26 @@
+/**
+ * .faq-item .bottom
+ */
+.faq-item .bottom {
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    padding-left: var(--default-horizontal-padding);
+    padding-right: var(--default-horizontal-padding);
+    display: none; /* Default is hidden */
+    font: var(--font-default-m-alt);
+    color: rgba(255, 255, 255, 0.6);
+}
+/**
+ * Bottom (active)
+ * - Note: The active state of the list item
+ * - Note: expand:target means active
+ * - Note: expand:target is set when link is clicked and url js call is made #q2 etc
+ */
+ .faq-item:target .bottom {
+    background-color: var(--debug-bg-10); /* ⚠️️ debug */
+	display: block; /* Show when active */
+	height: auto;
+}
+.faq-item .bottom a {
+    color: var(--primary-low);
+}

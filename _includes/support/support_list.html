@@ -1,0 +1,19 @@
+<!-- Support page list  -->
+<div class="faq">
+    <!-- faq-container -->
+    <div class="faq-container">
+        {% for category in site.data.support %} <!-- Loop through the support data in the YAML file -->
+         <!-- faq-section - adds segment header for each category etc -->
+            <div class="faq-section">
+                <!-- faq-section header -->
+                <h2 class="section-header" id="{{category.title}}">{{category.title}}</h2>
+            </div>
+            <ul class="faqs"> 
+                {% for item in category.list %}<!-- Loop through the list array of each category in the support data -->
+                    <!-- Include the faq_item.html file as a partial in the support.html file -->
+                    {% include support/faq/faq_item.html %}
+                {% endfor %}
+            </ul> <!-- End of faq_list -->
+        {% endfor %}
+    </div>
+</div>

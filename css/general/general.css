@@ -1,0 +1,10 @@
+/**
+ * The configuration for the website
+ */
+@import "const/reset.css"; /* Resets browser default styles to ensure consistency across different browsers. */
+@import "const/default.css"; /* Establishes general page layout settings. */
+@import "const/color.css"; /* Defines the color variables used throughout the site. */
+@import "const/scheme.css"; /* Sets up the color schemes and additional color-related settings. */
+@import "const/metric.css"; /* Specifies general measurements such as margins and paddings. */
+@import "const/font.css"; /* Contains font family, size, and other typography settings. */
+@import "const/debug.css"; /* Includes styles for debugging purposes, making it easier to identify layout issues during development. */

@@ -1,5 +1,5 @@
 ## Support page data (we link these in faq.yml, as such we need random ids, see readme on how to generate these)
-## - Fix: ⚠️️ We should use short form UUID's for perma links etc
+## - Note️: We  use short form UUID's for perma links etc
 ## - Note: Use double qoutes when writing some special characters etc like urls
 - title: Security ## Security category
   description: Questions and answers regarding encryption and security ## Context text
@@ -19,6 +19,9 @@
    - q: How can I set a master-password?
      a: 'To set a master password, navigate to the preferences menu in the app and select the <em>security option</em>. From there, click on the <em>"Set Master Password"</em> button and follow the on-screen instructions. Finally, make sure to turn on the <em>"Activate Master Password"</em> toggle.'
      id: rhd2
+   - q: How can I set a pin-code?
+     a: 'To set a pin-code, navigate to the preferences menu in the app and select the <em>security option</em>. From there, click on the <em>"Set Pin Code"</em> button and follow the on-screen instructions. Finally, make sure to turn on the <em>"Activate Pin Code"</em> toggle.'
+     id: oxy4
    - q: How can I activate biometric authentication?
      a: 'To activate Face-ID / Touch-ID, navigate to the preferences menu in the app and select the <em>security option</em>. From there, toggle the <em>"Active biometric authentication"</em> toggle button and follow the on-screen instructions to finalize the activation.'
      id: qx5A
@@ -207,9 +210,9 @@
    - q: What about apple watch and vision pro support?
      a: 'When the time is right. It might be sooner or later'
      id: y78G
-   - q: When is the iPad app going to be launched?
-     a: "It is in development. We are building it as a standalone app. Not a scaled up iOS or a scaled down macOS app. But we need to streamline more of the UI/UX code in iOS and macOS to ensure that we don't create too much complexity when adding another OS target to our workload and responsibilities"
-     id: rx4K
-   - q: Where can I see the macOS app in action?
-     a: 'You can check out the video from the 1.0.0 launch. It shows how the interaction between an iPhone and a MacBook works: <a href="https://vimeo.com/836812210">Watch the video</a>'
-     id: w4K2
+##   - q: When is the iPad app going to be launched?
+##     a: "It is in development. We are building it as a standalone app. Not a scaled up iOS or a scaled down macOS app. But we need to streamline more of the UI/UX code in iOS and macOS to ensure that we don't create too much complexity when adding another OS target to our workload and responsibilities"
+##     id: rx4K
+##- q: Where can I see the macOS app in action?
+##a: 'You can check out the video from the 1.0.0 launch. It shows how the interaction between an iPhone and a MacBook works: <a href="https://vimeo.com/836812210">Watch the video</a>'
+##id: w4K2

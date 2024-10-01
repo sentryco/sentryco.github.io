@@ -1,0 +1,48 @@
+/**
+ * Next / prev post
+ * - Fix: ⚠️️ we could also add the title of the post, to generate more interest etc?
+ */
+ .blog_post_footer {
+	background-color: var(--debug-bg-3);
+	width: 100%;
+	padding-top: var(--default-vertical-padding-big);
+	padding-bottom: var(--default-vertical-padding-big);
+	/*padding-left: 0;
+	padding-right: 0;*/
+	margin: auto;
+	height: auto;
+	text-align: center; /* We could also use flex to align center */
+	font: var(--text-xs);
+	line-height: 1.2;
+	color: var(--primary-high);
+}
+/**
+ * Next button
+ */
+main.blogpost .container .blog_post_footer a.next_blog_post_button {
+	background-color: var(--debug-bg-2);/* Debug */
+	text-decoration: none;
+	color: var(--primary); 
+}
+/**
+ * Seperator
+ */
+.blog_post_footer .blog_post_seperator {
+	background-color: var(--debug-bg-7);/* Debug */
+}
+/**
+ * Previous button
+ */
+main.blogpost .container .blog_post_footer a.prev_blog_post_button {
+	background-color: var(--debug-bg-25);/* Debug */
+	text-decoration: none;
+	color: var(--primary); 
+}
+main.blogpost .container .blog_post_footer a.prev_blog_post_button:hover { /*hover*/
+	text-decoration: underline;
+	color: var(--primary-low);
+}
+main.blogpost .container .blog_post_footer a.next_blog_post_button:hover { /*hover*/
+	text-decoration: underline;
+	color: var(--primary-low);
+}

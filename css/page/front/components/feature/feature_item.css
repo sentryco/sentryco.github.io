@@ -1,0 +1,60 @@
+/**
+ * same as  .top-column
+ */
+.feature-container > * {
+    border-radius: var(--standard-border-radius); /* Adds rounded corners to each child within the grid */
+    /*background-color: var(--foreground-color);*/
+}
+/**
+ * Top column
+ * - Fix: ⚠️️ Rename this to column-container or feature_component.css or feature_group 👈
+ * - Note: columns are aligned horizontally
+ */
+ .top-column {
+    display: flex; /* Makes the top-column a flex container */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: stretch; /* Evenly distributes spacing between children */
+    padding-left: var(--default-horizontal-padding-small);
+    padding-right: var(--default-horizontal-padding-small);
+    padding-top: var(--default-vertical-padding);
+    padding-bottom: var(--default-vertical-padding);
+    row-gap: var(--default-horizontal-gap); /* Adds 20px space between each item */
+    background-color: var(--foreground-color-alt);
+    text-decoration: none; /*remove link underline*/
+}
+/**
+ * Feature title    
+ */
+ .top-column .content h3 {
+    text-align: center; /* Centers text */
+    margin: 0; /* Removes default margins */
+    padding-left: var(--default-horizontal-padding-small);
+    padding-right: var(--default-horizontal-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    background-color: var(--debug-bg-6);  /* ⚠️️ debug */
+    color: var(--primary); 
+    font: var(--font-primary-m);
+}
+/**
+ * Feature description
+ */
+ .top-column .content p {
+    font: var(--font-default-m-alt);
+    margin: 0; /* Removes default margins */
+    padding-left: var(--default-horizontal-padding-small);
+    padding-right: var(--default-horizontal-padding-small);
+    text-align: center; /* Centers text within paragraphs in top-column */
+    color: var(--primary-medium); /* White text with 50% opacity */
+}
+.top-column .learn-more {
+    margin-top: auto; /* Pushes the element to the bottom */
+    color: var(--primary-low);
+    text-decoration: underline; /*remove link underline*/
+    text-align: center;
+    font: var(--font-default-m-alt);
+}
+.top-column:hover .learn-more {
+    color: var(--primary);
+    text-decoration: underline; /*remove link underline*/
+}

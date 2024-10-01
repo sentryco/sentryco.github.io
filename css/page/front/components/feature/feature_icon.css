@@ -1,0 +1,29 @@
+/**
+ * Feature icon
+ */
+ .top-column .circle-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--accent-color);
+    background-color: var(--bg-dark-suntan-teal);
+    background-color: var(--debug-bg-8);  /* ⚠️️ debug */
+    display: flex; /* Makes the container a flex container */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+/**
+ * Feature icon
+ */
+.top-column .circle-icon {
+    width: 60px;
+    height: 60px;
+}
+/**
+ * Feature icon svg
+ */
+.top-column .circle-icon img {
+    width: 50%; /* Sets the image width to 50% of it's parent */
+    height: 50%; /* Sets the image height to 50% of it's parent */
+    filter: var(--svg-dark-suntan-teal);
+}

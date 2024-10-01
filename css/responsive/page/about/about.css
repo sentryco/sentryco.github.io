@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+    /* container for all about content */
+    .container {
+        width: 100%;
+    }
+}

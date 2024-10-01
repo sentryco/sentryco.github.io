@@ -1,0 +1,8 @@
+/**
+ * Section header
+ */
+@media screen and (max-width: 600px) {
+    section.header-container {
+        width: 100%;
+    }
+}

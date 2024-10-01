@@ -1,0 +1,27 @@
+/**
+ * We can toggle these on mobile etc
+ * - Note: Adjust things to see what works etc
+ * - Note: we can use ems for padding and margins. use copilot to convert px to ems
+ */
+ :root {
+    /*padding - horizontal*/
+    --default-horizontal-padding-small: 12px;
+    --default-horizontal-padding: 24px;
+    --default-horizontal-padding-big: 48px;
+    /*padding - vertical*/
+    --default-vertical-padding-extra-small: 6px;
+    --default-vertical-padding-small: 12px;
+    --default-vertical-padding: 24px;
+    --default-vertical-padding-big: 32px;
+    /*gap - horizontal*/
+    --default-horizontal-gap-small: 6px;
+    --default-horizontal-gap: 12px;
+    --default-horizontal-gap-big: 24px;
+    /*gap - vertical*/
+    --default-vertical-gap-small: 6px;
+    --default-vertical-gap: 12px;
+    --default-vertical-gap-big: 24px;
+    --default-vertical-gap-extra-big: 32px;
+    /*rounded corners*/
+    --standard-border-radius: 12px;
+}

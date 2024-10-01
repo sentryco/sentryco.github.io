@@ -1,0 +1,23 @@
+/**
+ * Page indicator
+ */
+ .page-indicator {
+    margin: 0 auto;/*centers container*/
+    display: flex;
+    justify-content: center;
+    padding-top: var(--default-vertical-padding-small);
+    padding-bottom: var(--default-vertical-padding-small);
+    background-color: #101010; /* ⚠️️ debug - color for the container */
+    background-color: var(--debug-bg-9); /* ⚠️️ debug */
+    align-items: center;
+    gap: var(--default-horizontal-gap-small);  
+    font: var(--font-default-s);
+}
+/**
+ * - Note: Assuming .centered-text is inside a div with class .content
+ */
+.page-indicator p.indicator {
+    font-size: larger; /* Increases the font size */
+    color: var(--primary-medium); /* White with 50% opacity */
+    background-color: var(--debug-bg-11); /* ⚠️️ debug */
+}

@@ -1,0 +1,19 @@
+/**
+ * Theme - color-scheme
+ * - Fix: ⚠️️ rename file to theme.css?
+ */
+:root {
+    /*custom colors -bg */
+    --bg-white: rgba(255, 255, 255, 0.125);
+    --stroke-white: rgba(255, 255, 255, 0.3); 
+}
+/*colors*/
+:root {
+    --bg-dark-suntan-teal: rgba(80, 255, 168, 0.125);
+}
+/* filter */
+:root {
+   /*custom svg color - https://codepen.io/sosuke/pen/Pjoqqp*/
+    --svg-dark-suntan-teal: invert(89%) sepia(11%) saturate(2091%) hue-rotate(93deg) brightness(100%) contrast(94%);
+    --svg-white: invert(100%) sepia(0%) saturate(7496%) hue-rotate(329deg) brightness(126%) contrast(95%);
+}

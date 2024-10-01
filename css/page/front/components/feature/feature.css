@@ -1,0 +1,18 @@
+@import "feature_item.css";
+@import "feature_icon.css";
+/**
+ * Feature grid
+ */
+ .feature-container {
+	background-color: var(--debug-bg-33);
+	/*Metrics*/
+    margin: 0 auto;
+	height: auto;
+	/* Grid-Element */
+	display: grid;
+    /*To ensure that each column and row in your grid takes up exactly one-third of the available space, you can use the fr unit, which allocates one fraction of the available space. */
+	grid-template-columns: repeat(3, 1fr); /* Each column takes 1/3 of the available width */
+    grid-auto-rows: 1fr; /*ensures that each row takes up the tallest amount of space as the others in the row*/
+    justify-content: space-between; /* Grows space between when size change */
+	gap: var(--default-horizontal-gap-big); /* Sets both vertical and horizontal gaps between grid items */
+}

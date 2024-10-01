@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 600px) {
+    .download-section {
+        width: 100%;
+        padding-left: var(--default-horizontal-padding);
+        padding-right: var(--default-horizontal-padding);
+    }   
+    .disclaimer {
+        width: 100%;
+    }
+    .download-button {
+        width: 100%;
+        padding-left: var(--default-horizontal-padding);
+        padding-right: var(--default-horizontal-padding);
+    }
+    .download-button a {
+        padding-top: var(--default-vertical-padding);
+        padding-bottom: var(--default-vertical-padding);
+        width: 100%;
+        font: var(--font-secondary-l);
+    }  
+}

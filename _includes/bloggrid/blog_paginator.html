@@ -1,0 +1,21 @@
+<!--  
+  Blog paginator (Used to step through blog_grids )
+-->
+<div class="page-indicator"><!-- Previouse / Next -->
+   {% if paginator.previous_page %} <!-- If paginator has a previous page, make a link -->
+      <a href="{{ paginator.previous_page_path }}" class="prev-button" aria-label="Previous page">Prev</a>
+   {% else %} <!-- If not, make a non-link -->
+      <span class="prev-button" aria-disabled="true">Prev</span>
+   {% endif %}
+   <div class="indicator"> <!-- 'Page: 1 of 12'  -->
+      <span class="page_seperator">Page: </span>
+      <span class="current_page">{{ paginator.page }}</span> <!-- Current page -->
+      <span class="page_seperator">of</span>
+      <span class="total_pages">{{ paginator.total_pages }}</span> <!-- total pages -->
+   </div>
+   {% if paginator.next_page %} <!-- If paginator has a next page, make a link -->
+      <a href="{{ paginator.next_page_path }}" class="next-button" aria-label="Next page">Next</a>
+   {% else %}  <!-- If not, make a non-link -->
+      <span class="next-button" aria-disabled="true">Next</span>
+   {% endif %}
+</div>
