@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title # Title of the site, displayed in browser tabs and SEO titles
+title: Self-Sovereign Authentication and Password Management # Title of the site, displayed in browser tabs and SEO titles
 email: andre@sentry.co # Public contact email, displayed in the site footer or contact page
 description: >- # this means to ignore newlines until "baseurl:"
   Self-Sovereign Authentication and Password Management
