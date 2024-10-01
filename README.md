@@ -27,6 +27,7 @@ Website for sentry.co
 `blog` has the blogpost template (blog post structure)
 `css` has styles (styling)
 `assets` has svgs etc (images, svg etc)
+`legal` add doc for this
 
 ### CSS colors
 - Use this to get svg filter colors: [https://angel-rs.github.io/css-color-filter-generator/](https://angel-rs.github.io/css-color-filter-generator/) 
@@ -72,6 +73,7 @@ Theme colors are stored in as variables in th css/common/theme.css and can be cu
 - Add FAQ item that has link to video of macApp "Where can I can see a video of macApp?" Here is a link to our launch video which includes footage of the macApp ✅
 - Align the download btns like the price btns (the dl boxes are also not equal in width)
 - Do SEO testing o the site. Do research into which online service can help with this.
+- Add support for paginate v2: https://talk.jekyllrb.com/t/paginate-v2-with-github-pages-confusion/6471/26
 
 ### Future milestones:
 - Move to github action based jekyll hosting to get paginator v2 which has tagging :yum:
