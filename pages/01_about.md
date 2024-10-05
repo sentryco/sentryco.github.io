@@ -6,7 +6,7 @@ permalink: /about/ # Sets the permalink for the About page
 
 ### OpenSource
 
-We have open-sourced over 20+ modules, with more being added regularly. Additionally, we offer bounties for challenges we aim to tackle but are constrained by time and resources. Explore these opportunities on our [GitHub page](https://github.com/sentryco) or contact us via email if you're feeling adventurous.
+We have open-sourced over 35+ modules, with more being added regularly. Additionally, we offer bounties for challenges we aim to tackle but are constrained by time and resources. Explore these opportunities on our [GitHub page](https://github.com/sentryco) or contact us via email if you're feeling adventurous.
 
 ### Testing
 
